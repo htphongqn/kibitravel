@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtm" >
+<head>
+<title>Untitled Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+<script type="text/javascript" src="scripts/jquery.min.1.11.2.js"></script>
+</head>
+<body>
+<!---================BOOKTOUR===================-->
+<script type="text/javascript">
+$(document).ready(function () {
+	$(".c-frm").hide();
+	var notH = 1,
+	$pop = $('.c-frm').hover(function () { notH ^= 1; });
+	$(document).on('mouseup keyup', function (e) {
+		if (notH || e.which == 27) $pop.stop().hide();
+	});
+	$('.booktour-link').click(function () {
+		$('.c-frm').fadeIn('fast').end().siblings().$('.c-frm').hide('fast');
+		event.stopPropagation();
+	});
+	 
+	$('.close-btn').click(function () {
+	$('.c-frm').fadeOut('fast');                       
+	});
+}); 
+</script>
+<div class="c-frm" style="display:none">
+  <div class="container" >
+    <div class="frm-booktour" > <span class="close-btn"><i class="fa fa-close"></i></span>
+      <p class="tt-mt"> <span class="mt-s"><b>Book Tour</b></span> </p>
+      <div class="frm-book-tour">
+        <p> Name
+          <input type="text" class="txt-bt" />
+        </p>
+        <p> Phone number
+          <input type="text" class="txt-bt" />
+        </p>
+        <p> Email
+          <input type="text" class="txt-bt" />
+        </p>
+        <p>Message
+          <textarea class="txt-bt"></textarea>
+        </p>
+        <p class="cht"> Security Code<br />
+          <input type="text" class="txt-bt captcha" />
+          <img src="images/captcha.jpg" /> </p>
+        <p><a class="btn-bt">Send</a><a class="btn-bt">Refresh</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!---==============END BOOKTOUR=================-->
+<div class="top">
+  <div class="container">
+    <div class="search"> <span>Search this site </span> |
+      <div class="trigger"><i class="fa fa-search"></i></div>
+      <div class="popupSearch"  >
+        <input type="text" alt="Tìm kiếm" class="txt-search " placeholder="Input search…">
+        <a class="btn-search" ><i class="fa fa-search"></i></a> <a class="btn-close"><i class="fa fa-close"></i></a> </div>
+    </div>
+    <p><i class="fa fa-envelope-o"></i> sales@kibitravel.com.vn</p>
+  </div>
+</div>
+<!---================HEADER===================-->
+<header class="header" role="banner">
+  <div class="container"> <span class="brand"><a href="index.htm"><img src="data/logo.png" /></a></span>
+    <div class="navx"><a href="#" id="pull" class="clearfix"><i class="openIco fa fa-align-justify"></i> <i class="closeIco fa fa-remove"></i></a>
+      <ul>
+        <li class="active"><a href="index.htm">HOme</a> </li>
+        <li><a href="detailnews.htm">About us</a> </li>
+        <li><a href="destinations.htm">Destinations</a>
+          <ul>
+            <li><a href="#">Nullam quis risus</a>
+              <ul>
+                <li><a href="#">Nullam quis risus</a> </li>
+                <li><a href="#">Nullam quis risus</a> </li>
+                <li><a href="#">Nullam quis risus</a> </li>
+              </ul>
+            </li>
+            <li><a href="#">Nullam quis risus</a> </li>
+            <li><a href="#">Nullam quis risus</a> </li>
+          </ul>
+        </li>
+        <li><a href="bestdeals.htm">Best Deals</a> </li>
+        <li><a href="SocialActivities.htm">Social Activities</a></li>
+        <li><a href="#">Blog</a> </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!---================SLIDER IMG===================-->
+<figure class="slider" role="slider">
+  <div class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider"> <a href="#"><img src="data/slide1.jpg" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s "/></a> <a href="#"><img src="data/slide2.jpg" title="Hoi An   "/></a> </div>
+  </div>
+</figure>
+<section class="download-guide-book">
+  <div class="container">
+    <h2 class="tt-dl">Vietnam's Guide Book</h2>
+    <p class="caption-dl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <a class="btn-mn"> Download Now </a> </div>
+</section>
+
+<!---================MAIN===================-->
+<main class="main" role="main">
+  <div class="container">
+    <nav class="breadcrumb">
+      <ul>
+        <li><a href="/trang-chu.htm">Home</a></li>
+        <li><a href="/san-pham.htm">News</a></li>
+      </ul>
+    </nav>
+    <section class="content">
+      <article class="iblock detail-news">
+ 
+        <h1 class="tt-detail-news">Discovering Tram Chim National Park through the green tour</h1>
+        <!-- begin-->
+        <p>(TITC) - Recently, Centre for Tourism and Environmental Education - Tram Chim National Park (Tam Nong District, Dong Thap Province) has officially put into operation of the green tour discovering Tram Chim National Park.</p>
+<p>This is the green tour because visitors will move by environmentally friendly transport means, such as electric cars and solar energy tourist boats.</p>
+<p style="text-align:center"><img  src="data/tramchim1.jpg" width="500" /></p>
+<p>
+The tour route has a total length of about 12km with duration of 35 minutes. For the first 4km, visitors take electric cars with the speed of 30km/h. In the last 8km, visitors take solar energy tourist boats with the speed of 15km/h. The special feature of solar energy tourist boats is no noise and do not affect the lives of animals, especially birds. Therefore, visitors will hear the sounds of waves lapping against boats and birds only.</p>
+<p style="text-align:center"><img  src="data/tramchim2.jpg" title="Discovering Tram Chim National Park through the green tour" width="500"/><br />
+ 
+<p>Located in the central area of ​​Dong Thap Muoi, belonging to the lowest area of Mekong River, Tram Chim National Park has the natural area of 7,588ha and spreads over 6 communes of ​​Tan Cong Sinh, Phu Duc, Phu Tho, Phu Thanh A, Phu Thanh B, Phu Hiep and Tram Chim Town (Tam Nong District, Dong Thap Province). The park owns the beautiful natural landscape and is considered as a miniature Dong Thap Muoi in Southern region.
+</p>
+<p style="text-align:center"><img  src="data/tramchim3.jpg" width="500" /></p>
+<p>
+Tram Chim National Park has about 130 species of flora, distributing into 6 typical ecological community types of Dong Thap Muoi area, namely cajeput, lotus, ghost rice, tube grass, Ischaemum rugosum, and Eleocharis dulcis. The fauna system is also diversified with more than 130 species of freshwater fish, 132 species of water bird, typically red-headed crane – the largest bird in the family of stork in danger of extinction in the world.</p><p style="text-align:center"><img  src="data/tramchim4.jpg"  width="500"/></p><p>
+
+To Tram Chim in the flooding season (from July to November), visitors will have the opportunity to admire untouched green mangrove forests, grasslands, rice... succeeding each other on the vast expanse of water river and flocks of water birds following to fly in the sky.</p>
+        <!-- end--> 
+      </article>
+      
+      <div class="clearfix function">
+        <div class="shareBox"> <img src="images/social_network.jpg" width="142" height="18"></div>
+        <div class="toolbarBox"> <a href="#"> <i class="fa fa-print"></i>Print</a> <a> <i class="fa fa-envelope"></i>Send email</a> <a > <i class="fa fa-edit"></i>Feedback</a></div>
+      </div>
+    </section>
+    <!--end main content--> 
+    
+  </div>
+</main>
+<!---================FOOTER===================-->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <address class="address">
+    <map>
+      <img src="data/map.png" />
+    </map>
+    <p style="color:#fff">HCM City's Head Office:</p>
+    Add: 1099 Hoang Sa, District 03, Ho Chi Minh City, Vietnam<br />
+    Tel: (+84 8) 39311490<br />
+    Email: sales@kibitravel.com.vn<br />
+    Website: www.kibitravel.com.vn<br />
+    <p style="color:#fff">Hanoi Office:</p>
+    Add: The 4th Floor, 9 Ho Tung Mau, Cau Giay District, Hanoi, Vietnam<br />
+    </address>
+    <div class="col-ft">
+      <p class="tt-ft">KIBITRAVEL TOURS</p>
+      - Vietnam<br />
+      - Laos<br />
+      - Cambodia<br />
+      - Best Deals<br />
+      - Experience Tours<br />
+      - Responsible Tours<br />
+      - Free & Easy Packages<br />
+      - Beach Breaks<br />
+      - Honey Moon Packages<br />
+    </div>
+    <div class="col-ft">
+      <p class="tt-ft">NEWS</p>
+      - Press Releases<br />
+      - Awards<br />
+      - Blog<br />
+      - Newsletter<br />
+      - Association with: .....<br />
+    </div>
+    <!--/col ft-->
+    <div class="col-ft f-right">
+      <div class="social">
+        <p class="tt-ft">FIND US ON:</p>
+        <a class="facebook"><i class="fa fa-facebook"></i></a> <a class="google-plus"><i class="fa fa-google-plus"></i></a> <a class="twitter"><i class="fa fa-twitter"></i></a> <a class="youtube"><i class="fa fa-youtube"></i></a></div>
+      <div class="fbs">
+        <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/pages/KIBITRAVEL/820610807975230" data-width="320" data-hide-cover="true" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=220&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKIBITRAVEL%2F820610807975230&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=320"><span style="vertical-align: bottom; width: 220px; height: 246px;">
+          <iframe name="f1f986228c" width="320px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/page.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F6brUqVNoWO3.js%3Fversion%3D41%23cb%3Df21a62443%26domain%3Dkibitravel.com.vn%26origin%3Dhttp%253A%252F%252Fkibitravel.com.vn%252Ffba454d24%26relation%3Dparent.parent&amp;container_width=220&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKIBITRAVEL%2F820610807975230&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=320" style="border: none; visibility: visible; width: 220px; height: 246px;" class=""></iframe>
+          </span></div>
+      </div>
+    </div>
+    <!--/col ft-->
+    <p class="paypal"><img src="images/paypal.png" /></p>
+    <p class="copyright"><span>© kibitravel 2015</span></p>
+  </div>
+</footer>
+
+<!---===============javascript==================--> 
+<script type="text/javascript" src="scripts/bxslider.js"></script> 
+<script type="text/javascript" src="scripts/js.js"></script> 
+<script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script> 
+<script src="scripts/wow.js"></script> 
+<script>
+new WOW().init();
+</script> 
+<script>
+$().UItoTop({});
+</script>
+</body>
+</html>
