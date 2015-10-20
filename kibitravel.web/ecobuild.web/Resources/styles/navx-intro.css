@@ -1,0 +1,263 @@
+﻿/*Nav Desktop*/
+ 
+.navx {
+	width: 100%;
+	clear: both;
+	z-index: 999999;
+	position: relative;
+	display: block;
+	display: inline-block;
+	float: right
+}
+.navx >ul {
+	width: 100%;
+}
+.navx a {
+	text-decoration: none;
+	white-space: nowrap;
+}
+.navx ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.navx ul ul {
+	display: none;
+	position: absolute;
+	text-align: left;
+	background: #585B62;
+}
+.navx ul ul a {
+	line-height: 30px;
+	padding-right: 15px;
+	padding-left: 25px;
+	color: #fff
+}
+.navx ul ul ul {
+	left: 100%;
+	top: -1px;
+	display: none !important
+}
+.navx ul ul li {
+	position: relative;
+	border-bottom: solid 1px #797C81;
+	min-width: 190px;
+}
+.navx ul ul li:last-child {
+	border: 0;
+}
+.navx ul ul li:hover {
+	background: #797C81;
+}
+.navx ul ul li:hover> a {
+	color: #fff;
+}
+.navx ul li:hover>ul {
+	display: block;
+}
+.navx>ul {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center
+}
+.navx>ul>li {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+}
+.navx>ul>li>a {
+	color: #fff;
+	font-size: 1em;
+	line-height: 38px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: 700;
+}
+.navx>ul>li:hover>a ,.navx>ul>li:focus>a {
+	color: #EE522A
+}
+.navx > ul > li > ul {
+	top: 100%;
+	left: 0;
+	margin-top: 0px;
+	z-index: 9;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.navx-intro i.fa {
+	font-size: 5px;
+	color: #fff;
+	left: 10px;
+	position: absolute;
+	top: 40%
+}
+/* nav mobile*/
+#pull {
+	display: none;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+}
+#pull i {
+	font-size: 23px;
+	margin-top: 5px;
+	color: #fff;
+}
+#pull .closeIco {
+	color: #F58B1F
+}
+@media screen and (min-width: 768px) {
+.navx {
+	padding-left: 100px;
+	height: 100px;
+	position: relative;
+	width: 66%;
+	background: transparent;
+}
+
+.navx>ul {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	width: 100%;
+	text-align: right;
+}
+.navx>ul>li:last-child {
+	border-right: 0;
+}
+.navx>ul>li:last-child>a {
+	padding-right: 0;
+}
+.navx>ul>li:first-child {
+	border-left: 0
+}
+.navx >ul>li>a {
+	font-weight: 400
+}
+}
+@media screen and (max-width: 768px) {
+.menu {
+/*background: #DBBA41*/
+}
+.navx {
+	padding: 5px 0;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: right;
+	 left:10px
+}
+.navx ul {
+	z-index: 9999999999999
+}
+#pull {
+	display: block;
+}
+.parent:after {
+	content: "\00bb";
+	color: #000;
+	margin-left: 20px;
+	padding-right: 30px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding: 10px 20px;
+}
+#btnClose {
+	display: block;
+}
+.navx >ul {
+	display: none;
+	margin-top: 0px;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+	background: #EAE8E3;
+}
+.navx >ul>li {
+	float: none;
+	border: 0;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navx >ul>li:hover, .navx >ul>li:active, .navx >ul>li:focus {
+}
+.navx >ul>li>a {
+	color: #000;
+	background: url(../images/arrow_l.png) 10px center no-repeat;
+	padding: 0;
+	padding-left: 35px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+.navx>ul>li:first-child {
+}
+.navx ul li, .navx ul, .navx ul ul {
+}
+.navx ul li {
+	border-bottom: solid #ccc 1px;
+}
+.navx ul li:hover>ul {
+	display: none;
+}
+.navx ul ul {
+	position: relative;
+	clear: both;
+	top: auto;
+	left: auto;
+}
+.navx ul ul li {
+	background: #ddd;
+	border-bottom: #ccc solid 1px;
+	background: #fff;
+}
+.navx ul ul a {
+	padding-left: 35px;
+	color: #1A150B;
+	line-height: 35px;
+}
+.navx > ul > li > ul {
+	position: relative;
+	clear: both;
+	top: auto;
+	left: auto;
+}
+.open {
+	border-bottom: 0;
+	padding-bottom: 0px !important;
+}
+.navxMb li {
+	color: #fff
+}
+#btnClose span {
+	color: #3294B9;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	border: solid 1px #3294B9;
+	padding: 3px 7px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+}
+#btnClose {
+	color: #3294B9;
+	padding-bottom: 10px
+}
+}
+

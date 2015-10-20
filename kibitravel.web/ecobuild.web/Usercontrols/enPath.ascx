@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="enPath.ascx.cs" Inherits="ecobuild.UIs.enPath" %>
+<div class="path"><a href="/home.html">Home</a>  <asp:Literal ID="liPath" runat="server"></asp:Literal></div>

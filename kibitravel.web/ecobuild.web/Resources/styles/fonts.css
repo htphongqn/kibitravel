@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+  
+  @font-face {
+	font-family: 'FallingSky';
+	src: url(../fonts/FallingSky.eot);
+	src: url(../fonts/FallingSky.eot) format('embedded-opentype'), url(../fonts/FallingSky.otf) format('otf'), url(../fonts/FallingSky.woff) format('woff'), url(../fonts/FallingSky.ttf) format('truetype'), url(../fonts/FallingSky.svg) format('svg'); font-weight:400 !important
+}
+
+ @font-face {
+	font-family: 'FallingSkyBd';
+	src: url(../fonts/FallingSkyBd.eot);
+	src: url(../fonts/FallingSkyBd.eot) format('embedded-opentype'), url(../fonts/FallingSkyBd.otf) format('otf'), url(../fonts/FallingSkyBd.woff) format('woff'), url(../fonts/FallingSkyBd.ttf) format('truetype'), url(../fonts/FallingSkyBd.svg) format('svg'); font-weight:400;
+}

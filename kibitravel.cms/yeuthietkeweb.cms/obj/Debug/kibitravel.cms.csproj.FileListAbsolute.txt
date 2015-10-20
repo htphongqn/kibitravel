@@ -1,0 +1,6 @@
+E:\WWW\kibitravel\kibitravel.cms\yeuthietkeweb.cms\bin\yeuthietkeweb.cms.dll
+E:\WWW\kibitravel\kibitravel.cms\yeuthietkeweb.cms\bin\yeuthietkeweb.cms.pdb
+E:\WWW\kibitravel\kibitravel.cms\yeuthietkeweb.cms\bin\vpro.functions.pdb
+E:\WWW\kibitravel\kibitravel.cms\yeuthietkeweb.cms\obj\Debug\kibitravel.cms.csprojResolveAssemblyReference.cache
+E:\WWW\kibitravel\kibitravel.cms\yeuthietkeweb.cms\obj\Debug\yeuthietkeweb.cms.dll
+E:\WWW\kibitravel\kibitravel.cms\yeuthietkeweb.cms\obj\Debug\yeuthietkeweb.cms.pdb
