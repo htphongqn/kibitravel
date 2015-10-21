@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using vpro.functions;
 using Controller;
+using kibitravel.web.Components;
 
 namespace kibitravel.web.Usercontrols
 {
@@ -49,7 +50,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                Rpmenu.DataSource = per.Loadmenu(0, 20, 1, -1, -1);
+                Rpmenu.DataSource = per.Loadmenu(0, 20, 1, Const.LANGVI, -1);
                 Rpmenu.DataBind();
             }
             catch (Exception ex)
