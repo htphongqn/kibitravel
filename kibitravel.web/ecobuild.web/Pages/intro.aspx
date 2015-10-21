@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/Default.Master" AutoEventWireup="true" CodeBehind="intro.aspx.cs" Inherits="ecobuild.Pages.intro" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/Default.Master" AutoEventWireup="true" CodeBehind="intro.aspx.cs" Inherits="kibitravel.web.Pages.intro" %>
 <%@ Register src="../Usercontrols/intro.ascx" tagname="intro" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:Literal ID="ltrFavicon" runat="server" EnableViewState="false"></asp:Literal>

@@ -10,7 +10,7 @@ using vpro.functions;
 using GiaNguyen.Components;
 using Controller;
 
-namespace ecobuild
+namespace kibitravel.web
 {
     public partial class Contact : System.Web.UI.Page
     {

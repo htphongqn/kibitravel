@@ -9,7 +9,7 @@ using Controller;
 using GiaNguyen.Components;
 using System.Web.UI.HtmlControls;
 
-namespace ecobuild.vi_vn
+namespace kibitravel.web.vi_vn
 {
     public partial class cart_result : System.Web.UI.Page
     {

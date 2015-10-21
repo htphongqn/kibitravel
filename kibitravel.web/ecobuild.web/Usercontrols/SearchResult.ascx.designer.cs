@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ecobuild.UIs {
+namespace kibitravel.web.UIs {
     
     
     public partial class SearchResult {

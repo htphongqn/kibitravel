@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ecobuild.Pages {
+namespace kibitravel.web.Pages {
     
     
     public partial class intro {
@@ -28,6 +28,6 @@ namespace ecobuild.Pages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ecobuild.Usercontrols.intro intro1;
+        protected global::System.Web.UI.UserControl intro1;
     }
 }

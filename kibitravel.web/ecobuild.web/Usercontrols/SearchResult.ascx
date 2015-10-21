@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SearchResult.ascx.cs" Inherits="ecobuild.UIs.SearchResult" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SearchResult.ascx.cs" Inherits="kibitravel.web.UIs.SearchResult" %>
             
     <div class="eleven columns" id="main_content">
       <!--Breadcrumbs-->

@@ -166,3 +166,10 @@ E:\WWW\kibitravel\kibitravel.web\Controller\bin\Debug\Model.pdb
 E:\WWW\kibitravel\kibitravel.web\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 E:\WWW\kibitravel\kibitravel.web\Controller\obj\Debug\Controller.dll
 E:\WWW\kibitravel\kibitravel.web\Controller\obj\Debug\Controller.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\bin\Debug\Controller.dll
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\bin\Debug\Controller.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\bin\Debug\Model.dll
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\bin\Debug\Model.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\obj\Debug\Controller.dll
+H:\SoftWeb\kibitravel\kibitravel.web\Controller\obj\Debug\Controller.pdb

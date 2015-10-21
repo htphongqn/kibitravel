@@ -1,7 +1,12 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="ecobuild.Masterpages.Index" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="kibitravel.web.Masterpages.Index" %>
 
-<%@ Register src="../Usercontrols/MenuMain.ascx" tagname="MenuMain" tagprefix="uc1" %>
-<%@ Register src="../Usercontrols/Logo.ascx" tagname="Logo" tagprefix="uc2" %>
+<%@ Register src="../Usercontrols/TopHeader.ascx" tagname="TopHeader" tagprefix="uc1" %>
+<%@ Register src="../Usercontrols/Header.ascx" tagname="Header" tagprefix="uc2" %>
+<%@ Register src="../Usercontrols/Slide.ascx" tagname="Slide" tagprefix="uc3" %>
+<%@ Register src="../Usercontrols/Guide.ascx" tagname="Guide" tagprefix="uc4" %>
+<%@ Register src="../Usercontrols/InfoHome.ascx" tagname="InfoHome" tagprefix="uc5" %>
+<%@ Register src="../Usercontrols/HomeContains.ascx" tagname="HomeContains" tagprefix="uc6" %>
+<%@ Register src="../Usercontrols/Footer.ascx" tagname="Footer" tagprefix="uc7" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -13,40 +18,53 @@
     <link rel="stylesheet" type="text/css" href="/Resources/styles/styles.css"/>
     <script type="text/javascript" src="/Resources/scripts/jquery.min.1.11.2.js"></script>
 </head>
-<body>
+<body class="nobg">
     <form id="form1" runat="server">
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-    </asp:ContentPlaceHolder>
-    <div class="container page">
-        <div class="bor1">
-            <p class="lang-box">
-                <a href="/"><img src="/Resources/images/vi.png" /></a>
-                <a href="home.html"><img src="/Resources/images/en.png" /></a>
-            </p>
-            <div class="bor2 home-page">
-                <div class="testDiv">
-                    <uc1:MenuMain ID="MenuMain1" runat="server" />
-                </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--TopHeader-->
+        <uc1:TopHeader ID="TopHeader1" runat="server" />
+        <!--End TopHeader-->
+        <!--Header-->
+        <uc2:Header ID="Header1" runat="server" />
+        <!--End Header-->
+        <!--Slide-->
+        <uc3:Slide ID="Slide1" runat="server" />
+        <!--End Slide-->
+        <!--Guide-->
+        <uc4:Guide ID="Guide1" runat="server" />
+        <!--End Guide-->
+        <!--InfoHome-->
+        <uc5:InfoHome ID="InfoHome1" runat="server" />
+        <!--End InfoHome-->
+        <main class="main" role="main">
+            <div class="container">
+                <!--HomeContains-->
+                <uc6:HomeContains ID="HomeContains1" runat="server" />
+                <!--End HomeContains-->
             </div>
-            <uc2:Logo ID="Logo1" runat="server" />
-            <p class="copyright">All rights reserved by Truong Phu Steel ABN 241499</p>
-            <p class="menu-home"> <a class="link-home"><i class="fa fa-square-o"> </i></a> </p>
-        </div>
-    </div>
-    <script type="text/javascript" src="/Resources/scripts/js.js"></script> 
-    <script src="/Resources/scripts/wow.js"></script> 
-    <script>
-        new WOW().init();
-    </script> 
-    <script type="text/javascript" src="/Resources/Scripts/jquery.slimscroll.js"></script> 
-    <script type="text/javascript">
-        $(function () {
-            $('.testDiv').slimScroll({
-                alwaysVisible: true
+        </main>
+        <!--Footer-->
+        <uc7:Footer ID="Footer1" runat="server" />
+        <!--End Footer-->
+        <script type="text/javascript" src="/Resources/scripts/bxslider.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/js.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/jquery.nivo.slider.js"></script> 
+        <script src="/Resources/scripts/wow.js"></script> 
+        <script>
+            new WOW().init();
+        </script> 
+        <script>
+            $().UItoTop({});
+        </script> 
+        <script src="/Resources/scripts/jquery.mousewheel.min.js"></script> 
+        <script src="/Resources/scripts/jquery.simplr.smoothscroll.min.js"></script> 
+        <script>
+            $.srSmoothscroll({
+                step: 100,
+                speed: 500
             });
-
-        });
-    </script> 
+        </script>
     </form>
 </body>
 </html>

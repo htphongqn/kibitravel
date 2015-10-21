@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Print.aspx.cs" Inherits="ecobuild.vi_vn.PrintPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Print.aspx.cs" Inherits="kibitravel.web.vi_vn.PrintPage" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,7 +43,7 @@
         <asp:Literal ID="ltrHtml" runat="server"></asp:Literal>
       </div>
     </div>
-    <p align="center">Copyright 2015 by ecobuild - <a href="http://www.ecobuild.com" target="_blank" tabindex="0"> Thiết kế website</a> bởi <a href="http://ecobuild.com" title="Website yêu thiết kế web" target="_blank" tabindex="0"> Yêu thiết kế web</a></p>
+    <p align="center">Copyright 2015 by kibitravel.web - <a href="http://www.kibitravel.web.com" target="_blank" tabindex="0"> Thiết kế website</a> bởi <a href="http://kibitravel.web.com" title="Website yêu thiết kế web" target="_blank" tabindex="0"> Yêu thiết kế web</a></p>
   </div>
 </form>
 </body>

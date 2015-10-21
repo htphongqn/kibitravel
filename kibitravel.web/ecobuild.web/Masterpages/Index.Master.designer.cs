@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ecobuild.Masterpages {
+namespace kibitravel.web.Masterpages {
     
     
     public partial class Index {
@@ -40,21 +40,66 @@ namespace ecobuild.Masterpages {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
-        /// MenuMain1 control.
+        /// TopHeader1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ecobuild.Usercontrols.MenuMain MenuMain1;
+        protected global::kibitravel.web.Usercontrols.TopHeader TopHeader1;
         
         /// <summary>
-        /// Logo1 control.
+        /// Header1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ecobuild.Usercontrols.Logo Logo1;
+        protected global::kibitravel.web.Usercontrols.Header Header1;
+        
+        /// <summary>
+        /// Slide1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::kibitravel.web.Usercontrols.Slide Slide1;
+        
+        /// <summary>
+        /// Guide1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::kibitravel.web.Usercontrols.Guide Guide1;
+        
+        /// <summary>
+        /// InfoHome1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::kibitravel.web.Usercontrols.InfoHome InfoHome1;
+        
+        /// <summary>
+        /// HomeContains1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::kibitravel.web.Usercontrols.HomeContains HomeContains1;
+        
+        /// <summary>
+        /// Footer1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::kibitravel.web.Usercontrols.Footer Footer1;
     }
 }

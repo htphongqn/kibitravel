@@ -10,8 +10,8 @@
 /* The Nivo Slider styles */
 .nivoSlider {
 	position: relative;
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 	overflow: hidden;
 }
 .nivoSlider img {
@@ -30,7 +30,7 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: auto;
+	width: 100%;
 	height: 100%;
 	border: 0;
 	padding: 0;
@@ -48,7 +48,6 @@
 	z-index: 5;
 	height: 100%;
 	top: 0;
-	
 }
 .nivo-box {
 	display: block;
@@ -62,22 +61,28 @@
 /* Caption styles */
 .nivo-caption {
 	position: absolute;
-	left: 0px;
-	bottom: 0px;
+	right: 0px;
+	bottom: 5%;
+	background:rgba(0,0,0,0.5);
 	color: #000;
-	width: 96%;
+	width: 35%;
 	margin: 2%;
 	z-index: 8;
-	padding: 10px 15px;
-	opacity: 0.8;
+	padding: 20px 35px;
+ 
 	overflow: hidden;
 	display: none;
-	-moz-opacity: 0.8;
-	filter: alpha(opacity=80);
+ 
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
-	font-size: 15px;
+	font-size: 1.2em;
+ 
+	font-weight: normal;
+	color: #fff;
+	margin-left: 0;
+ 
+	text-align:right
 }
 .nivo-caption p {
 	padding: 5px;
@@ -105,13 +110,12 @@
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
-	text-align: left;
-	padding: 0px 0;
+	text-align: center;
+	padding: 15px 0;
 	position: relative;
-	bottom: 10px;
-	left: 10px;
+	top: 103%;
+	right: 0px;
 	z-index: 99999;
-	position: absolute;
 }
 .nivo-controlNav a {
 	cursor: pointer;
@@ -128,7 +132,6 @@
 	top: 0px;
 	left: 0px;
 	display: none;
-	height:100% !important;
 }
 .theme-default .nivoSlider a {
 	border: 0;
@@ -136,16 +139,18 @@
 }
 .theme-default .nivo-controlNav {
 	text-align: center;
-	padding: 7px 10px;
-	background: rgba(255,255,255, 0.7);
+	padding: 4px 10px;
+	width: 100%;
 }
 .theme-default .nivo-controlNav a {
 	display: inline-block;
+	border: solid 1px #FFF;
 	color: #000;
 	font-weight: bold;
-	padding: 2px;
+	margin: 5px;
 }
 .theme-default .nivo-controlNav a.active {
+	border: solid 1px #FCCA5B;
 }
 .theme-default .nivo-directionNav a {
 	display: block;
@@ -171,76 +176,35 @@
 .theme-default a.nivo-prevNav {
 	left: 10px;
 }
-.theme-default .nivo-caption {
-	font-family: Helvetica, Arial, sans-serif;
-}
-.theme-default .nivo-caption a {
-	color: #fff;
-	border-bottom: 1px dotted #fff;
-}
+ 
 .theme-default .nivo-caption a:hover {
 	color: #fff;
 }
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
-/*width: 100%;*/
+	width: 100%;
 }
 .theme-default .nivo-controlNav.nivo-thumbs-enabled a {
 	width: auto;
 	height: auto;
-	background: rgba(255,255,255,0.6);
+	background: #388d58;
 }
 .theme-default .nivo-controlNav.nivo-thumbs-enabled img {
 	display: block;
-	width: 90px;
+	width: 120px;
 	height: auto;
 	background: #388d58;
 }
 .theme-default .nivo-controlNav a.active img {
-	opacity: 1
+	opacity: 0.3
 }
 .slider-wrapper-detail {
 	position: relative;
+	margin-bottom: 20px
 }
 #slider {
-	border: solid 1px #ccc;
+ 
 	position: relative;
 	margin: 0px 0;
-	border-radius: 10px;
-	overflow: hidden;
+ 
 }
-figure.slider .container {
-	position: relative;
-	text-align: center;
-	display: inline-block;
-	overflow: hidden;
-	overflow: hidden;
-}
-.slider-intro {
-	margin: 0;
-	padding: 0
-}
-.theme-default { height:800px;}
-/*.slider-intro{ position:absolute; top:0; left:0; width:100%; height:100%; height:800px;background:#000}
-.nivoSlider .nivo-main-image img  {position:absolute; top:0; left:0; height:100%;height:800px; width:100%}
-.slider-intro {}
-.slider-intro .nivo-slice img, .slider-intro .nivo-box img{ height:800px !important;} */
- @media (max-width:768px) {
-.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
-	width: 50px;
-}
-.nivo-controlNav {
-	bottom: 5px;
-	left: 5px;
-}
-.theme-default .nivo-controlNav {
-	padding: 3px 5px;
-}
-}
- @media (max-width:480px) {
-.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
-	width: 26px;
-}
-.theme-default .nivo-controlNav {
-	padding: 2px 2px;
-}
-}
+ 

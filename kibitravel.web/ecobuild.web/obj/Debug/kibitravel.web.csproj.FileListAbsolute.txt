@@ -7,3 +7,12 @@ E:\WWW\kibitravel\kibitravel.web\ecobuild.web\bin\Model.pdb
 E:\WWW\kibitravel\kibitravel.web\ecobuild.web\obj\Debug\kibitravel.web.csprojResolveAssemblyReference.cache
 E:\WWW\kibitravel\kibitravel.web\ecobuild.web\obj\Debug\ecobuild.dll
 E:\WWW\kibitravel\kibitravel.web\ecobuild.web\obj\Debug\ecobuild.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\bin\Controller.dll
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\bin\Model.dll
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\bin\Controller.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\bin\Model.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\obj\Debug\kibitravel.web.csprojResolveAssemblyReference.cache
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\bin\kibitravel.web.dll
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\bin\kibitravel.web.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\obj\Debug\kibitravel.web.dll
+H:\SoftWeb\kibitravel\kibitravel.web\ecobuild.web\obj\Debug\kibitravel.web.pdb

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ecobuild.vi_vn {
+namespace kibitravel.web.vi_vn {
     
     
     public partial class PrintPage {

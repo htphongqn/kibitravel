@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ecobuild</RootNamespace>
-    <AssemblyName>ecobuild</AssemblyName>
+    <RootNamespace>kibitravel.web</RootNamespace>
+    <AssemblyName>kibitravel.web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
@@ -98,9 +98,9 @@
     <Content Include="bin\DevExpress.Web.ASPxEditors.v12.1.dll" />
     <Content Include="bin\DevExpress.Web.ASPxTreeList.v12.1.dll" />
     <Content Include="bin\DevExpress.Web.v12.1.dll" />
-    <Content Include="bin\ecobuild.dll" />
-    <Content Include="bin\ecobuild.pdb" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="bin\kibitravel.web.dll" />
+    <Content Include="bin\kibitravel.web.pdb" />
     <Content Include="bin\Model.dll" />
     <Content Include="bin\Model.pdb" />
     <Content Include="bin\MSCaptcha.dll" />
@@ -112,44 +112,40 @@
     <Content Include="Pages\Ajax-customer.aspx" />
     <Content Include="Pages\cart-result.aspx" />
     <Content Include="Pages\Contact.aspx" />
-    <Content Include="Pages\Contact-en.aspx" />
-    <Content Include="Pages\Home-en.aspx" />
     <Content Include="Pages\intro.aspx" />
-    <Content Include="Pages\Main-en.aspx" />
     <Content Include="Pages\Main.aspx" />
     <Content Include="Pages\Print.aspx" />
-    <Content Include="Resources\fonts\FallingSky.svg" />
+    <Content Include="Resources\fonts\BebasNeueRegular.svg" />
     <Content Include="Resources\fonts\fontawesome-webfont.svg" />
-    <Content Include="Resources\images\1.png" />
-    <Content Include="Resources\images\2.png" />
-    <Content Include="Resources\images\3.png" />
-    <Content Include="Resources\images\4.png" />
-    <Content Include="Resources\images\5.png" />
-    <Content Include="Resources\images\6.png" />
-    <Content Include="Resources\images\7.png" />
-    <Content Include="Resources\images\8.png" />
-    <Content Include="Resources\images\9.png" />
+    <Content Include="Resources\fonts\GidoleRegular.svg" />
+    <Content Include="Resources\fonts\OpenSans-Bold.svg" />
+    <Content Include="Resources\fonts\OpenSans.svg" />
+    <Content Include="Resources\images\a17.png" />
+    <Content Include="Resources\images\arrowl.png" />
+    <Content Include="Resources\images\arrowr.png" />
     <Content Include="Resources\images\arrows.png" />
     <Content Include="Resources\images\arrow_s.png" />
-    <Content Include="Resources\images\b18.png" />
-    <Content Include="Resources\images\bg-ct.png" />
-    <Content Include="Resources\images\bg-default.jpg" />
-    <Content Include="Resources\images\bg-navx-1.png" />
-    <Content Include="Resources\images\bg-navx-2.png" />
-    <Content Include="Resources\images\bg.png" />
+    <Content Include="Resources\images\bg-btn.png" />
+    <Content Include="Resources\images\bg-dt-1.png" />
+    <Content Include="Resources\images\bg-dt-2.png" />
+    <Content Include="Resources\images\bg_daytour.png" />
     <Content Include="Resources\images\bullets.png" />
     <Content Include="Resources\images\captcha.jpg" />
     <Content Include="Resources\images\controls.png" />
+    <Content Include="Resources\images\controls1.png" />
     <Content Include="Resources\images\fancybox.png" />
     <Content Include="Resources\images\fancybox_sprite.png" />
-    <Content Include="Resources\images\i1.png" />
-    <Content Include="Resources\images\i2.png" />
-    <Content Include="Resources\images\i3.png" />
+    <Content Include="Resources\images\hd2.png" />
     <Content Include="Resources\images\icon-truycap.gif" />
+    <Content Include="Resources\images\likePro.png" />
     <Content Include="Resources\images\li_f.png" />
     <Content Include="Resources\images\loading.gif" />
-    <Content Include="Resources\images\reloadpaf.png" />
+    <Content Include="Resources\images\logo.png" />
+    <Content Include="Resources\images\paypal.png" />
+    <Content Include="Resources\images\pico_phone.png" />
+    <Content Include="Resources\images\sk.png" />
     <Content Include="Resources\images\social_network.jpg" />
+    <Content Include="Resources\images\t01.png" />
     <Content Include="Resources\scripts\bxslider.js" />
     <Content Include="Resources\scripts\jquery.min.1.11.2.js" />
     <Content Include="Resources\scripts\jquery.mousewheel.min.js" />
@@ -157,6 +153,11 @@
     <Content Include="Resources\scripts\jquery.simplr.smoothscroll.min.js" />
     <Content Include="Resources\scripts\jquery.slimscroll.js" />
     <Content Include="Resources\scripts\js.js" />
+    <Content Include="Resources\scripts\jsor-js-2.js" />
+    <Content Include="Resources\scripts\jsor-js.js" />
+    <Content Include="Resources\scripts\jssor.js" />
+    <Content Include="Resources\scripts\jssor.slider.js" />
+    <Content Include="Resources\scripts\lightslider.js" />
     <Content Include="Resources\scripts\loader.gif" />
     <Content Include="Resources\scripts\tabcontent.js" />
     <Content Include="Resources\scripts\wow.js" />
@@ -165,30 +166,23 @@
     <Content Include="Resources\styles\css.css" />
     <Content Include="Resources\styles\font-awesome.min.css" />
     <Content Include="Resources\styles\fonts.css" />
-    <Content Include="Resources\styles\intro.css" />
-    <Content Include="Resources\styles\navx-intro.css" />
+    <Content Include="Resources\styles\jssor.css" />
+    <Content Include="Resources\styles\lightslider.css" />
     <Content Include="Resources\styles\navx.css" />
     <Content Include="Resources\styles\nivo-slider.css" />
     <Content Include="Resources\styles\styles.css" />
-    <Content Include="Usercontrols\enListNews.ascx" />
-    <Content Include="Usercontrols\enListProject.ascx" />
-    <Content Include="Usercontrols\enLogo.ascx" />
-    <Content Include="Usercontrols\enMenuMain.ascx" />
-    <Content Include="Usercontrols\enNewsDetail.ascx" />
-    <Content Include="Usercontrols\enPath.ascx" />
-    <Content Include="Usercontrols\enProjectDetail.ascx" />
-    <Content Include="Usercontrols\enSearchResult.ascx" />
-    <Content Include="Usercontrols\enToolbar.ascx" />
-    <Content Include="Usercontrols\intro.ascx" />
-    <Content Include="Usercontrols\ListNews.ascx" />
-    <Content Include="Usercontrols\ListProject.ascx" />
-    <Content Include="Usercontrols\Logo.ascx" />
-    <Content Include="Usercontrols\MenuMain.ascx" />
-    <Content Include="Usercontrols\NewsDetail.ascx" />
+    <Content Include="Resources\styles\tabcontent.css" />
+    <Content Include="Resources\styles\tabcontent3.css" />
+    <Content Include="Usercontrols\Footer.ascx" />
+    <Content Include="Usercontrols\Guide.ascx" />
+    <Content Include="Usercontrols\Header.ascx" />
+    <Content Include="Usercontrols\HomeContains.ascx" />
+    <Content Include="Usercontrols\InfoHome.ascx" />
     <Content Include="Usercontrols\Path.ascx" />
-    <Content Include="Usercontrols\ProjectDetail.ascx" />
     <Content Include="Usercontrols\SearchResult.ascx" />
+    <Content Include="Usercontrols\Slide.ascx" />
     <Content Include="Usercontrols\Toolbar.ascx" />
+    <Content Include="Usercontrols\TopHeader.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -212,27 +206,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Masterpages\enDefault.Master.cs">
-      <DependentUpon>enDefault.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Masterpages\enDefault.Master.designer.cs">
-      <DependentUpon>enDefault.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Masterpages\enIndex.Master.cs">
-      <DependentUpon>enIndex.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Masterpages\enIndex.Master.designer.cs">
-      <DependentUpon>enIndex.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Masterpages\Default.Master.cs">
-      <DependentUpon>Default.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Masterpages\Default.Master.designer.cs">
-      <DependentUpon>Default.Master</DependentUpon>
     </Compile>
     <Compile Include="Masterpages\Index.Master.cs">
       <DependentUpon>Index.Master</DependentUpon>
@@ -262,33 +235,12 @@
     <Compile Include="Pages\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Contact-en.aspx.cs">
-      <DependentUpon>Contact-en.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Contact-en.aspx.designer.cs">
-      <DependentUpon>Contact-en.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Home-en.aspx.cs">
-      <DependentUpon>Home-en.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Home-en.aspx.designer.cs">
-      <DependentUpon>Home-en.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\intro.aspx.cs">
       <DependentUpon>intro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\intro.aspx.designer.cs">
       <DependentUpon>intro.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Main-en.aspx.cs">
-      <DependentUpon>Main-en.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Main-en.aspx.designer.cs">
-      <DependentUpon>Main-en.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -305,110 +257,40 @@
       <DependentUpon>Print.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usercontrols\enListNews.ascx.cs">
-      <DependentUpon>enListNews.ascx</DependentUpon>
+    <Compile Include="Usercontrols\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Usercontrols\enListNews.ascx.designer.cs">
-      <DependentUpon>enListNews.ascx</DependentUpon>
+    <Compile Include="Usercontrols\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\enListProject.ascx.cs">
-      <DependentUpon>enListProject.ascx</DependentUpon>
+    <Compile Include="Usercontrols\Guide.ascx.cs">
+      <DependentUpon>Guide.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Usercontrols\enListProject.ascx.designer.cs">
-      <DependentUpon>enListProject.ascx</DependentUpon>
+    <Compile Include="Usercontrols\Guide.ascx.designer.cs">
+      <DependentUpon>Guide.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\enLogo.ascx.cs">
-      <DependentUpon>enLogo.ascx</DependentUpon>
+    <Compile Include="Usercontrols\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Usercontrols\enLogo.ascx.designer.cs">
-      <DependentUpon>enLogo.ascx</DependentUpon>
+    <Compile Include="Usercontrols\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\enMenuMain.ascx.cs">
-      <DependentUpon>enMenuMain.ascx</DependentUpon>
+    <Compile Include="Usercontrols\HomeContains.ascx.cs">
+      <DependentUpon>HomeContains.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Usercontrols\enMenuMain.ascx.designer.cs">
-      <DependentUpon>enMenuMain.ascx</DependentUpon>
+    <Compile Include="Usercontrols\HomeContains.ascx.designer.cs">
+      <DependentUpon>HomeContains.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\enNewsDetail.ascx.cs">
-      <DependentUpon>enNewsDetail.ascx</DependentUpon>
+    <Compile Include="Usercontrols\InfoHome.ascx.cs">
+      <DependentUpon>InfoHome.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Usercontrols\enNewsDetail.ascx.designer.cs">
-      <DependentUpon>enNewsDetail.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\enPath.ascx.cs">
-      <DependentUpon>enPath.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\enPath.ascx.designer.cs">
-      <DependentUpon>enPath.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\enProjectDetail.ascx.cs">
-      <DependentUpon>enProjectDetail.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\enProjectDetail.ascx.designer.cs">
-      <DependentUpon>enProjectDetail.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\enSearchResult.ascx.cs">
-      <DependentUpon>enSearchResult.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\enSearchResult.ascx.designer.cs">
-      <DependentUpon>enSearchResult.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\enToolbar.ascx.cs">
-      <DependentUpon>enToolbar.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\enToolbar.ascx.designer.cs">
-      <DependentUpon>enToolbar.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\intro.ascx.cs">
-      <DependentUpon>intro.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\intro.ascx.designer.cs">
-      <DependentUpon>intro.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\ListNews.ascx.cs">
-      <DependentUpon>ListNews.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\ListNews.ascx.designer.cs">
-      <DependentUpon>ListNews.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\ListProject.ascx.cs">
-      <DependentUpon>ListProject.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\ListProject.ascx.designer.cs">
-      <DependentUpon>ListProject.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\Logo.ascx.cs">
-      <DependentUpon>Logo.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\Logo.ascx.designer.cs">
-      <DependentUpon>Logo.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\MenuMain.ascx.cs">
-      <DependentUpon>MenuMain.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\MenuMain.ascx.designer.cs">
-      <DependentUpon>MenuMain.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\NewsDetail.ascx.cs">
-      <DependentUpon>NewsDetail.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\NewsDetail.ascx.designer.cs">
-      <DependentUpon>NewsDetail.ascx</DependentUpon>
+    <Compile Include="Usercontrols\InfoHome.ascx.designer.cs">
+      <DependentUpon>InfoHome.ascx</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Path.ascx.cs">
       <DependentUpon>Path.ascx</DependentUpon>
@@ -417,13 +299,6 @@
     <Compile Include="Usercontrols\Path.ascx.designer.cs">
       <DependentUpon>Path.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\ProjectDetail.ascx.cs">
-      <DependentUpon>ProjectDetail.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\ProjectDetail.ascx.designer.cs">
-      <DependentUpon>ProjectDetail.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Usercontrols\SearchResult.ascx.cs">
       <DependentUpon>SearchResult.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -431,12 +306,26 @@
     <Compile Include="Usercontrols\SearchResult.ascx.designer.cs">
       <DependentUpon>SearchResult.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Usercontrols\Slide.ascx.cs">
+      <DependentUpon>Slide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\Slide.ascx.designer.cs">
+      <DependentUpon>Slide.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\Toolbar.ascx.cs">
       <DependentUpon>Toolbar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Usercontrols\Toolbar.ascx.designer.cs">
       <DependentUpon>Toolbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\TopHeader.ascx.cs">
+      <DependentUpon>TopHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\TopHeader.ascx.designer.cs">
+      <DependentUpon>TopHeader.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -450,18 +339,26 @@
     <None Include="bin\ComponentArt.UIFramework.lic" />
     <Content Include="Pages\captchr.ashx" />
     <Content Include="Masterpages\Index.Master" />
-    <Content Include="Masterpages\Default.Master" />
-    <Content Include="Masterpages\enIndex.Master" />
-    <Content Include="Masterpages\enDefault.Master" />
-    <None Include="Resources\fonts\FallingSky.eot" />
-    <None Include="Resources\fonts\FallingSky.otf" />
-    <None Include="Resources\fonts\FallingSky.ttf" />
-    <None Include="Resources\fonts\FallingSky.woff" />
+    <None Include="Resources\fonts\BebasNeueRegular.eot" />
+    <None Include="Resources\fonts\BebasNeueRegular.otf" />
+    <None Include="Resources\fonts\BebasNeueRegular.ttf" />
+    <None Include="Resources\fonts\BebasNeueRegular.woff" />
     <None Include="Resources\fonts\fontawesome-webfont.eot" />
     <None Include="Resources\fonts\fontawesome-webfont.ttf" />
     <None Include="Resources\fonts\fontawesome-webfont.woff" />
     <None Include="Resources\fonts\fontawesome-webfont.woff2" />
     <None Include="Resources\fonts\FontAwesome.otf" />
+    <None Include="Resources\fonts\GidoleRegular.eot" />
+    <None Include="Resources\fonts\GidoleRegular.otf" />
+    <None Include="Resources\fonts\GidoleRegular.ttf" />
+    <None Include="Resources\fonts\GidoleRegular.woff" />
+    <None Include="Resources\fonts\OpenSans-Bold.eot" />
+    <None Include="Resources\fonts\OpenSans-Bold.ttf" />
+    <None Include="Resources\fonts\OpenSans-Bold.woff" />
+    <None Include="Resources\fonts\OpenSans-Bold.woff2" />
+    <None Include="Resources\fonts\OpenSans.ttf" />
+    <None Include="Resources\fonts\OpenSans.woff" />
+    <None Include="Resources\fonts\OpenSans.woff2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Controller\Controller.csproj">

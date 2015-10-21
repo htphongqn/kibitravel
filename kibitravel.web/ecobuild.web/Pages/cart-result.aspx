@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/SiteVI.Master" AutoEventWireup="true" CodeBehind="cart-result.aspx.cs" Inherits="ecobuild.vi_vn.cart_result" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/SiteVI.Master" AutoEventWireup="true" CodeBehind="cart-result.aspx.cs" Inherits="kibitravel.web.vi_vn.cart_result" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <asp:Literal ID="ltrFavicon" runat="server" EnableViewState="false"></asp:Literal>
 </asp:Content>

@@ -16,10 +16,10 @@
         width : 'auto',
 
         // height in pixels of the visible scroll area
-        height : 'auto',
+        height : '690px',
 
         // width in pixels of the scrollbar and rail
-        size : '7px',
+        size : '5px',
 
         // scrollbar color, accepts any hex/color value
         color: '#000',
@@ -34,7 +34,7 @@
         start : 'top',
 
         // sets scrollbar opacity
-        opacity : .7,
+        opacity : .5,
 
         // enables always-on mode for the scrollbar
         alwaysVisible : false,
@@ -43,7 +43,7 @@
         disableFadeOut : false,
 
         // sets visibility of the rail
-        railVisible : false,
+        railVisible : true,
 
         // sets rail color
         railColor : '#333',
@@ -73,10 +73,10 @@
         touchScrollStep : 200,
 
         // sets border radius
-        borderRadius: '7px',
+        borderRadius: '0px',
 
         // sets border radius of the rail
-        railBorderRadius : '7px'
+        railBorderRadius : '0px'
       };
 
       var o = $.extend(defaults, options);

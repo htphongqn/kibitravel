@@ -202,3 +202,26 @@
 	left: -30px;
 }
 }
+
+ 
+
+.slide-news  .bx-wrapper .bx-next {
+	left: auto !important;
+	right: 0px;
+	width: 25px;
+	height: 25px;
+	top: -15px;
+	background: url(../images/arrowr.png) center no-repeat;
+	background-color:rgba(0,0,0,0.3);
+	border-radius:1px
+}
+.slide-news  .bx-wrapper .bx-prev {
+	left: auto !important;
+	right: 27px;
+	top: -15px;
+	background: url(../images/arrowl.png) center no-repeat;
+	width: 25px;
+	height: 25px;
+	background-color:rgba(0,0,0,0.3);
+	border-radius:1px
+}

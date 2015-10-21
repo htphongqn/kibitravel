@@ -8,7 +8,7 @@ using vpro.functions;
 using GiaNguyen.Components;
 using Controller;
 
-namespace ecobuild.UIs
+namespace kibitravel.web.UIs
 {
     public partial class SearchResult : System.Web.UI.UserControl
     {

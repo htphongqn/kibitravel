@@ -8,7 +8,7 @@ using System.Web.UI.HtmlControls;
 using vpro.functions;
 using Controller;
 
-namespace ecobuild.Pages
+namespace kibitravel.web.Pages
 {
     public partial class intro : System.Web.UI.Page
     {

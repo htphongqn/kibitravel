@@ -9,7 +9,7 @@ using Controller;
 using vpro.functions;
 using System.Xml;
 
-namespace ecobuild
+namespace kibitravel.web
 {
     public partial class Default : System.Web.UI.Page
     {

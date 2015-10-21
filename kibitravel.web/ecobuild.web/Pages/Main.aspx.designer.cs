@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ecobuild {
+namespace kibitravel.web {
     
     
     public partial class Main {

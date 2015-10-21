@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Controller;
 
-namespace ecobuild.UIs
+namespace kibitravel.web.UIs
 {
     public partial class Path : System.Web.UI.UserControl
     {

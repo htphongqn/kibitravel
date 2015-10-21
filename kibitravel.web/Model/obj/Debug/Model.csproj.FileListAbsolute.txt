@@ -139,3 +139,8 @@ E:\WWW\kibitravel\kibitravel.web\Model\bin\Debug\Model.dll
 E:\WWW\kibitravel\kibitravel.web\Model\bin\Debug\Model.pdb
 E:\WWW\kibitravel\kibitravel.web\Model\obj\Debug\Model.dll
 E:\WWW\kibitravel\kibitravel.web\Model\obj\Debug\Model.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\Model\bin\Debug\Model.dll.config
+H:\SoftWeb\kibitravel\kibitravel.web\Model\bin\Debug\Model.dll
+H:\SoftWeb\kibitravel\kibitravel.web\Model\bin\Debug\Model.pdb
+H:\SoftWeb\kibitravel\kibitravel.web\Model\obj\Debug\Model.dll
+H:\SoftWeb\kibitravel\kibitravel.web\Model\obj\Debug\Model.pdb

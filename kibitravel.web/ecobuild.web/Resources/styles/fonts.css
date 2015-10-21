@@ -1,14 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
-  
-  @font-face {
-	font-family: 'FallingSky';
-	src: url(../fonts/FallingSky.eot);
-	src: url(../fonts/FallingSky.eot) format('embedded-opentype'), url(../fonts/FallingSky.otf) format('otf'), url(../fonts/FallingSky.woff) format('woff'), url(../fonts/FallingSky.ttf) format('truetype'), url(../fonts/FallingSky.svg) format('svg'); font-weight:400 !important
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url(../fonts/BebasNeueRegular.eot);
+	src: url(../fonts/BebasNeueRegular.eot) format('embedded-opentype'), url(../fonts/BebasNeueRegular.otf) format('otf'), url(../fonts/BebasNeueRegular.woff) format('woff'), url(../fonts/BebasNeueRegular.ttf) format('truetype'), url(../fonts/BebasNeueRegular.svg) format('svg');
+	font-weight:400 !important
+}
+ @font-face {
+	font-family: 'GidoleRegular';
+	src: url(../fonts/GidoleRegular.eot);
+	src: url(../fonts/GidoleRegular.eot) format('embedded-opentype'), url(../fonts/GidoleRegular.otf) format('otf'), url(../fonts/GidoleRegular.woff) format('woff'), url(../fonts/GidoleRegular.ttf) format('truetype'), url(../fonts/GidoleRegular.svg) format('svg'); font-weight:400 !important
 }
 
  @font-face {
-	font-family: 'FallingSkyBd';
-	src: url(../fonts/FallingSkyBd.eot);
-	src: url(../fonts/FallingSkyBd.eot) format('embedded-opentype'), url(../fonts/FallingSkyBd.otf) format('otf'), url(../fonts/FallingSkyBd.woff) format('woff'), url(../fonts/FallingSkyBd.ttf) format('truetype'), url(../fonts/FallingSkyBd.svg) format('svg'); font-weight:400;
+	font-family: 'OpenSans';
+	src: url(../fonts/OpenSans.eot);
+	src: url(../fonts/OpenSans.eot) format('embedded-opentype'), url(../fonts/OpenSans.otf) format('otf'), url(../fonts/OpenSans.woff) format('woff'), url(../fonts/OpenSans.ttf) format('truetype'), url(../fonts/OpenSans.svg) format('svg'); font-weight:400 !important
+}
+ 
+  @font-face {
+	font-family: 'OpenSans-Bold';
+	src: url(../fonts/OpenSans-Bold.eot);
+	src: url(../fonts/OpenSans-Bold.eot) format('embedded-opentype'), url(../fonts/OpenSans-Bold.otf) format('otf'), url(../fonts/OpenSans-Bold.woff) format('woff'), url(../fonts/OpenSans-Bold.ttf) format('truetype'), url(../fonts/OpenSans-Bold.svg) format('svg'); font-weight:400 !important
 }

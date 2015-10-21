@@ -7,7 +7,7 @@ using System.Web.SessionState;
 using vpro.functions;
 using Controller;
 
-namespace ecobuild
+namespace kibitravel.web
 {
     public class Global : System.Web.HttpApplication
     {

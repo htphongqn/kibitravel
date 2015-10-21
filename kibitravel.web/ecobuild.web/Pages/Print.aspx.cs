@@ -8,7 +8,7 @@ using vpro.functions;
 using Controller;
 using System.Web.UI.HtmlControls;
 
-namespace ecobuild.vi_vn
+namespace kibitravel.web.vi_vn
 {
     public partial class PrintPage : System.Web.UI.Page
     {
