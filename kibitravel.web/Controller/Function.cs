@@ -33,7 +33,11 @@ namespace Controller
         }
         public string getDate(object News_PublishDate)
         {
-            return string.Format("{0:dd/MM/yyyy HH:mm}", News_PublishDate);
+            return string.Format("{0:dd/MM/yyyy}", News_PublishDate);
+        }
+        public string getDateEN(object News_PublishDate)
+        {
+            return string.Format("{0:MMM d, yyyy}", News_PublishDate);
         }
         public string GetImageT_News(object News_Id, object News_Image1)
         {
