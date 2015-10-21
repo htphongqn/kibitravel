@@ -137,8 +137,8 @@ namespace Controller
         {
             try
             {
-                string s = "";                 
-                 s+= "<a href='" + Utils.CStrDef(Ad_Url) + "' target='" + Utils.CStrDef(Ad_Target) + "'> ";
+                string s = "";
+                s += "<a href='" + Utils.CStrDef(Ad_Url) + "' target='" + Utils.CStrDef(Ad_Target) + "' title='" + Utils.CStrDef(Ad_Item_Desc) + "'> ";
                  s+= "<img src='" + PathFiles.GetPathAdItems(Utils.CIntDef(Ad_Id)) + Utils.CStrDef(Ad_Image1) + "' /> ";
                  s+= "</a> ";
                  return s;
