@@ -24,22 +24,22 @@
                                         Text="Vui lòng nhập Mô tả" ControlToValidate="txtDesc" CssClass="errormes"></asp:RequiredFieldValidator>
                                 </div>
                                 <div class="form-group">
-                                    <label>Phone/URL</label>
+                                    <label>Nick/URL</label>
                                     <input type="text" name="txtName" id="txtName" runat="server" class="form-control"/>
                                 </div>
-                                <div class="form-group">
+                                <%--<div class="form-group">
                                     <label>Nick skype</label>
                                     <input type="text" name="txtName" id="txtSkype" runat="server" class="form-control"/>
-                                </div>
+                                </div>--%>
                                 <div class="form-group">
                                     <label>Loại</label>
                                     <asp:RadioButtonList ID="rblType" runat="server" RepeatColumns="6" 
                                         RepeatDirection="Horizontal">
-                                        <asp:ListItem Selected="True" Value="0" Text="Hotline"></asp:ListItem>
-                                        <asp:ListItem Value="7" Text="Mua hàng"></asp:ListItem>
-                                        <%--<asp:ListItem Value="8" Text="Mail"></asp:ListItem>--%>
-                                        <%--<asp:ListItem Value="1" Text="Yahoo"></asp:ListItem>
-                                        <asp:ListItem Value="2" Text="Skype"></asp:ListItem> --%>                      
+                                        <%--<asp:ListItem Selected="True" Value="0" Text="Hotline"></asp:ListItem>--%>
+                                        <%--<asp:ListItem Value="7" Text="Mua hàng"></asp:ListItem>--%>
+                                        <asp:ListItem Value="8" Text="Mail"></asp:ListItem>
+                                        <%--<asp:ListItem Value="1" Text="Yahoo"></asp:ListItem> --%> 
+                                        <asp:ListItem Value="2" Text="Skype"></asp:ListItem>                     
                                         <asp:ListItem Value="3" Text="Facebook"></asp:ListItem>
                                         <asp:ListItem Value="4" Text="Google+"></asp:ListItem>
                                         <asp:ListItem Value="5" Text="Twitter"></asp:ListItem>

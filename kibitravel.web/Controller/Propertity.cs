@@ -19,8 +19,10 @@ namespace Controller
         {
             try
             {
-                var list = db.ESHOP_CATEGORies.Where(n => n.CAT_STATUS == 1 && (n.CAT_POSITION == position || position == -1) && n.CAT_RANK == rank 
-                    && (n.CAT_SHOWFOOTER == 1 || showfooter == -1)
+                var list = db.ESHOP_CATEGORies.Where(n => n.CAT_STATUS == 1 
+                    && (n.CAT_POSITION == position || position == -1) 
+                    && n.CAT_RANK == rank
+                    && (n.CAT_SHOWFOOTER == showfooter || showfooter == -1)
                     && (n.CAT_LANGUAGE == lang || lang == -1)
                     ).OrderByDescending(n => n.CAT_ORDER).Take(limit).ToList();
                 return list;

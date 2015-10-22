@@ -107,7 +107,7 @@ namespace yeuthietkeweb.cms.pages
 
                 if (G_info.ToList().Count > 0)
                 {
-                    txtSkype.Value = G_info.ToList()[0].ONLINE_FIELD1;
+                    //txtSkype.Value = G_info.ToList()[0].ONLINE_FIELD1;
                     txtName.Value = G_info.ToList()[0].ONLINE_NICKNAME;
                     txtDesc.Value = Utils.CStrDef(System.Web.HttpUtility.HtmlDecode(G_info.ToList()[0].ONLINE_DESC.Replace("<br>", "\r\n").Replace(" ", "&nbsp;")), "");
                     //txtDescEn.Value = Utils.CStrDef(System.Web.HttpUtility.HtmlDecode(G_info.ToList()[0].ONLINE_DESC_EN.Replace("<br>", "\r\n").Replace(" ", "&nbsp;")), "");
@@ -172,7 +172,7 @@ namespace yeuthietkeweb.cms.pages
                 {
                     //insert
                     ESHOP_ONLINE g_insert = new ESHOP_ONLINE();
-                    g_insert.ONLINE_FIELD1 = txtSkype.Value;
+                    //g_insert.ONLINE_FIELD1 = txtSkype.Value;
                     g_insert.ONLINE_NICKNAME = txtName.Value;
                     g_insert.ONLINE_DESC = Utils.CStrDef(System.Web.HttpUtility.HtmlDecode(txtDesc.Value.Replace("\r\n", "<br>").Replace(" ", "&nbsp;")), "");
                     //g_insert.ONLINE_DESC_EN = Utils.CStrDef(System.Web.HttpUtility.HtmlDecode(txtDescEn.Value.Replace("\r\n", "<br>").Replace(" ", "&nbsp;")), "");
@@ -198,7 +198,7 @@ namespace yeuthietkeweb.cms.pages
 
                     if (g_update.ToList().Count > 0)
                     {
-                        g_update.Single().ONLINE_FIELD1 = txtSkype.Value;
+                        //g_update.Single().ONLINE_FIELD1 = txtSkype.Value;
                         g_update.Single().ONLINE_NICKNAME = txtName.Value;
                         //g_update.Single().ONLINE_FIELD1 = txtSkype.Value;
                         //g_update.Single().ONLINE_FIELD2 = txtHotline.Value;

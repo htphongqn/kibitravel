@@ -5,7 +5,11 @@
     <figure class="slide-ht">
         <figure class="slider" role="slider">
         <div class="slider-wrapper theme-default">
-            <div id="slider-ht" class="nivoSlider"> <a href="#"><img src="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg" /></a> </div>
+            <div id="slider-ht" class="nivoSlider"> 
+            <a href="#"><img src="data/slide1.jpg"  /></a> 
+            <a href="#"><img src="data/slide2.jpg" /></a> 
+            
+            </div>
         </div>
         </figure>
     </figure>

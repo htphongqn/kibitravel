@@ -4,11 +4,14 @@
     <div class="container">
     <div class="col6">
         <p class="tt-sp"> <i class="fa fa-comment-o"></i> What Client Say </p>
-        <img src="data/h1.jpg" /> </div>
+        <img src="/vi-vn/data/h1.jpg" /> </div>
     <div class="col-sp col3">
-        <p class="tt-sp"><i class="fa fa-skype"></i> Online support </p>
-        <p class="sp-item"><a class="sk"><img src="images/sk.png" /></a> <span>Consultant 1</span></p>
-        <p class="sp-item"><a class="sk"><img src="images/sk.png" /></a> <span>Consultant 2</span></p>
+        <p class="tt-sp"><i class="fa fa-skype"></i> Online support </p>        
+        <asp:Repeater ID="rptSupport" runat="server">
+            <ItemTemplate>
+            <p class="sp-item"><a href="skype:<%# Eval("ONLINE_NICKNAME")%>?chat" title="<%# Eval("ONLINE_DESC")%>" class="sk"><img src="/vi-vn/images/sk.png" /></a> <span><%# Eval("ONLINE_DESC")%></span></p>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
     <!--end col-->
     <div class="col-sp col3">
@@ -30,37 +33,21 @@
 			});
 			</script>
         <div class="slide-news">
-        <div class="slider5">
-            <div class="slide">
-            <article class="media">
-                <div class="text-media">
-                <h2 class="tt-media"> <a>DIVE INTO ‘INFINITY’ WITH DIZZYING VIEWS OF A COLOSSAL CAVE</a></h2>
-                <p class="date-time-news">03 JUL 2015</p>
-                <p class="text-media">By Jane J. Lee Interactive and photographs by Martin Edström PUBLISHED MAY 20, 2015 Son Doong is one of the world’s largest caves, with...</p>
-                </div>
-            </article>
-            <!--End article--> 
-            </div>
-            <div class="slide">
-            <article class="media">
-                <div class="text-media">
-                <h2 class="tt-media"> <a>DIVE INTO ‘INFINITY’ WITH DIZZYING VIEWS OF A COLOSSAL CAVE</a></h2>
-                <p class="date-time-news">03 JUL 2015</p>
-                <p class="text-media">By Jane J. Lee Interactive and photographs by Martin Edström PUBLISHED MAY 20, 2015 Son Doong is one of the world’s largest caves, with...</p>
-                </div>
-            </article>
-            <!--End article--> 
-            </div>
-            <div class="slide">
-            <article class="media">
-                <div class="text-media">
-                <h2 class="tt-media"> <a>DIVE INTO ‘INFINITY’ WITH DIZZYING VIEWS OF A COLOSSAL CAVE</a></h2>
-                <p class="date-time-news">03 JUL 2015</p>
-                <p class="text-media">By Jane J. Lee Interactive and photographs by Martin Edström PUBLISHED MAY 20, 2015 Son Doong is one of the world’s largest caves, with...</p>
-                </div>
-            </article>
-            <!--End article--> 
-            </div>
+        <div class="slider5">            
+            <asp:Repeater ID="rptNewsPeriod" runat="server">
+                <ItemTemplate>
+                     <div class="slide">
+                    <article class="media">
+                        <div class="text-media">
+                        <h2 class="tt-media"> <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><%# Eval("NEWS_TITLE") %></a></h2>
+                        <p class="date-time-news"><%# getDate(Eval("NEWS_PUBLISHDATE"))%></p>
+                        <p class="text-media"><%# Eval("NEWS_DESC")%></p>
+                        </div>
+                    </article>
+                    <!--End article--> 
+                    </div>                
+                </ItemTemplate>
+            </asp:Repeater>            
         </div>
         </div>
     </div>

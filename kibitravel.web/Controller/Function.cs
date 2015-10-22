@@ -33,7 +33,11 @@ namespace Controller
         }
         public string getDate(object News_PublishDate)
         {
-            return string.Format("{0:dd/MM/yyyy HH:mm}", News_PublishDate);
+            return string.Format("{0:dd/MM/yyyy}", News_PublishDate);
+        }
+        public string getDateEN(object News_PublishDate)
+        {
+            return string.Format("{0:MMM d, yyyy}", News_PublishDate);
         }
         public string GetImageT_News(object News_Id, object News_Image1)
         {
@@ -137,8 +141,8 @@ namespace Controller
         {
             try
             {
-                string s = "";                 
-                 s+= "<a href='" + Utils.CStrDef(Ad_Url) + "' target='" + Utils.CStrDef(Ad_Target) + "'> ";
+                string s = "";
+                s += "<a href='" + Utils.CStrDef(Ad_Url) + "' target='" + Utils.CStrDef(Ad_Target) + "' title='" + Utils.CStrDef(Ad_Item_Desc) + "'> ";
                  s+= "<img src='" + PathFiles.GetPathAdItems(Utils.CIntDef(Ad_Id)) + Utils.CStrDef(Ad_Image1) + "' /> ";
                  s+= "</a> ";
                  return s;
