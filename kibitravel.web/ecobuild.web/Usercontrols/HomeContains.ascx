@@ -5,10 +5,13 @@
     <figure class="slide-ht">
         <figure class="slider" role="slider">
         <div class="slider-wrapper theme-default">
-            <div id="slider-ht" class="nivoSlider"> 
-            <a href="#"><img src="data/slide1.jpg"  /></a> 
-            <a href="#"><img src="data/slide2.jpg" /></a> 
-            
+            <div id="slider-ht" class="nivoSlider">
+            <asp:Repeater ID="rptHottour" runat="server">
+                <ItemTemplate>
+                     <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">
+                     <img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>"  /></a>                 
+                </ItemTemplate>
+            </asp:Repeater>
             </div>
         </div>
         </figure>
@@ -18,75 +21,44 @@
     <!--/end hot tour-->
     <div class="most-tour">
     <p class="tt-mt"> <span class="mt-s"><b>Most Popular Tours</b></span> </p>
-    <p class="view-all-lst"><a>View All Destinations</a></p>
-    <article class="tour-mt">
-        <p class="more-mt"> <span class="more-s"><b><a>See more</a></b></span> <i class="caret-mt"></i></p>
-        <figure class="img-mt"> <a><img src="data/des/t1.jpg" /></a>
-        <div class="des-mt">
-            <p> Halong Bay Discovery on Phoenix Cruiser 2 Days 1 Night <a class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
-        </div>
-        </figure>
-        <p class="day-of-mt"><i class="fa fa-clock-o"></i> 2 DAYS 1 NIGHT</p>
-    </article>
-    <!--end articale-->
-    <article class="tour-mt">
-        <p class="more-mt"> <span class="more-s"><b><a>See more</a></b></span> <i class="caret-mt"></i></p>
-        <figure class="img-mt"> <a><img src="data/des/t2.jpg" /></a>
-        <div class="des-mt">
-            <p> Sapa & The North 2 Days 1 Night <a class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
-        </div>
-        </figure>
-        <p class="day-of-mt"><i class="fa fa-clock-o"></i> 2 DAYS 1 NIGHT</p>
-    </article>
-    <!--end articale-->
-    <article class="tour-mt">
-        <p class="more-mt"> <span class="more-s"><b><a>See more</a></b></span> <i class="caret-mt"></i></p>
-        <figure class="img-mt"> <a><img src="data/des/t3.jpg" /></a>
-        <div class="des-mt">
-            <p> Hanoi & Around 2 Days 1 Night <a class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
-        </div>
-        </figure>
-        <p class="day-of-mt"><i class="fa fa-clock-o"></i> 2 DAYS 1 NIGHT</p>
-    </article>
-    <!--end articale--> 
+<%--    <p class="view-all-lst"><a>View All Destinations</a></p>--%>
+    
+    <asp:Repeater ID="rptTourPopular" runat="server">
+        <ItemTemplate>
+                <article class="tour-mt">
+                <p class="more-mt"> <span class="more-s"><b><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">See more</a></b></span> <i class="caret-mt"></i></p>
+                <figure class="img-mt"> <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>"  /></a>
+                <div class="des-mt">
+                    <p> <%# Eval("NEWS_TITLE")%><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
+                </div>
+                </figure>
+                <p class="day-of-mt"><i class="fa fa-clock-o"></i> <%# Eval("NEWS_DESC")%></p>
+            </article>
+            <!--end articale-->                
+        </ItemTemplate>
+    </asp:Repeater> 
         
     </div>
     <!--/end most tour-->
       
     <div class="most-tour">
     <p class="tt-mt"> <span class="mt-s"><b>Unique & Different Tours</b></span> </p>
-    <p class="view-all-lst"><a>View All Destinations</a></p>
-    <article class="tour-mt">
-        <p class="more-mt"> <span class="more-s"><b><a>See more</a></b></span> <i class="caret-mt"></i></p>
-        <figure class="img-mt"> <a><img src="data/des/t4.jpg" /></a>
-        <div class="des-mt">
-            <p> Hoi An - Phong Nha & The Center 2 Days 1 Night <a class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
-        </div>
-        </figure>
-        <p class="day-of-mt"><i class="fa fa-clock-o"></i> 2 DAYS 1 NIGHT</p>
-    </article>
-    <!--end articale-->
+    <%--<p class="view-all-lst"><a>View All Destinations</a></p>--%>
         
-    <article class="tour-mt">
-        <p class="more-mt"> <span class="more-s"><b><a>See more</a></b></span> <i class="caret-mt"></i></p>
-        <figure class="img-mt"> <a><img src="data/des/t2.jpg" /></a>
-        <div class="des-mt">
-            <p> Sapa & The North 2 Days 1 Night <a class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
-        </div>
-        </figure>
-        <p class="day-of-mt"><i class="fa fa-clock-o"></i> 2 DAYS 1 NIGHT</p>
-    </article>
-    <!--end articale-->
-    <article class="tour-mt">
-        <p class="more-mt"> <span class="more-s"><b><a>See more</a></b></span> <i class="caret-mt"></i></p>
-        <figure class="img-mt"> <a><img src="data/des/t3.jpg" /></a>
-        <div class="des-mt">
-            <p> Hanoi & Around 2 Days 1 Night <a class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
-        </div>
-        </figure>
-        <p class="day-of-mt"><i class="fa fa-clock-o"></i> 2 DAYS 1 NIGHT</p>
-    </article>
-    <!--end articale--> 
+    <asp:Repeater ID="rptTourDifferent" runat="server">
+        <ItemTemplate>
+                <article class="tour-mt">
+                <p class="more-mt"> <span class="more-s"><b><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">See more</a></b></span> <i class="caret-mt"></i></p>
+                <figure class="img-mt"> <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>"  /></a>
+                <div class="des-mt">
+                    <p> <%# Eval("NEWS_TITLE")%><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" class="price-mt"><i class="fa fa-tag"></i> loading..</a> </p>
+                </div>
+                </figure>
+                <p class="day-of-mt"><i class="fa fa-clock-o"></i> <%# Eval("NEWS_DESC")%></p>
+            </article>
+            <!--end articale-->                
+        </ItemTemplate>
+    </asp:Repeater> 
         
     </div>
     <!--/end most tour--> 
