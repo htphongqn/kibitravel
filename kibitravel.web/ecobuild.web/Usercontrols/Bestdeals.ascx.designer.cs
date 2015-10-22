@@ -10,33 +10,33 @@
 namespace kibitravel.web.Usercontrols {
     
     
-    public partial class InfoHome {
+    public partial class Bestdeals {
         
         /// <summary>
-        /// rptClientSay control.
+        /// Path1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptClientSay;
+        protected global::kibitravel.web.UIs.Path Path1;
         
         /// <summary>
-        /// rptSupport control.
+        /// lbCateName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSupport;
+        protected global::System.Web.UI.WebControls.Label lbCateName;
         
         /// <summary>
-        /// rptNewsPeriod control.
+        /// rptmenubestdeal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptNewsPeriod;
+        protected global::System.Web.UI.WebControls.Repeater rptmenubestdeal;
     }
 }

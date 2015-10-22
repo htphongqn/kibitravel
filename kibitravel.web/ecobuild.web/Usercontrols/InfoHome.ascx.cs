@@ -21,6 +21,7 @@ namespace kibitravel.web.Usercontrols
         {
             Load_NewsPreiod();
             Load_Support();
+            Load_ClientSay();
         }
         protected void Load_Support()
         {
@@ -34,6 +35,19 @@ namespace kibitravel.web.Usercontrols
                 clsVproErrorHandler.HandlerError(ex);
             }
         }
+        private void Load_ClientSay()
+        {
+            try
+            {
+                var list = index.Loadindex(0, 2, Const.LANGVI, 20);
+                rptClientSay.DataSource = list;
+                rptClientSay.DataBind();
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+            }
+        } 
         private void Load_NewsPreiod()
         {
             try

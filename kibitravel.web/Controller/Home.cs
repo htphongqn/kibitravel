@@ -25,7 +25,8 @@ namespace Controller
                 var list = (from a in db.ESHOP_NEWS_CATs
                             join b in db.ESHOP_NEWs on a.NEWS_ID equals b.NEWS_ID
                             join c in db.ESHOP_CATEGORies on a.CAT_ID equals c.CAT_ID
-                            where b.NEWS_PERIOD == period && b.NEWS_TYPE == type
+                            where b.NEWS_PERIOD == period 
+                            && b.NEWS_TYPE == type
                             && (c.CAT_LANGUAGE == lang || lang == -1)
                             select new { b.NEWS_ID, b.NEWS_TITLE, b.NEWS_IMAGE3, b.NEWS_PRICE1, b.NEWS_DESC, b.NEWS_SEO_URL, b.NEWS_URL, b.NEWS_ORDER_PERIOD, b.NEWS_PUBLISHDATE, c.CAT_SEO_URL, b.NEWS_FIELD2 }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER_PERIOD).Take(limit).ToList();
                 foreach (var i in list)

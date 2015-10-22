@@ -3,8 +3,42 @@
 <section class="section2">
     <div class="container">
     <div class="col6">
-        <p class="tt-sp"> <i class="fa fa-comment-o"></i> What Client Say </p>
-        <img src="/vi-vn/data/h1.jpg" /> </div>
+      <p class="tt-sp"> <i class="fa fa-comment-o"></i> What Client Say </p>
+      <script type="text/javascript">
+			$(document).ready(function(){
+			  $('.slider-cl').bxSlider({
+				slideWidth: 500,
+				mode: 'vertical',
+				minSlides: 1,
+				moveSlides: 1,
+				maxSlides: 1,
+				slideMargin: 0,
+				auto: true,
+				speed: 1000,
+				controls: false,
+				pause: 4000,
+			  });
+			});
+			</script>
+      <div class="slide-client">
+        <div class="slider-cl">
+          <asp:Repeater ID="rptClientSay" runat="server">
+            <ItemTemplate>
+                <div class="slide">
+                    <div class="ct-cl">
+                      <div class="content-cl"> <%# Eval("NEWS_DESC")%> </div>
+                      <i class="caret-ht"></i>
+                      <div class="auth">
+                        <p><%# Eval("NEWS_TITLE")%></p>
+                        <%--<span>CEO of Envato</span> --%>
+                        </div>
+                    </div>
+                  </div>               
+            </ItemTemplate>
+        </asp:Repeater>          
+        </div>
+      </div>
+    </div>
     <div class="col-sp col3">
         <p class="tt-sp"><i class="fa fa-skype"></i> Online support </p>        
         <asp:Repeater ID="rptSupport" runat="server">
