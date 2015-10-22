@@ -10,7 +10,7 @@
 namespace kibitravel.web.Usercontrols {
     
     
-    public partial class BlogDetail {
+    public partial class DestinationDetail {
         
         /// <summary>
         /// Path1 control.
@@ -40,13 +40,40 @@ namespace kibitravel.web.Usercontrols {
         protected global::System.Web.UI.WebControls.Label lbNewsTitle;
         
         /// <summary>
-        /// liHtml control.
+        /// Rpimg_small control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal liHtml;
+        protected global::System.Web.UI.WebControls.Repeater Rpimg_small;
+        
+        /// <summary>
+        /// liHtmlOverview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal liHtmlOverview;
+        
+        /// <summary>
+        /// liHtmlItinerary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal liHtmlItinerary;
+        
+        /// <summary>
+        /// liHtmlPrices control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal liHtmlPrices;
         
         /// <summary>
         /// rptlistnewsOther control.

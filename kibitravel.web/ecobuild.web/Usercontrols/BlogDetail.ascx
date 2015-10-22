@@ -2,7 +2,8 @@
 
 <%@ Register src="Path.ascx" tagname="Path" tagprefix="uc1" %>
 <uc1:Path ID="Path1" runat="server" />
-
+<%@ Register src="BookTour.ascx" tagname="BookTour" tagprefix="uc2" %>
+<uc2:BookTour ID="BookTour1" runat="server" />
 <section class="content">
       <article class="iblock detail-blog">
         <h1 class="tt-detail-blog"><asp:Label ID="lbNewsTitle" runat="server" /></h1>
