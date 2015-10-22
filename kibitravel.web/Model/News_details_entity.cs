@@ -18,5 +18,6 @@ namespace Model
         public DateTime NEWS_PUBLISHDATE { get; set; }
         public string NEWS_CODE { get; set; }
         public string CAT_SEO_URL { get; set; }
+        public string CAT_NAME { get; set; }
     }
 }

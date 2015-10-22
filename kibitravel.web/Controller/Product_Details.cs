@@ -194,6 +194,19 @@ namespace Controller
                 throw;
             }
         }
+        public List<ESHOP_NEWS_IMAGE> Load_albumimgPlus(int _Newsid, int _type)
+        {
+            try
+            {
+                var list = db.ESHOP_NEWS_IMAGEs.Where(n => n.NEWS_ID == _Newsid && (n.NEWS_IMG_SHOWTYPE == _type || n.NEWS_IMG_SHOWTYPE == 0)).ToList();
+                return list;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         //Load comment
         public List<ESHOP_NEWS_COMMENT> Load_comment(int _Newsid)
         {

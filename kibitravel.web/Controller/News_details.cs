@@ -98,7 +98,7 @@ namespace Controller
                                        join a in db.ESHOP_NEWs on c.NEWS_ID equals a.NEWS_ID
                                        join b in db.ESHOP_CATEGORies on c.CAT_ID equals b.CAT_ID
                                        where a.NEWS_SEO_URL != _sNews_Seo_Url && b.CAT_ID == s[0].CAT_ID
-                                       select new { a.NEWS_ID, a.NEWS_TITLE, a.NEWS_IMAGE3,a.NEWS_PRICE1, a.NEWS_DESC, a.NEWS_SEO_URL, a.NEWS_URL, a.NEWS_ORDER, a.NEWS_ORDER_PERIOD, a.NEWS_PUBLISHDATE, c.ESHOP_CATEGORy.CAT_SEO_URL }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER).Take(9).Distinct();
+                                       select new { a.NEWS_ID, a.NEWS_TITLE,b.CAT_NAME, a.NEWS_IMAGE3,a.NEWS_PRICE1, a.NEWS_DESC, a.NEWS_SEO_URL, a.NEWS_URL, a.NEWS_ORDER, a.NEWS_ORDER_PERIOD, a.NEWS_PUBLISHDATE, c.ESHOP_CATEGORy.CAT_SEO_URL }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER).Take(9).Distinct();
                     if (_tinTucKhac.ToList().Count > 0)
                     {
                         foreach (var i in _tinTucKhac)
@@ -114,6 +114,7 @@ namespace Controller
                             pro.NEWS_ORDER_PERIOD = Utils.CIntDef(i.NEWS_ORDER_PERIOD);
                             pro.NEWS_PUBLISHDATE = Utils.CDateDef(i.NEWS_PUBLISHDATE, DateTime.Now);
                             pro.CAT_SEO_URL = i.CAT_SEO_URL;
+                            pro.CAT_NAME = i.CAT_NAME;
                             l.Add(pro);
                         }
                     }
