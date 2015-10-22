@@ -50,6 +50,7 @@
           </p>
           <p>
             <asp:LinkButton ID="Lbthanhtoan" runat="server" OnClick="Lbthanhtoan_Click" ValidationGroup="G40" CssClass="btn-bt">Gửi tin</asp:LinkButton>
+            <a class="btn-bt" href="javascript:void(0)" onclick="reset();" >Refresh</a>
           </p>
         </div>
         <div class="col5 fright">
@@ -67,4 +68,14 @@
             ShowSummary="False" ValidationGroup="G40" />                 
         <asp:Label ID="lblresult" runat="server" ForeColor="Red"></asp:Label>
     </div>
+      <script type="text/javascript">
+          function reset() {
+              var name = document.getElementById("<%= Txtname.ClientID %>");
+              var email = document.getElementById("<%= txtPhone.ClientID %>");
+              var add = document.getElementById("<%= txtEmail.ClientID %>");
+              var desc = document.getElementById("<%= txtContent.ClientID %>");
+              var capcha = document.getElementById("<%= txtCapcha.ClientID %>");
+              name.value = email.value = add.value = desc.value = capcha.value = "";
+          }
+    </script>
 </asp:Content>
