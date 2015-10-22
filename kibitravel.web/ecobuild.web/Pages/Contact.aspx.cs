@@ -138,7 +138,7 @@ namespace kibitravel.web
                     string _add = "";
                     string _phone = txtPhone.Value;
                     string _content = txtContent.Value;
-                    string _title = txttitle.Value;
+                    string _title = "";
                     cf.Insert_contact(_sName, _sEmail, _title, _content, _add, _phone);
                     string _mailBody = string.Empty;
                     _mailBody += "<br/><br/><strong>Tên khách hàng</strong>: " + _sName;

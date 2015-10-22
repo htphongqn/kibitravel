@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="kibitravel.web.Masterpages.Default" %>
+
+<%@ Register src="../Usercontrols/TopHeader.ascx" tagname="TopHeader" tagprefix="uc1" %>
+<%@ Register src="../Usercontrols/Header.ascx" tagname="Header" tagprefix="uc2" %>
+<%@ Register src="../Usercontrols/Slide.ascx" tagname="Slide" tagprefix="uc3" %>
+<%@ Register src="../Usercontrols/Guide.ascx" tagname="Guide" tagprefix="uc4" %>
+<%@ Register src="../Usercontrols/Footer.ascx" tagname="Footer" tagprefix="uc7" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Resources/styles/styles.css"/>
+    <script type="text/javascript" src="/Resources/scripts/jquery.min.1.11.2.js"></script>
+</head>
+<body class="nobg">
+    <form id="form1" runat="server">
+        <!--TopHeader-->
+        <uc1:TopHeader ID="TopHeader1" runat="server" />
+        <!--End TopHeader-->
+        <!--Header-->
+        <uc2:Header ID="Header1" runat="server" />
+        <!--End Header-->
+        <!--Slide-->
+        <uc3:Slide ID="Slide1" runat="server" />
+        <!--End Slide-->
+        <!--Guide-->
+        <uc4:Guide ID="Guide1" runat="server" />
+        <!--End Guide-->
+        <main class="main" role="main">
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <!--Footer-->
+        <uc7:Footer ID="Footer1" runat="server" />
+        <!--End Footer-->
+        <script type="text/javascript" src="/Resources/scripts/bxslider.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/js.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/jquery.nivo.slider.js"></script> 
+        <script src="/Resources/scripts/wow.js"></script> 
+        <script>
+            new WOW().init();
+        </script> 
+        <script>
+            $().UItoTop({});
+        </script> 
+        <script src="/Resources/scripts/jquery.mousewheel.min.js"></script> 
+        <script src="/Resources/scripts/jquery.simplr.smoothscroll.min.js"></script> 
+        <script>
+            $.srSmoothscroll({
+                step: 100,
+                speed: 500
+            });
+        </script>
+    </form>
+</body>
+</html>
