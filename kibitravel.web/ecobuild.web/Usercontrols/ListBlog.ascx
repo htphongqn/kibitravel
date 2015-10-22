@@ -2,6 +2,8 @@
 
 <%@ Register src="Path.ascx" tagname="Path" tagprefix="uc1" %>
 
+<%@ Register src="BookTour.ascx" tagname="BookTour" tagprefix="uc2" %>
+<uc2:BookTour ID="BookTour1" runat="server" />
 <uc1:Path ID="Path1" runat="server" />
 <section class="content">
       <div class="iblock list-media-blog">
@@ -30,3 +32,4 @@
         <p class="pagination clearfix"><asp:Literal ID="ltrPage" runat="server"></asp:Literal></p>
       </div>
     </section>
+

@@ -22,6 +22,15 @@ namespace kibitravel.web.Usercontrols {
         protected global::kibitravel.web.UIs.Path Path1;
         
         /// <summary>
+        /// BookTour1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::kibitravel.web.Usercontrols.BookTour BookTour1;
+        
+        /// <summary>
         /// lbNewsTitle control.
         /// </summary>
         /// <remarks>
