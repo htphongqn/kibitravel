@@ -26,10 +26,7 @@
                 <p class="destinations-tt"><%#Eval("cat_name")%></p>
                 <div class="slide-news slide-destinations">
                   <div class="slider6">            
-                    <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
-                        <HeaderTemplate>
-                            <ul>
-                        </HeaderTemplate>
+                    <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>  
                         <ItemTemplate>
                             <div class="slide">
                               <article class="destinations-it">
@@ -45,9 +42,6 @@
                               <!--end articale--> 
                             </div>
                         </ItemTemplate>
-                        <FooterTemplate>
-                            </ul>
-                        </FooterTemplate>
                     </asp:Repeater>
                   </div>
                 </div>
