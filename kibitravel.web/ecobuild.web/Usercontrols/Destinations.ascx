@@ -34,7 +34,7 @@
                             <div class="slide">
                               <article class="destinations-it">
                                 <div class="inner-dt">
-                                  <figure class="img-dt"><a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>"><img src="<%# GetImageCat(Eval("News_Id"),Eval("News_Image1"))%>" /></a> </figure>
+                                  <figure class="img-dt"><a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>"><img src="<%# GetImageCat(Eval("CAT_ID"),Eval("CAT_IMAGE1"))%>" /></a> </figure>
                                   <h3 class="tt-dt"><%#Eval("cat_name")%></h3>
                                   <div class="over-dt">
                                     <p class="tt-over-dt"><%#Eval("cat_name")%></p>
