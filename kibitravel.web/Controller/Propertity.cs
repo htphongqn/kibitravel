@@ -310,7 +310,7 @@ namespace Controller
         {
             try
             {
-                var list = db.ESHOP_AD_ITEMs.Where(n => n.AD_ITEM_POSITION == position && n.AD_ITEM_POSITION == lang).Take(limit).ToList();
+                var list = db.ESHOP_AD_ITEMs.Where(n => n.AD_ITEM_POSITION == position && (n.AD_ITEM_LANGUAGE == lang || lang == -1)).Take(limit).ToList();
                 return list;
             }
             catch (Exception)

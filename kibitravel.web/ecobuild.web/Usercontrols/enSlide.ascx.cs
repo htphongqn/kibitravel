@@ -25,7 +25,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = per.Load_slider(0, 20, Const.LANGEN);
+                var list = per.Load_slider(0, 20, -1);
                 rptAds.DataSource = list;
                 rptAds.DataBind();
             }
