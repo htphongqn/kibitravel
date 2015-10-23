@@ -72,9 +72,11 @@
                         <label>Loại thông tin</label>
                         <asp:RadioButtonList ID="rblNewsType" runat="server" RepeatColumns="5" AutoPostBack="True"
                             OnSelectedIndexChanged="rblNewsType_SelectedIndexChanged">
-                            <asp:ListItem Text="Tin tức" Value="0" Selected="True"></asp:ListItem>
-                            <asp:ListItem Text="Dự án" Value="1"></asp:ListItem>
-                            <asp:ListItem Text="Global Contact" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="News" Value="0" Selected="True"></asp:ListItem>
+                            <asp:ListItem Text="Bestdeal" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Destinations" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Social Activities" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Blog" Value="4"></asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
                     <div class="form-group" id="iCate" runat="server">
@@ -182,14 +184,17 @@
                             <asp:ListItem Selected="True" Text="Có" Value="1"></asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
-                    <div class="form-group" style="display:none;">
+                    <div class="form-group">
                         <label>Hiển thị trang chủ</label>
                         <asp:RadioButtonList ID="rblNewsPeriod" runat="server" RepeatColumns="4" 
                             RepeatDirection="Horizontal">
-                            <asp:ListItem Text="Nổi bật" Value="1"></asp:ListItem>   
-                            <asp:ListItem Text="Bán chạy" Value="2"></asp:ListItem> 
-                            <asp:ListItem Text="Mua nhiều" Value="3"></asp:ListItem>
-                            <asp:ListItem Selected="True" Text="Khác" Value="20"></asp:ListItem>  
+                            <asp:ListItem Text="Nổi bật" Value="0"></asp:ListItem>   
+                            <asp:ListItem Text="Download" Value="1"></asp:ListItem>   
+                            <asp:ListItem Text="Client Say" Value="2"></asp:ListItem> 
+                            <asp:ListItem Text="Hottour" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Tour phổ biến" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Tour khác" Value="5"></asp:ListItem>
+                            <asp:ListItem Selected="True" Text="Khác" Value="10"></asp:ListItem>  
                         </asp:RadioButtonList>
                     </div>
                     <div class="form-group">
