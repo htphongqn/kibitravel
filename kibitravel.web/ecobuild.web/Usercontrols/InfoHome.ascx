@@ -43,7 +43,7 @@
         <p class="tt-sp"><i class="fa fa-skype"></i> Online support </p>        
         <asp:Repeater ID="rptSupport" runat="server">
             <ItemTemplate>
-            <p class="sp-item"><a href="skype:<%# Eval("ONLINE_NICKNAME")%>?chat" title="<%# Eval("ONLINE_DESC")%>" class="sk"><img src="/vi-vn/images/sk.png" /></a> <span><%# Eval("ONLINE_DESC")%></span></p>
+            <p class="sp-item"><a href="skype:<%# Eval("ONLINE_NICKNAME")%>?chat" title="<%# Eval("ONLINE_DESC")%>" class="sk"><img src="/Resources/images/sk.png" /></a> <span><%# Eval("ONLINE_DESC")%></span></p>
             </ItemTemplate>
         </asp:Repeater>
     </div>

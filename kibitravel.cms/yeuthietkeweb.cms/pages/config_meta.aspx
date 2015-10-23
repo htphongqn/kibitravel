@@ -79,15 +79,15 @@
                         <asp:HyperLink runat="server" ID="hplFile" Target="_blank"></asp:HyperLink><br />
                         <asp:Literal EnableViewState="false" runat="server" ID="ltrImage"></asp:Literal>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display:none">
                         <label>Chọn màu hover</label>
                         <cc1:ColorPicker ID="ColorPicker1" runat="server"/>
                     </div>
-                    <div class="form-group" id="trUploadBG" runat="server">
+                    <div class="form-group" id="trUploadBG" runat="server" style="display:none">
                         <label>Background</label>
                         <input id="fileImageBG" type="file" name="fileImageBG" size="50" runat="server" class="form-control">
                     </div>
-                    <div class="form-group" id="trFileBG" runat="server">
+                    <div class="form-group" id="trFileBG" runat="server" style="display:none">
                         <asp:ImageButton ID="btnDeleteBG" runat="server" ImageUrl="../images/icon_delete.png"
                             BorderWidth="0" Width="13px" CausesValidation="false" ToolTip="Xóa file đính kèm" OnClick="btnDeleteBG_Click">
                         </asp:ImageButton>

@@ -11,7 +11,7 @@
                 <p class="tt-ft"><%#Eval("cat_name")%></p>        
                 <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
                     <ItemTemplate>
-                        <a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>">
+                        <a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>" style="color:#A5A5A5">
                             - <%#Eval("cat_name")%><br /></a>
                     </ItemTemplate>
                 </asp:Repeater>
@@ -35,7 +35,7 @@
         </div>
     </div>
     <!--/col ft-->
-    <p class="paypal"><img src="/vi-vn/images/paypal.png" /></p>
+    <p class="paypal"><img src="/Resources/images/paypal.png" /></p>
     <p class="copyright"><span>© kibitravel 2015</span></p>
     </div>
 </footer>
