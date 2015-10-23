@@ -27,7 +27,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = index.Loadindex(1, 3, Const.LANGEN, 20);
+                var list = index.Loadindex(2, 3, Const.LANGEN, 20);
                 rptHottour.DataSource = list;
                 rptHottour.DataBind();
             }
@@ -40,7 +40,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = index.Loadindex(1, 4, Const.LANGEN, 20);
+                var list = index.Loadindex(2, 4, Const.LANGEN, 20);
                 rptTourPopular.DataSource = list;
                 rptTourPopular.DataBind();
             }
@@ -53,7 +53,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = index.Loadindex(1, 5, Const.LANGEN, 20);
+                var list = index.Loadindex(2, 5, Const.LANGEN, 20);
                 rptTourDifferent.DataSource = list;
                 rptTourDifferent.DataBind();
             }
