@@ -306,11 +306,11 @@ namespace Controller
             }
         }
         // Silder
-        public List<ESHOP_AD_ITEM> Load_slider(int position, int limit)
+        public List<ESHOP_AD_ITEM> Load_slider(int position, int limit, int lang)
         {
             try
             {
-                var list = db.ESHOP_AD_ITEMs.Where(n => n.AD_ITEM_POSITION == position).Take(limit).ToList();
+                var list = db.ESHOP_AD_ITEMs.Where(n => n.AD_ITEM_POSITION == position && n.AD_ITEM_POSITION == lang).Take(limit).ToList();
                 return list;
             }
             catch (Exception)

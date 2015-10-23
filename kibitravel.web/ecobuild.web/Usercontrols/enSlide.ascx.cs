@@ -10,7 +10,7 @@ using kibitravel.web.Components;
 
 namespace kibitravel.web.Usercontrols
 {
-    public partial class Slide : System.Web.UI.UserControl
+    public partial class enSlide : System.Web.UI.UserControl
     {
         Function fun = new Function();
         Propertity per = new Propertity();
@@ -25,7 +25,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = per.Load_slider(0, 20, Const.LANGVI);
+                var list = per.Load_slider(0, 20, Const.LANGEN);
                 rptAds.DataSource = list;
                 rptAds.DataBind();
             }
