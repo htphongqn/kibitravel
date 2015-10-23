@@ -154,16 +154,18 @@
                 <div class="form-group">
                     <label>Kiểu hiển thị</label>
                     <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="5">
-                        <asp:ListItem Text="Tin tức" Value="0" Selected="True"></asp:ListItem>
-                        <asp:ListItem Text="Dự án" Value="1"></asp:ListItem>
-                        <asp:ListItem Text="Global Contact" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="News" Value="0" Selected="True"></asp:ListItem>
+                        <asp:ListItem Text="Bestdeal" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="Distinations" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="Social Activities" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="Blog" Value="4"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
                 <div class="form-group">
                     <label>Vị trí</label>
                     <asp:RadioButtonList ID="rblPos" runat="server" RepeatColumns="2">
-                        <asp:ListItem Text="Menu" Value="0" Selected="True"></asp:ListItem>
-                        <asp:ListItem Text="Khác" Value="20"></asp:ListItem>
+                        <asp:ListItem Text="Main" Value="0" Selected="True"></asp:ListItem>
+                        <asp:ListItem Text="Footer" Value="1"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
                 <div class="form-group" style="display:none;">
