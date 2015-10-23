@@ -49,10 +49,10 @@ namespace yeuthietkeweb.cms.pages
             {
                 case 0: str = "Slideshow";
                     break;
-                case 1: str = "Góc Phải";
-                    break;
-                case 2: str = "Hổ trợ đặt hàng";
-                    break;
+                //case 1: str = "Góc Phải";
+                //    break;
+                //case 2: str = "Hổ trợ đặt hàng";
+                //    break;
             }
             return str;
         }

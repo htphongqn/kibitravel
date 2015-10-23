@@ -54,8 +54,8 @@ namespace yeuthietkeweb.cms.Components
             List<string[]> l = new List<string[]> 
             { 
                 new string[] { "0", "Slideshow" }, 
-                new string[] { "1", "Góc Phải" },
-                new string[] { "2", "Hổ trợ đặt hàng" },
+                //new string[] { "1", "Góc Phải" },
+                //new string[] { "2", "Hổ trợ đặt hàng" },
             };
 
             rbl.DataSource = from obj in l
