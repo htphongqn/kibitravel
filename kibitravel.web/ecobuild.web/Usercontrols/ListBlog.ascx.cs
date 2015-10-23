@@ -100,7 +100,7 @@ namespace kibitravel.web.Usercontrols
                 return null;
             }
         }
-        public string getdate(object date)
+        public string getDate(object date)
         {
             return fun.getDate(date);
         }

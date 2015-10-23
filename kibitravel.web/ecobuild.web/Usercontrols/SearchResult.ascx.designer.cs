@@ -13,22 +13,22 @@ namespace kibitravel.web.UIs {
     public partial class SearchResult {
         
         /// <summary>
-        /// lbTitle control.
+        /// lbNewsTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbTitle;
+        protected global::System.Web.UI.WebControls.Label lbNewsTitle;
         
         /// <summary>
-        /// Rplistnews control.
+        /// rptlistnews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Rplistnews;
+        protected global::System.Web.UI.WebControls.Repeater rptlistnews;
         
         /// <summary>
         /// ltrPage control.

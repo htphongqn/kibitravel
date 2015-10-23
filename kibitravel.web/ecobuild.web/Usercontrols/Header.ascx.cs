@@ -28,7 +28,7 @@ namespace kibitravel.web.Usercontrols
         protected void load_logo()
         {
             var _logoSlogan = per.Load_logo_and_sologan(2, 1);
-            if (_logoSlogan.ToList().Count > 0)
+            if (_logoSlogan != null && _logoSlogan.ToList().Count > 0)
             {
                 Rplogo.DataSource = _logoSlogan.Where(n => n.BANNER_FIELD1 == "1");
                 Rplogo.DataBind();
