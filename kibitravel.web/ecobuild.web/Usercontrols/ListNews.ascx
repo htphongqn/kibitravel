@@ -14,7 +14,7 @@
                     <a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%></a>
                 </figure>
                 &nbsp;<div class="text-media">
-                    <h2 class="tt-media" href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'> <a><%# Eval("NEWS_TITLE")%></a></h2>
+                    <h2 class="tt-media"> <a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><%# Eval("NEWS_TITLE")%></a></h2>
                     <p><%# Eval("NEWS_DESC")%></p>
                 </div>
             </article>
