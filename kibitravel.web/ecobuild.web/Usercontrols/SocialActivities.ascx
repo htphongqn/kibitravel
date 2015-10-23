@@ -11,7 +11,7 @@
                 <article>
                   <figure><a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%></a></figure>
                   <div class="text-exp">
-                    <h2> <a> <%# Eval("NEWS_TITLE")%></a></h2>
+                    <h2> <a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'> <%# Eval("NEWS_TITLE")%></a></h2>
                     <p class="text-exp"> <%# Eval("NEWS_DESC")%> </p>
                     <p><a class="read-more" href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><i class="fa fa-play-circle"></i> Read more</a></p>
                   </div>
