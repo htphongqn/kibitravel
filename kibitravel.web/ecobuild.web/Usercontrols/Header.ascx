@@ -15,7 +15,7 @@
                     <a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>">
                         <%#Eval("cat_name")%>
                     </a>
-                    <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
+                    <%--<asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
                         <HeaderTemplate>
                             <ul>
                         </HeaderTemplate>
@@ -41,7 +41,7 @@
                         <FooterTemplate>
                             </ul>
                         </FooterTemplate>
-                    </asp:Repeater>
+                    </asp:Repeater>--%>
                 </li>
             </ItemTemplate>
         </asp:Repeater>
