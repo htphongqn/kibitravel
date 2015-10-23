@@ -9,7 +9,7 @@
 </nav>
 <section class="content">
     <div class="iblock list-media">
-        <p class="tt-mt"> <span class="mt-s"><b><asp:Label ID="lbNewsTitle" runat="server" Text="Kết quả tìm kiếm"></asp:Label></b></span> </p>
+        <p class="tt-mt"> <span class="mt-s"><b><asp:Label ID="lbNewsTitle" runat="server" Text="Search Results"></asp:Label></b></span> </p>
 
         <asp:Repeater ID="rptlistnews" runat="server">
             <ItemTemplate>

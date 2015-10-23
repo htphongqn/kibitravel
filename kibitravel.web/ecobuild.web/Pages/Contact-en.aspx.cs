@@ -121,7 +121,7 @@ namespace kibitravel.web
                 string strSecurity = txtCapcha.Value.ToString().ToLower();
                 if (strSecurity != strSecView)
                 {
-                    Response.Write("<script>alert('Nhập mã bảo mật sai!');</script>");
+                    Response.Write("<script>alert('Captcha code is incorrect');</script>");
                     return;
                 }
                 //if (this.txtCapcha.Value != this.Session["CaptchaImageText"].ToString())
@@ -141,18 +141,17 @@ namespace kibitravel.web
                     string _title = "";
                     cf.Insert_contact(_sName, _sEmail, _title, _content, _add, _phone);
                     string _mailBody = string.Empty;
-                    _mailBody += "<br/><br/><strong>Tên khách hàng</strong>: " + _sName;
-                    _mailBody += "<br/><br/><strong>Số điện thoại</strong>: " + _phone;
+                    _mailBody += "<br/><br/><strong>Name</strong>: " + _sName;
+                    _mailBody += "<br/><br/><strong>Phone</strong>: " + _phone;
                     _mailBody += "<br/><br/><strong>Email</strong>: " + _sEmail;
-                    _mailBody += "<br/><br/><strong>Tiêu đề</strong>: " + _title;
-                    _mailBody += "<br/><br/><strong>Nội dung</strong>: " + _content + "<br/><br/>";
+                    _mailBody += "<br/><br/><strong>Message</strong>: " + _content + "<br/><br/>";
                     string _sMailBody = string.Empty;
-                    _sMailBody += "Cám ơn quý khách: " + _sName + " đã đặt liên hệ với chúng tôi. Đây là email được gửi từ website của " + System.Configuration.ConfigurationManager.AppSettings["EmailDisplayName"] + " <br>" + _mailBody;
+                    _sMailBody += "Thank " + _sName + " for contacting us. Emails sent from websites " + System.Configuration.ConfigurationManager.AppSettings["EmailDisplayName"] + " <br>" + _mailBody;
                     _sEmailCC = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_TO : "";
-                    sm.SendEmailSMTP("Thông báo: Bạn đã liên hệ thành công", _sEmail, _sEmailCC, "", _sMailBody, true, false);
+                    sm.SendEmailSMTP("Notice: You have contacted success", _sEmail, _sEmailCC, "", _sMailBody, true, false);
                     string strScript = "<script>";
-                    strScript += "alert(' Đã gửi thành công!');";
-                    strScript += "window.location='/';";
+                    strScript += "alert(' Done');";
+                    strScript += "window.location='/home.html';";
                     strScript += "</script>";
                     Page.RegisterClientScriptBlock("strScript", strScript);
                 //}

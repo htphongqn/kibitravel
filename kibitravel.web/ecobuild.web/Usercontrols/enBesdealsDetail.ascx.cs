@@ -97,7 +97,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                return fun.Getlink_News(News_Url, News_Seo_Url, cat_seo);
+                return fun.Getlink_News_EN(News_Url, News_Seo_Url, cat_seo);
             }
             catch (Exception ex)
             {
