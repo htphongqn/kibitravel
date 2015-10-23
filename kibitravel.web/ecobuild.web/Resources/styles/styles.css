@@ -550,8 +550,7 @@ transform: scale(1.5);}
 }
 
 .tabcontents .testDiv{ text-align:justify;  }
-
-
+ 
 @media (max-width:960px){
 .tour-mt{ width:50%}
 .col-ft{ width:40%; padding :10px;   }
@@ -585,6 +584,7 @@ max-width: 100%; clear:both; margin:10px 0}
 .iblock{ padding-left:10px; padding-right:10px}	
 .list-destinations-tour .destinations-it{ width:100%}
 .item-bestdeals{ width:100%}
+ 
 }
 
 
@@ -626,3 +626,19 @@ position:relative; margin-top:20px; top:auto; right:auto; display:inline-block;
 
 .search-blog{ display:inline-block; margin-bottom:20px; width:100%; font-size:1.2em; color:#3598DC}
 .search-blog a{ color:#fff}
+
+.ct-cl .content-cl{ width:100%; border: solid 1px #E5E5E5; padding:15px 25px; color:#A09993; text-align:left; background:#fff; }
+.ct-cl { position:relative; padding:10px; padding-bottom:60px; padding-right:0;font-family:"Times New Roman", Times, serif; font-size:1.1em;   font-style:italic;}
+.ct-cl .auth{ position:absolute; bottom:0; right:15px; text-align:right}
+.ct-cl .auth p{ font-weight:bold}
+.slide-client{ width:100%; display:inline-block}
+.ct-cl .caret-ht{ border-color:#E5E5E5;     
+	width: 0;
+    height: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 18px 18px 0 0;
+    float: right;
+    border-right-color: transparent;
+    clear: both;}
