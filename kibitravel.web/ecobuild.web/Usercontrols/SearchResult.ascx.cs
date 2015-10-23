@@ -37,7 +37,7 @@ namespace kibitravel.web.UIs
             {
                 int _sotin = 25;
 
-                if (_txt == "Nhập từ khóa tìm kiếm…")
+                if (_txt == "Input search…")
                 {
                     _txt = "";
                 }
@@ -52,13 +52,13 @@ namespace kibitravel.web.UIs
                     if (_page != 0)
                     {
 
-                        Rplistnews.DataSource = _vNews.Skip(_sotin * _page - _sotin).Take(_sotin);
-                        Rplistnews.DataBind();
+                        rptlistnews.DataSource = _vNews.Skip(_sotin * _page - _sotin).Take(_sotin);
+                        rptlistnews.DataBind();
                     }
                     else
                     {
-                        Rplistnews.DataSource = _vNews.Take(_sotin);
-                        Rplistnews.DataBind();
+                        rptlistnews.DataSource = _vNews.Take(_sotin);
+                        rptlistnews.DataBind();
                     }
                     ltrPage.Text = change.result(_vNews.ToList().Count, _sotin, _txt, 0, _page, 2);
                 }
