@@ -85,21 +85,21 @@ namespace yeuthietkeweb.cms.pages {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea mrk;
         
         /// <summary>
-        /// FileUpload1 control.
+        /// mrk2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea mrk2;
         
         /// <summary>
-        /// Btupmulti control.
+        /// mrk3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btupmulti;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea mrk3;
     }
 }

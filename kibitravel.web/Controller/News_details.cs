@@ -81,6 +81,57 @@ namespace Controller
                 return "";
             }
         }
+        public string Showfilehtm2(string _sCat_Seo_Url, string _sNews_seo_url, string filename)
+        {
+            try
+            {
+                string _result = string.Empty;
+                int _newsID = 0;
+                if (!string.IsNullOrEmpty(_sCat_Seo_Url))
+                {
+                    var _vNewsID = db.GetTable<ESHOP_NEWS_CAT>().Where(a => a.ESHOP_CATEGORy.CAT_SEO_URL == _sCat_Seo_Url);
+                    _newsID = _vNewsID.ToList().Count > 0 ? Utils.CIntDef(_vNewsID.ToList()[0].NEWS_ID) : 0;
+
+                }
+                else
+                {
+                    var getid = db.ESHOP_NEWs.Where(n => n.NEWS_SEO_URL == _sNews_seo_url).ToList();
+                    _newsID = getid.Count > 0 ? Utils.CIntDef(getid[0].NEWS_ID) : 0;
+                }
+
+                string pathFile;
+                string strHTMLContent;
+
+                if (_newsID > 0)
+                {
+
+                    var newsInfo = db.GetTable<ESHOP_NEW>().Where(n => n.NEWS_ID == _newsID);
+
+                    if (newsInfo.ToList().Count > 0)
+                    {
+
+                        pathFile = HttpContext.Current.Server.MapPath(PathFiles.GetPathNews(_newsID) + "/" + _newsID.ToString() + filename);
+
+                        if ((File.Exists(pathFile)))
+                        {
+                            StreamReader objNewsReader;
+                            objNewsReader = new StreamReader(pathFile);
+                            strHTMLContent = objNewsReader.ReadToEnd();
+                            objNewsReader.Close();
+                            _result = strHTMLContent;
+                        }
+
+                    }
+
+                }
+                return _result;
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+                return "";
+            }
+        }
         // Load other news
         public List<News_details_entity> Load_othernews(string _sNews_Seo_Url)
         {

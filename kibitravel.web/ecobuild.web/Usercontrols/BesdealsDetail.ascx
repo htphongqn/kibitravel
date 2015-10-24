@@ -95,7 +95,7 @@
             <div class="col4">
                 <p class="brand-s"><img src="data/logo-s.png" /></p>
                 <div class="box-hl-dt">
-                    <asp:Literal ID="liHtml1" runat="server"></asp:Literal>
+                    <asp:Literal ID="liHtmlItinerary" runat="server"></asp:Literal>
                 </div>
             </div>
             <div class="col8" style="padding-right:0; text-align:right">
@@ -118,9 +118,8 @@
         <!-- /*end view*/-->
         <div id="view3"> 
             <!--begin--> 
-              
-            <!--end--> 
-              
+              <asp:Literal ID="liHtmlPrices" runat="server"></asp:Literal>
+            <!--end-->               
         </div>
         <!-- /*end view*/--> 
         </div>

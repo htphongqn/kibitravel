@@ -25,16 +25,44 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Nội dung chi tiết tin
+                    Chi tiết tin/Package details/Overview
                 </div>                
                 <div class="panel-body">
                     <div class="form-group">
                         <textarea id="mrk" cols="20" rows="10" class="mrk" style="height: 500px;" runat="server"></textarea>
                     </div>    
-                    <div class="form-group">
+                    <%--<div class="form-group">
                         <asp:FileUpload ID="FileUpload1" runat="server" class="multi" multiple="true" Width="300px" />
                         <asp:Button ID="Btupmulti" runat="server" Text="Upload" OnClick="Btupmulti_Click" Width="100px"/>
-                    </div>
+                    </div>--%>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Itinerary
+                </div>                
+                <div class="panel-body">
+                    <div class="form-group">
+                        <textarea id="mrk2" cols="20" rows="10" class="mrk" style="height: 500px;" runat="server"></textarea>
+                    </div>    
+                    <%--<div class="form-group">
+                        <asp:FileUpload ID="FileUpload2" runat="server" class="multi" multiple="true" Width="300px" />
+                        <asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Btupmulti_Click" Width="100px"/>
+                    </div>--%>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Prices
+                </div>                
+                <div class="panel-body">
+                    <div class="form-group">
+                        <textarea id="mrk3" cols="20" rows="10" class="mrk" style="height: 500px;" runat="server"></textarea>
+                    </div>    
+                    <%--<div class="form-group">
+                        <asp:FileUpload ID="FileUpload3" runat="server" class="multi" multiple="true" Width="300px" />
+                        <asp:Button ID="Button2" runat="server" Text="Upload" OnClick="Btupmulti_Click" Width="100px"/>
+                    </div>--%>
                 </div>
             </div>
         </div>

@@ -31,11 +31,13 @@ namespace yeuthietkeweb.cms.pages
             if (!IsPostBack)
             {
                 showFileHTML();
+                showFileHTML2();
+                showFileHTML3();
             }
 
             hplCatNews.HRef = "news_category.aspx?news_id=" + m_news_id;
             hplEditorHTMl.HRef = "news_editor.aspx?news_id=" + m_news_id;
-            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id; hplNewsAtt.Visible = false;
+            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id;
             hplAlbum.HRef = "news_images.aspx?news_id=" + m_news_id;
             //bplNewsCopy.HRef = "news_copy.aspx?news_id=" + m_news_id;
             hplComment.HRef = "news_comment.aspx?news_id=" + m_news_id; hplComment.Visible = false;
@@ -95,7 +97,72 @@ namespace yeuthietkeweb.cms.pages
                 }
             }
         }
+        private void showFileHTML2()
+        {
+            string pathFile;
+            string strHTMLContent;
+            //string strSubweb;
 
+            //if ((HttpContext.Current.Request.ApplicationPath == "/"))
+            //{
+            //    strSubweb = Request.ApplicationPath;
+            //}
+            //else
+            //{
+            //    strSubweb = Request.ApplicationPath + "/";
+            //}
+
+            if (m_news_id > 0)
+            {
+
+                var newsInfo = DB.GetTable<ESHOP_NEW>().Where(n => n.NEWS_ID == m_news_id);
+
+                pathFile = Server.MapPath(PathFiles.GetPathNews(m_news_id) + "/" + m_news_id.ToString() + "itinerary-vi.htm");
+
+                if ((File.Exists(pathFile)))
+                {
+                    StreamReader objNewsReader;
+                    //objNewsReader = New StreamReader(pathFile, System.Text.Encoding.Default)
+                    objNewsReader = new StreamReader(pathFile);
+                    strHTMLContent = objNewsReader.ReadToEnd();
+                    objNewsReader.Close();
+                    mrk2.Value = strHTMLContent;
+                }
+            }
+        }
+        private void showFileHTML3()
+        {
+            string pathFile;
+            string strHTMLContent;
+            //string strSubweb;
+
+            //if ((HttpContext.Current.Request.ApplicationPath == "/"))
+            //{
+            //    strSubweb = Request.ApplicationPath;
+            //}
+            //else
+            //{
+            //    strSubweb = Request.ApplicationPath + "/";
+            //}
+
+            if (m_news_id > 0)
+            {
+
+                var newsInfo = DB.GetTable<ESHOP_NEW>().Where(n => n.NEWS_ID == m_news_id);
+
+                pathFile = Server.MapPath(PathFiles.GetPathNews(m_news_id) + "/" + m_news_id.ToString() + "price-vi.htm");
+
+                if ((File.Exists(pathFile)))
+                {
+                    StreamReader objNewsReader;
+                    //objNewsReader = New StreamReader(pathFile, System.Text.Encoding.Default)
+                    objNewsReader = new StreamReader(pathFile);
+                    strHTMLContent = objNewsReader.ReadToEnd();
+                    objNewsReader.Close();
+                    mrk3.Value = strHTMLContent;
+                }
+            }
+        }
         private void SaveHTMLInfo()
         {
             try
@@ -133,12 +200,67 @@ namespace yeuthietkeweb.cms.pages
                 clsVproErrorHandler.HandlerError(ex);
             }
         }
+        private void SaveHTMLInfo2()
+        {
+            try
+            {
+                if ((m_news_id > 0))
+                {
+                    string strHTMLFileLocation;
+                    string strFileName;
+                    string strHTMLContent;
+                    StreamWriter fsoFile;
 
+                    strFileName = PathFiles.GetPathNews(m_news_id) + m_news_id.ToString() + "itinerary-vi.htm";
+                    strHTMLFileLocation = Server.MapPath(strFileName);
+                    strHTMLContent = mrk2.Value;
+
+                    fsoFile = File.CreateText(strHTMLFileLocation);
+                    fsoFile.Write(strHTMLContent);
+                    fsoFile.Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+            }
+        }
+        private void SaveHTMLInfo3()
+        {
+            try
+            {
+                if ((m_news_id > 0))
+                {
+                    string strHTMLFileLocation;
+                    string strFileName;
+                    string strHTMLContent;
+                    StreamWriter fsoFile;
+
+                    strFileName = PathFiles.GetPathNews(m_news_id) + m_news_id.ToString() + "price-vi.htm";
+                    strHTMLFileLocation = Server.MapPath(strFileName);
+                    strHTMLContent = mrk3.Value;
+
+                    fsoFile = File.CreateText(strHTMLFileLocation);
+                    fsoFile.Write(strHTMLContent);
+                    fsoFile.Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+            }
+        }
         #endregion
 
         protected void lbtSave_Click(object sender, EventArgs e)
         {
             SaveHTMLInfo();
+            SaveHTMLInfo2();
+            SaveHTMLInfo3();
             //Create_att();
         }
         #region Attfile
@@ -388,47 +510,47 @@ namespace yeuthietkeweb.cms.pages
 
         }
 
-        protected void Btupmulti_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (FileUpload1.HasFile)
-                {
+        //protected void Btupmulti_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (FileUpload1.HasFile)
+        //        {
 
-                    HttpFileCollection hfc = Request.Files;
-                    List<string> lpath = new List<string>();
-                    for (int i = 0; i < hfc.Count; i++)
-                    {
-                        HttpPostedFile hpf = hfc[i];
-                        if (hpf.ContentLength > 0)
-                        {
+        //            HttpFileCollection hfc = Request.Files;
+        //            List<string> lpath = new List<string>();
+        //            for (int i = 0; i < hfc.Count; i++)
+        //            {
+        //                HttpPostedFile hpf = hfc[i];
+        //                if (hpf.ContentLength > 0)
+        //                {
 
-                            string pathfile = Server.MapPath("/data/news/" + m_news_id);
-                            string fullpathfile = pathfile + "/" + Path.GetFileName(hpf.FileName);
-                            lpath.Add("/data/news/" + m_news_id + "/" + Path.GetFileName(hpf.FileName));
-                            if (!Directory.Exists(pathfile))
-                            {
-                                Directory.CreateDirectory(pathfile);
-                            }
-                            hpf.SaveAs(fullpathfile);
+        //                    string pathfile = Server.MapPath("/data/news/" + m_news_id);
+        //                    string fullpathfile = pathfile + "/" + Path.GetFileName(hpf.FileName);
+        //                    lpath.Add("/data/news/" + m_news_id + "/" + Path.GetFileName(hpf.FileName));
+        //                    if (!Directory.Exists(pathfile))
+        //                    {
+        //                        Directory.CreateDirectory(pathfile);
+        //                    }
+        //                    hpf.SaveAs(fullpathfile);
 
-                        }
-                    }
-                    string listimg = string.Empty;
-                    for (int s = 0; s < lpath.Count; s++)
-                    {
-                        listimg += "<p><img src='" + lpath[s] + "' alt=''/></p>";
-                    }
-                    mrk.Value += listimg;
-                }
+        //                }
+        //            }
+        //            string listimg = string.Empty;
+        //            for (int s = 0; s < lpath.Count; s++)
+        //            {
+        //                listimg += "<p><img src='" + lpath[s] + "' alt=''/></p>";
+        //            }
+        //            mrk.Value += listimg;
+        //        }
 
 
 
-            }
-            catch (Exception ex)
-            {
-                clsVproErrorHandler.HandlerError(ex);
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        clsVproErrorHandler.HandlerError(ex);
+        //    }
+        //}
     }
 }
