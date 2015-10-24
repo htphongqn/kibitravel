@@ -91,7 +91,7 @@
                         <asp:RadioButtonList ID="rblLanguage" runat="server" RepeatColumns="5">
                         </asp:RadioButtonList>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display:none">
                         <label>Lượt Click</label>
                         <asp:Label ID="lblCount" runat="server" EnableViewState="false"></asp:Label>
                     </div>
@@ -107,7 +107,7 @@
                         <asp:Literal EnableViewState="false" runat="server" ID="ltrImage"></asp:Literal>
                     </div>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" style="display:none">
                     <div class="dataTable_wrapper">
                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                             <thead>
