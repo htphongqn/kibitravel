@@ -54,7 +54,7 @@ namespace yeuthietkeweb.cms.pages
             }
             hplCatNews.HRef = "news_category.aspx?news_id=" + m_news_id;
             hplEditorHTMl.HRef = "news_editor.aspx?news_id=" + m_news_id;
-            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id; hplNewsAtt.Visible = false;
+            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id;
             hplAlbum.HRef = "news_images.aspx?news_id=" + m_news_id;
             //bplNewsCopy.HRef = "news_copy.aspx?news_id=" + m_news_id;
             hplComment.HRef = "news_comment.aspx?news_id=" + m_news_id; hplComment.Visible = false;

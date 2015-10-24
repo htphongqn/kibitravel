@@ -10,7 +10,7 @@
 namespace yeuthietkeweb.cms.pages {
     
     
-    public partial class news_images {
+    public partial class news_attachment {
         
         /// <summary>
         /// lbtDelete control.
@@ -19,16 +19,16 @@ namespace yeuthietkeweb.cms.pages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtDelete;
+        protected global::System.Web.UI.WebControls.Button lbtDelete;
         
         /// <summary>
-        /// Lnupload control.
+        /// lbtSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Lnupload;
+        protected global::System.Web.UI.WebControls.Button lbtSave;
         
         /// <summary>
         /// hplBack control.
@@ -85,6 +85,24 @@ namespace yeuthietkeweb.cms.pages {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor hplComment;
         
         /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
+        
+        /// <summary>
+        /// lbMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbMessage;
+        
+        /// <summary>
         /// txtTitle control.
         /// </summary>
         /// <remarks>
@@ -94,13 +112,22 @@ namespace yeuthietkeweb.cms.pages {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitle;
         
         /// <summary>
-        /// ddlType control.
+        /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlType;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        
+        /// <summary>
+        /// ddlExtFiles control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlExtFiles;
         
         /// <summary>
         /// txtOrder control.
@@ -112,31 +139,40 @@ namespace yeuthietkeweb.cms.pages {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtOrder;
         
         /// <summary>
-        /// trUpload1 control.
+        /// txtUrl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl trUpload1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtUrl;
         
         /// <summary>
-        /// FileUpload1 control.
+        /// trUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl trUpload;
         
         /// <summary>
-        /// trImage1 control.
+        /// fileImage1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl trImage1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileImage1;
+        
+        /// <summary>
+        /// trFile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl trFile;
         
         /// <summary>
         /// btnDelete1 control.
@@ -148,22 +184,13 @@ namespace yeuthietkeweb.cms.pages {
         protected global::System.Web.UI.WebControls.ImageButton btnDelete1;
         
         /// <summary>
-        /// hplImage1 control.
+        /// hplFile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplImage1;
-        
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage Image1;
+        protected global::System.Web.UI.WebControls.HyperLink hplFile;
         
         /// <summary>
         /// rptList control.

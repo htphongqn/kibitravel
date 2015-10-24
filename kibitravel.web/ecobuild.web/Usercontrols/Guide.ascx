@@ -5,11 +5,10 @@
         <asp:Repeater ID="rptBookDownload" runat="server">
             <ItemTemplate>
                 <h2 class="tt-dl"><%# Eval("NEWS_TITLE") %></h2>
-                <p class="caption-dl"><%# Eval("NEWS_DESC")%></p>
-                <a class="btn-mn"> Download Now </a> 
+                <p class="caption-dl"><%# Eval("NEWS_DESC")%></p>                
                 <asp:Repeater ID="Rpattfile" runat="server" DataSource='<%# Loadattfile(Eval("NEWS_SEO_URL")) %>'>
                         <ItemTemplate>
-                            <%#BindAttItems(Eval("NEWS_ID"), Eval("EXT_ID"), Eval("NEWS_ATT_NAME"), Eval("NEWS_ATT_URL"), Eval("NEWS_ATT_FILE"), Eval("EXT_FILE_IMAGE"))%>
+                            <%#BindAttItems(Eval("NEWS_ID"), Eval("EXT_ID"), Eval("NEWS_ATT_NAME"), Eval("NEWS_ATT_URL"), Eval("NEWS_ATT_FILE"))%>
                         </ItemTemplate>
                     </asp:Repeater>                   
             </ItemTemplate>

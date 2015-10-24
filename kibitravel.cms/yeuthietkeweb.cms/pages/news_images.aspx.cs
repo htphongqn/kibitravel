@@ -45,7 +45,7 @@ namespace yeuthietkeweb.cms.pages
 
             hplCatNews.HRef = "news_category.aspx?news_id=" + m_news_id;
             hplEditorHTMl.HRef = "news_editor.aspx?news_id=" + m_news_id;
-            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id; hplNewsAtt.Visible = false;
+            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id;
             hplAlbum.HRef = "news_images.aspx?news_id=" + m_news_id;
             //bplNewsCopy.HRef = "news_copy.aspx?news_id=" + m_news_id;
             hplComment.HRef = "news_comment.aspx?news_id=" + m_news_id; hplComment.Visible = false;
@@ -157,6 +157,7 @@ namespace yeuthietkeweb.cms.pages
                 {
                     txtTitle.Value = G_info.ToList()[0].NEWS_IMG_DESC;
                     txtOrder.Value = Utils.CStrDef(G_info.ToList()[0].NEWS_IMG_ORDER);
+                    ddlType.SelectedValue = Utils.CStrDef(G_info.ToList()[0].NEWS_IMG_SHOWTYPE);
 
                     //image 1
                     if (!string.IsNullOrEmpty(G_info.ToList()[0].NEWS_IMG_IMAGE1))
@@ -390,6 +391,10 @@ namespace yeuthietkeweb.cms.pages
             return "news_images.aspx?news_id=" + m_news_id + "&img_id=" + Utils.CStrDef(obj_id);
         }
 
+        public string getType(object type)
+        {
+            return Utils.CIntDef(type) == 1 ? "Tab 1" : (Utils.CIntDef(type) == 2 ? "Tab 2" : "All");
+        }
         public string getLinkImage(object obj_id, object obj_image1)
         {
             if (!string.IsNullOrEmpty(Utils.CStrDef(obj_id)) && Utils.CIntDef(obj_id) > 0)
@@ -470,6 +475,7 @@ namespace yeuthietkeweb.cms.pages
                         hpf.SaveAs(fullpathfile);
                         g_update.NEWS_IMG_DESC = txtTitle.Value;
                         g_update.NEWS_IMG_ORDER = Utils.CIntDef(txtOrder.Value);
+                        g_update.NEWS_IMG_SHOWTYPE = Utils.CIntDef(ddlType.SelectedValue);
                         g_update.NEWS_ID = m_news_id;
                         g_update.NEWS_IMG_IMAGE1 = hpf.FileName;
                         DB.ESHOP_NEWS_IMAGEs.InsertOnSubmit(g_update);

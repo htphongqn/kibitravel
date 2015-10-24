@@ -39,6 +39,14 @@
                         <input type="text" name="txtTitle" id="txtTitle" runat="server" class="form-control" />
                     </div>
                     <div class="form-group">
+                        <label>Loại</label>
+                        <asp:DropDownList ID="ddlType" runat="server" class="form-control">
+                            <asp:ListItem Value="0" Text="--All--"></asp:ListItem>
+                            <asp:ListItem Value="1" Text="Tab 1"></asp:ListItem>
+                            <asp:ListItem Value="2" Text="Tab 2"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="form-group">
                         <label>Thứ tự</label>
                         <input type="text" name="txtOrder" id="txtOrder" runat="server" onkeyup="this.value=formatNumeric(this.value);" onblur="this.value=formatNumeric(this.value);"
                             maxlength="4" class="form-control" value="1" />
@@ -64,6 +72,7 @@
                                     <th class="center" style="width:100px">STT</th>
                                     <th class="center">Hình</th>
                                     <th>Mô tả</th>
+                                    <th>Loại</th>
                                     <%--<th>#</th>--%>
                                     <th class="center">Xóa</th>
                                 </tr>
@@ -85,6 +94,9 @@
                                                 <a href='<%# getLink(DataBinder.Eval(Container.DataItem, "NEWS_IMG_ID")) %>'>
                                                     <%#DataBinder.Eval(Container.DataItem, "NEWS_IMG_DESC") %>
                                                 </a>
+                                            </td>
+                                            <td>
+                                                <%# getType(DataBinder.Eval(Container.DataItem, "NEWS_IMG_SHOWTYPE"))%>
                                             </td>
                                             <%--<td>
                                                 <a href='<%# getLink(DataBinder.Eval(Container.DataItem, "NEWS_IMG_ID")) %>'>Chỉnh sửa</a>
