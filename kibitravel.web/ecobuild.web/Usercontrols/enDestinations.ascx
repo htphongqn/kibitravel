@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="enDestinations.ascx.cs" Inherits="kibitravel.web.Usercontrols.enDestinations" %>
-<%@ Register src="Path.ascx" tagname="Path" tagprefix="uc1" %>
+<%@ Register src="enPath.ascx" tagname="Path" tagprefix="uc1" %>
 
 <uc1:Path ID="Path1" runat="server" />
     <section class="content">
@@ -27,9 +27,6 @@
                 <div class="slide-news slide-destinations">
                   <div class="slider6">            
                     <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
-                        <HeaderTemplate>
-                            <ul>
-                        </HeaderTemplate>
                         <ItemTemplate>
                             <div class="slide">
                               <article class="destinations-it">
@@ -45,9 +42,6 @@
                               <!--end articale--> 
                             </div>
                         </ItemTemplate>
-                        <FooterTemplate>
-                            </ul>
-                        </FooterTemplate>
                     </asp:Repeater>
                   </div>
                 </div>

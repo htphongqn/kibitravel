@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="enListBestdeals.ascx.cs" Inherits="kibitravel.web.Usercontrols.enListBestdeals" %>
-<%@ Register src="Path.ascx" tagname="Path" tagprefix="uc1" %>
+<%@ Register src="enPath.ascx" tagname="Path" tagprefix="uc1" %>
 
 <uc1:Path ID="Path1" runat="server" />
 

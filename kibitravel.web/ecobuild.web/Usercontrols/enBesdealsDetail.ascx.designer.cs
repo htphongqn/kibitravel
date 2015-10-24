@@ -19,7 +19,7 @@ namespace kibitravel.web.Usercontrols {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::kibitravel.web.UIs.Path Path1;
+        protected global::kibitravel.web.UIs.enPath Path1;
         
         /// <summary>
         /// lblTitleCat control.
@@ -76,13 +76,13 @@ namespace kibitravel.web.Usercontrols {
         protected global::System.Web.UI.WebControls.Label lblDesc;
         
         /// <summary>
-        /// liHtml1 control.
+        /// liHtmlItinerary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal liHtml1;
+        protected global::System.Web.UI.WebControls.Literal liHtmlItinerary;
         
         /// <summary>
         /// Rpalbumimg1 control.
@@ -101,5 +101,14 @@ namespace kibitravel.web.Usercontrols {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDesc1;
+        
+        /// <summary>
+        /// liHtmlPrices control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal liHtmlPrices;
     }
 }

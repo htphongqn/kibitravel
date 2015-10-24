@@ -19,7 +19,7 @@ namespace kibitravel.web.Usercontrols {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::kibitravel.web.UIs.Path Path1;
+        protected global::kibitravel.web.UIs.enPath Path1;
         
         /// <summary>
         /// lbCateName control.

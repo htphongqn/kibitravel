@@ -62,8 +62,14 @@ namespace kibitravel.web.Usercontrols
                 {
                     _sNews_Seo_Url = ndetail.Get_News_seo_url(_sCat_Seo_Url);
                 }
-                string s = ndetail.Showfilehtm(_sCat_Seo_Url, _sNews_Seo_Url);
-                liHtml.Text = liHtml1.Text = s;
+                string str = ndetail.Showfilehtm(_sCat_Seo_Url, _sNews_Seo_Url);
+                liHtml.Text = str;
+                str = ndetail.Showfilehtm2(_sCat_Seo_Url, _sNews_Seo_Url, "itinerary-vi.htm");
+                if (str != "")
+                    liHtmlItinerary.Text = str;
+                str = ndetail.Showfilehtm2(_sCat_Seo_Url, _sNews_Seo_Url, "price-vi.htm");
+                if (str != "")
+                    liHtmlPrices.Text = str;
             }
             catch (Exception ex)
             {

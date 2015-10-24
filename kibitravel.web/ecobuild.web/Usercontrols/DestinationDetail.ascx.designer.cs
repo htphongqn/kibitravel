@@ -13,13 +13,13 @@ namespace kibitravel.web.Usercontrols {
     public partial class DestinationDetail {
         
         /// <summary>
-        /// Path1 control.
+        /// enPath1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::kibitravel.web.UIs.enPath Path1;
+        protected global::kibitravel.web.UIs.Path enPath1;
         
         /// <summary>
         /// BookTour1 control.

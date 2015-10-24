@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DestinationDetail.ascx.cs" Inherits="kibitravel.web.Usercontrols.DestinationDetail" %>
 
-<%@ Register src="enPath.ascx" tagname="Path" tagprefix="uc1" %>
-<uc1:Path ID="Path1" runat="server" />
+<%@ Register src="Path.ascx" tagname="enPath" tagprefix="uc1" %>
+
+<uc1:enPath ID="enPath1" runat="server" />
 <%@ Register src="BookTour.ascx" tagname="BookTour" tagprefix="uc2" %>
 <uc2:BookTour ID="BookTour1" runat="server" />
     <section class="content"> 
