@@ -135,7 +135,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                return fun.GetImageT_News_Hasclass(News_Id, News_Image1, "");
+                return fun.GetImageT_News(News_Id, News_Image1);
             }
             catch (Exception ex)
             {

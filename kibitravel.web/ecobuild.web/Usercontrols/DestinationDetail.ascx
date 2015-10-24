@@ -117,7 +117,7 @@
                     <div class="slide">
                       <article class="destinations-it">
                         <div class="inner-dt">
-                          <figure class="img-dt"><a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%></a></figure>
+                          <figure class="img-dt"><a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><img src='<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%>' /></a></figure>
                           <h3 class="tt-dt"><%# Eval("NEWS_TITLE")%><span>2 DAY(S)</span></h3>
                           <div class="over-dt">
                             <p class="tt-over-dt"><%# Eval("NEWS_TITLE")%></p>
