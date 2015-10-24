@@ -23,7 +23,7 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = index.Loadindex(0, 1, Const.LANGEN, 1);
+                var list = index.Loadindex(0, 1, -1, 1);
                 rptBookDownload.DataSource = list;
                 rptBookDownload.DataBind();
             }
@@ -36,11 +36,11 @@ namespace kibitravel.web.Usercontrols
         public List<Attfile_entity> Loadattfile(object NEWS_SEO_URL)
         {
             string _sNews_Seo_Url = Utils.CStrDef(NEWS_SEO_URL);
-            return att.Load_att(_sNews_Seo_Url).Take(1).ToList();
+            return att.Load_att2(_sNews_Seo_Url).Take(1).ToList();
         }
-        public string BindAttItems(object News_Id, object Ext_Id, object Att_Name, object Att_Url, object Att_File, object Ext_Image)
+        public string BindAttItems(object News_Id, object Ext_Id, object Att_Name, object Att_Url, object Att_File)
         {
-            return att.BindAttItems(News_Id, Ext_Id, Att_Name, Att_Url, Att_File, Ext_Image);
+            return att.BindAttItems2(News_Id, Ext_Id, Att_Name, Att_Url, Att_File);
         }
         #endregion
     }

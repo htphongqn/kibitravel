@@ -36,7 +36,7 @@ namespace kibitravel.web.Usercontrols
         public List<Attfile_entity> Loadattfile(object NEWS_SEO_URL)
         {
             string _sNews_Seo_Url = Utils.CStrDef(NEWS_SEO_URL);
-            return att.Load_att(_sNews_Seo_Url).Take(1).ToList();
+            return att.Load_att2(_sNews_Seo_Url).Take(1).ToList();
         }
         public string BindAttItems(object News_Id, object Ext_Id, object Att_Name, object Att_Url, object Att_File)
         {

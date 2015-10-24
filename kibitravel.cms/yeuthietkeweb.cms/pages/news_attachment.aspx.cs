@@ -227,7 +227,7 @@ namespace yeuthietkeweb.cms.pages
                 {
                     if (!string.IsNullOrEmpty(fileImage1.PostedFile.FileName))
                     {
-                        string pathfile = Server.MapPath("../data/news/" + m_news_id);
+                        string pathfile = Server.MapPath("/data/news/" + m_news_id);
                         string fullpathfile = pathfile + "/" + Att_File;
 
                         if (!Directory.Exists(pathfile))
