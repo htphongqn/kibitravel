@@ -39,7 +39,7 @@ namespace kibitravel.web.Usercontrols
             try
             {
                 string temp;
-                temp = fun.GetImageAd(Ad_Id, Ad_Image1, Ad_Target, Ad_Url, Ad_Item_Desc);
+                temp = fun.GetImageSlideHome(Ad_Id, Ad_Image1, Ad_Target, Ad_Url, Ad_Item_Desc);
                 return temp;
             }
             catch (Exception ex)
