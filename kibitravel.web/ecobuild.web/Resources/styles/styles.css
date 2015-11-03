@@ -75,7 +75,7 @@ border-right-color: transparent; clear:both}
 .most-tour{ width:100%; display:inline-block; margin-bottom:20px}
 .tt-mt{ height:1px; background:#2A80B9; text-align:center; margin:40px 0; position:relative; width:100%;font-family:'BebasNeueRegular';}
 .mt-s{   color:#000; background:#fff; padding:5px;display:inline-block; margin-top:-30px;  }
-.mt-s b{ padding:5px 30px; display:inline-block; font-size:2.3em; font-weight:normal; background:#3598DC; color:#fff; border-bottom: solid 2px #2A80B9;font-family:'BebasNeueRegular';  }
+.mt-s b{ padding:5px 30px; display:inline-block; font-size:2.3em; font-weight:normal; background:#3598DC; color:#fff; border-bottom: solid 2px #2A80B9;    font-family: 'Source Sans Pro' !important; text-transform: uppercase;}
 .view-all-lst{ text-align:center; margin:10px;}
 .view-all-lst a{ color:#2A80B9}
 .view-all-lst a:hover{ color:#3598DC}
@@ -84,8 +84,8 @@ border-right-color: transparent; clear:both}
 .img-mt{ position:relative;}
 .tour-mt .img-mt img{ width:100%; position:relative; z-index:2; }
 .des-mt{ position:absolute; bottom:0px ;left:0; width:100%; padding:10px; z-index:3; text-align:center}
-.des-mt p{ display:inline-block; padding:7px  20px; background: rgba(0,0,0,0.6); color:#fff; width:100%; text-align:center }
-.price-mt{ float:right; color:#3598DC; font-family:'BebasNeueRegular'; padding-left:20px}
+.des-mt p{ display:inline-block; padding:7px  10px; background: rgba(0,0,0,0.6); color:#fff; width:100%; text-align:left }
+.price-mt{ float:right; color:#3598DC; font-family:'BebasNeueRegular'; padding-left:10px}
 .price-mt:hover{ color:#BEC3C7}
 
 .more-mt { position:absolute; top:40px; right:6px; z-index:4;}
