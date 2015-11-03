@@ -14,6 +14,7 @@ namespace kibitravel.web.Usercontrols
     {
         #region Declare
 
+        Propertity per = new Propertity();
         public clsFormat _clsFormat = new clsFormat();
         News_details ndetail = new News_details();
         List_news lnews = new List_news();
@@ -36,7 +37,18 @@ namespace kibitravel.web.Usercontrols
             gettitle();
             Tinkhac();
             LoadAlbum();
-
+            loadtabtext();
+        }
+        private void loadtabtext()
+        {
+            int _Catid = Utils.CIntDef(Session["Cat_id"]);
+            var item = per.GetCatalogryByID(_Catid);
+            if (item != null)
+            {
+                lbtab1.Text = item.CAT_FIELD1;
+                lbtab2.Text = item.CAT_FIELD2;
+                lbtab3.Text = item.CAT_FIELD3;
+            }
         }
         #region My Function
         public void gettitle()

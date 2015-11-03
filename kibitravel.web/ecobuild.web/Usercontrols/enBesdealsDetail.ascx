@@ -59,9 +59,9 @@
         <script type="text/javascript" src="/Resources/scripts/tabcontent.js"></script>
         <link rel="stylesheet" type="text/css" href="/Resources/styles/tabcontent3.css"/>
         <ul class="tabs" data-persist="true">
-        <li><a href="#view1">Package Details</a></li>
-        <li><a href="#view2">Itinerary</a></li>
-        <li><a href="#view3">Prices</a></li>
+        <li><a href="#view1"><asp:Literal ID="lbtab1" runat="server"></asp:Literal></a></li>
+        <li><a href="#view2"><asp:Literal ID="lbtab2" runat="server"></asp:Literal></a></li>
+        <li><a href="#view3"><asp:Literal ID="lbtab3" runat="server"></asp:Literal></a></li>
         </ul>
         <div class="tabcontents">
         <div id="view1"> 

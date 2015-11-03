@@ -49,6 +49,33 @@ namespace kibitravel.web.Usercontrols {
         protected global::System.Web.UI.WebControls.Repeater Rpimg_small;
         
         /// <summary>
+        /// lbtab1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbtab1;
+        
+        /// <summary>
+        /// lbtab2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbtab2;
+        
+        /// <summary>
+        /// lbtab3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbtab3;
+        
+        /// <summary>
         /// liHtmlOverview control.
         /// </summary>
         /// <remarks>

@@ -49,6 +49,33 @@ namespace kibitravel.web.Usercontrols {
         protected global::System.Web.UI.WebControls.Label lbNewsTitle;
         
         /// <summary>
+        /// lbtab1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbtab1;
+        
+        /// <summary>
+        /// lbtab2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbtab2;
+        
+        /// <summary>
+        /// lbtab3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbtab3;
+        
+        /// <summary>
         /// liHtml control.
         /// </summary>
         /// <remarks>

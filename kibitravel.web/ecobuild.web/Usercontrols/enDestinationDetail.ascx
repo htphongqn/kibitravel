@@ -70,9 +70,9 @@
           
           <div class="dt-dn" >
             <ul class="tabs wmn" data-persist="true">
-              <li><a href="#view1">Overview</a></li>
-              <li><a href="#view2">Itinerary</a></li>
-              <li><a href="#view3">Prices</a></li>
+              <li><a href="#view1"><asp:Literal ID="lbtab1" runat="server"></asp:Literal></a></li>
+              <li><a href="#view2"><asp:Literal ID="lbtab2" runat="server"></asp:Literal></a></li>
+              <li><a href="#view3"><asp:Literal ID="lbtab3" runat="server"></asp:Literal></a></li>
                <a class="btn-order" href="/booktour.html">BOOK NOW</a>
             </ul>
             <div class="wmn tabcontents ">

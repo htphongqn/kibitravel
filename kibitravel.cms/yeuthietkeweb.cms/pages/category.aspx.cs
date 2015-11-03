@@ -283,6 +283,11 @@ namespace yeuthietkeweb.cms.pages
                     txtSeoDescription.Value = Utils.CStrDef(G_info.ToList()[0].CAT_SEO_DESC);
                     txtSeoUrl.Value = Utils.CStrDef(G_info.ToList()[0].CAT_SEO_URL);
 
+                    //tab text
+                    txttab1.Value = G_info.ToList()[0].CAT_FIELD1;
+                    txttab2.Value = G_info.ToList()[0].CAT_FIELD2;
+                    txttab3.Value = G_info.ToList()[0].CAT_FIELD3;
+
                     //english language
                     //txtNameEn.Value = G_info.ToList()[0].CAT_NAME_EN;
                     //txtCodeEn.Value = G_info.ToList()[0].CAT_CODE_EN;
@@ -506,6 +511,9 @@ namespace yeuthietkeweb.cms.pages
                     //cat_insert.CAT_SEO_KEYWORD_EN = Cat_Seo_Keyword_En;
                     //cat_insert.CAT_SEO_DESC_EN = Cat_Seo_Description_En;
 
+                    cat_insert.CAT_FIELD1 = txttab1.Value;
+                    cat_insert.CAT_FIELD2 = txttab2.Value;
+                    cat_insert.CAT_FIELD3 = txttab3.Value;
 
                     DB.ESHOP_CATEGORies.InsertOnSubmit(cat_insert);
                     DB.SubmitChanges();
@@ -560,6 +568,10 @@ namespace yeuthietkeweb.cms.pages
                         //c_update.Single().CAT_SEO_TITLE_EN = Cat_Seo_Tittle_En;
                         //c_update.Single().CAT_SEO_KEYWORD_EN = Cat_Seo_Keyword_En;
                         //c_update.Single().CAT_SEO_DESC_EN = Cat_Seo_Description_En;
+
+                        c_update.Single().CAT_FIELD1 = txttab1.Value;
+                        c_update.Single().CAT_FIELD2 = txttab2.Value;
+                        c_update.Single().CAT_FIELD3 = txttab3.Value;
 
                         DB.SubmitChanges();
 
