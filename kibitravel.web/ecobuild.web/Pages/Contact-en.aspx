@@ -6,12 +6,12 @@
     <nav class="breadcrumb">
       <ul>
         <li><a href="/home.html">Home</a></li>
-        <li><a>Contact</a></li>
+        <li><a>Send Requests</a></li>
       </ul>
     </nav>
     <section class="content">
       <div class="iblock contact">
-        <p class="tt-mt"> <span class="mt-s"><b>Contact</b></span> </p>
+        <p class="tt-mt"> <span class="mt-s"><b>Send Requests</b></span> </p>
         <div class=" col6">
         <p class="text-bt">Please complete the form below and we will contact you within 24 hours."<br /> Thank you for making a reservation with Kibitravel!</p>
           <p> Name

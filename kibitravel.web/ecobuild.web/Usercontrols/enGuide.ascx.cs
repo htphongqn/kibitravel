@@ -23,9 +23,9 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = index.Loadindex(0, 1, -1, 1);
-                rptBookDownload.DataSource = list;
-                rptBookDownload.DataBind();
+                //var list = index.Loadindex(0, 1, -1, 1);
+                //rptBookDownload.DataSource = list;
+                //rptBookDownload.DataBind();
             }
             catch (Exception ex)
             {

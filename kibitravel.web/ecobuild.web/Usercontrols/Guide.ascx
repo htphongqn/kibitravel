@@ -2,7 +2,7 @@
 
 <section class="download-guide-book">
     <div class="container">
-        <asp:Repeater ID="rptBookDownload" runat="server">
+        <%--<asp:Repeater ID="rptBookDownload" runat="server">
             <ItemTemplate>
                 <h2 class="tt-dl"><%# Eval("NEWS_TITLE") %></h2>
                 <p class="caption-dl"><%# Eval("NEWS_DESC")%></p>                
@@ -12,6 +12,7 @@
                         </ItemTemplate>
                     </asp:Repeater>                   
             </ItemTemplate>
-        </asp:Repeater>
+        </asp:Repeater>--%>
+        <a class='btn-mn' href='/lien-he.html'>Gửi yêu cầu</a>
     </div>
 </section>

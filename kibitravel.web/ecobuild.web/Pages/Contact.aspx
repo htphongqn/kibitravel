@@ -6,12 +6,12 @@
     <nav class="breadcrumb">
       <ul>
         <li><a href="/trang-chu.html">Trang chủ</a></li>
-        <li><a>Liên hệ</a></li>
+        <li><a>Gửi yêu cầu</a></li>
       </ul>
     </nav>
     <section class="content">
       <div class="iblock contact">
-        <p class="tt-mt"> <span class="mt-s"><b>Liên hệ</b></span> </p>
+        <p class="tt-mt"> <span class="mt-s"><b>Gửi yêu cầu</b></span> </p>
         <div class=" col6">
         <p class="text-bt">Xin vui lòng hoàn thành những yêu cầu bên dưới."</p>
           <p> Họ và tên
