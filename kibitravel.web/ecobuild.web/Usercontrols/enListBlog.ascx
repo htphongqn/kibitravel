@@ -22,7 +22,7 @@
                     <p class="date-time-news-blog"><%# getDate(Eval("NEWS_PUBLISHDATE"))%></p>
                     <p class="txt-media-blog"><%# Eval("NEWS_DESC")%></p>
                     <a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>' class="detail-news-blog"><i class="fa fa-chevron-circle-right"></i></a>
-                    <p class="social-blog"><a class="facebook"><i class="fa fa-facebook"></i></a> <a class="google-plus"><i class="fa fa-google-plus"></i></a> <a class="twitter"><i class="fa fa-twitter"></i></a> </p>
+                    <%--<p class="social-blog"><a class="facebook"><i class="fa fa-facebook"></i></a> <a class="google-plus"><i class="fa fa-google-plus"></i></a> <a class="twitter"><i class="fa fa-twitter"></i></a> </p>--%>
                   </div>
                 </article>
             </ItemTemplate>
