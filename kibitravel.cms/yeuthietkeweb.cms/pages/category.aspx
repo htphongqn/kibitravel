@@ -56,7 +56,7 @@
             </div>
             <div class="panel-body">
                 <div class="form-group">
-                    <asp:Label CssClass="user" ID="lblError" runat="server"></asp:Label>
+                    <asp:Label CssClass="user" ID="lblError" runat="server" ForeColor="Red"></asp:Label>
                 </div>
                 <div class="form-group">
                     <label>Cấp chuyên mục</label>
@@ -226,20 +226,17 @@
                 <div class="form-group">
                     <label>Tab 1</label>
                     <input type="text" name="txttab1" id="txttab1" runat="server" class="form-control" value="Package Details"/>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Vui lòng nhập text cho tab1"
-                        Text="Vui lòng nhập text cho tab1" ControlToValidate="txttab1" CssClass="errormes"></asp:RequiredFieldValidator>
+                    
                 </div>
                 <div class="form-group">
                     <label>Tab 2</label>
                     <input type="text" name="txttab2" id="txttab2" runat="server" class="form-control" value="Itinerary"/>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Vui lòng nhập text cho tab2"
-                        Text="Vui lòng nhập text cho tab2" ControlToValidate="txttab2" CssClass="errormes"></asp:RequiredFieldValidator>
+                    
                 </div>
                 <div class="form-group">
                     <label>Tab 3</label>
                     <input type="text" name="txttab3" id="txttab3" runat="server" class="form-control" value="Prices"/>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Vui lòng nhập text cho tab3"
-                        Text="Vui lòng nhập text cho tab3" ControlToValidate="txttab3" CssClass="errormes"></asp:RequiredFieldValidator>
+                    
                 </div>
             </div>
         </div>

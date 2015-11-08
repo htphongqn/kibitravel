@@ -63,10 +63,10 @@
                 </div>
                 <div class="panel-body">
                     <div class="form-group">
-                        <asp:Label CssClass="user" ID="lblError" runat="server"></asp:Label>
+                        <asp:Label CssClass="user" ID="lblError" runat="server" ForeColor="Red"></asp:Label>
                     </div>
                     <div class="form-group" style="margin-bottom:0">
-                        <label><asp:Literal ID="lbMessage" runat="server" Text=""></asp:Literal></label>
+                        <label><asp:Literal ID="lbMessage" runat="server" Text="" ForeColor="Red"></asp:Literal></label>
                     </div>
                     <div class="form-group">
                         <label>Loại thông tin</label>

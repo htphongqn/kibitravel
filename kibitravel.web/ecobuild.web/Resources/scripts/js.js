@@ -68,7 +68,7 @@ $(function () {
 $(function () {
 	//$( ".navy >ul > li" ).prepend("<i class='fa fa-caret-right'></i>");
 	//$( ".detail-destination .navy ul li" ).prepend("<i class='fa fa-bookmark'></i>");
-	$( ".navx>ul> li:last-child>a").attr("href", "blog.htm");
+	//$( ".navx>ul> li:last-child>a").attr("href", "blog.htm");
 });
 ////list bestdeals
  $( ".item-bestdeals:nth-child(6n+1),.item-bestdeals:nth-child(6n)" ).addClass("w50");

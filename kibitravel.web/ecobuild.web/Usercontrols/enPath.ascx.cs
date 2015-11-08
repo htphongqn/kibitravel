@@ -16,7 +16,7 @@ namespace kibitravel.web.UIs
         #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
-            string str = per.Getpath();
+            string str = per.GetpathEn();
             if (str.Length > 0)
             {
                 int first_index = str.IndexOf(">");

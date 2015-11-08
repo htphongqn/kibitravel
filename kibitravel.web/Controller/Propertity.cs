@@ -602,7 +602,84 @@ namespace Controller
                 return "";
             }
         }
+        public string GetpathEn()
+        {
+            try
+            {
+                string _result = string.Empty;
+                string cat_seo_url = CatChuoiURL(Utils.CStrDef(HttpContext.Current.Request.RawUrl));
+                if (cat_seo_url.Contains("html?p"))
+                {
+                    string[] a = cat_seo_url.Split('?');
+                    cat_seo_url = a[0].Substring(0, a[0].Length - 5);
+                }
+                var rausach = from p in db.ESHOP_CATEGORies
+                              where p.CAT_SEO_URL == cat_seo_url && p.CAT_STATUS == 1
+                              select p;
 
+                if (rausach.ToList().Count > 0)
+                {
+
+                    string cat_parent_path = rausach.ToList()[0].CAT_PARENT_PATH;
+
+                    string[] str = cat_parent_path.Split(',');
+
+                    if (str.Count() > 1)
+                    {
+                        _result = Convert_NameEn(str) + "  &raquo;  <a href='/en/" + rausach.ToList()[0].CAT_SEO_URL + ".html'>" + rausach.ToList()[0].CAT_NAME + "</a>";
+                    }
+                    else
+                    {
+                        if (rausach.ToList()[0].CAT_SHOWITEM > 0)
+                        {
+                            _result = "  &raquo; <a href='/en/" + rausach.ToList()[0].CAT_SEO_URL + ".html'>" + rausach.ToList()[0].CAT_NAME + "</a> ";
+                        }
+                        else
+                        {
+                            _result = "  &raquo; <a href='/en/" + rausach.ToList()[0].CAT_SEO_URL + ".html'>" + rausach.ToList()[0].CAT_NAME + "</a> ";
+                        }
+                    }
+                }
+
+                else
+                {
+                    var rausach1 = (from nc in db.ESHOP_NEWS_CATs
+                                    join c in db.ESHOP_CATEGORies on nc.CAT_ID equals c.CAT_ID
+                                    join n in db.ESHOP_NEWs on nc.NEWS_ID equals n.NEWS_ID
+                                    where n.NEWS_SEO_URL == cat_seo_url && c.CAT_STATUS == 1
+                                    orderby c.CAT_RANK descending
+                                    select c).Take(1);
+                    if (rausach1.ToList().Count > 0)
+                    {
+                        string cat_parent_path_Max = rausach1.ToList()[0].CAT_PARENT_PATH;
+
+                        string[] str = cat_parent_path_Max.Split(',');
+                        if (str.Count() > 1)
+                        {
+                            _result = Convert_NameEn(str) + "  &raquo; <a href='/en/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a>";
+                        }
+                        else
+                        {
+                            if (rausach1.ToList()[0].CAT_SHOWITEM > 0)
+                            {
+                                _result = "  &raquo; <a href='/en/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a> ";
+                            }
+                            else
+                            {
+                                _result = "  &raquo; <a href='/en/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a> ";
+                            }
+                        }
+
+                    }
+                }
+                return _result;
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+                return "";
+            }
+        }
         /// <summary>
         /// Chuyển chuỗi kiểu số thành chuỗi kiểu chữ
         /// </summary>
@@ -634,13 +711,39 @@ namespace Controller
                 return "";
             }
         }
+        public string Convert_NameEn(string[] str)
+        {
+            string s = "";
+
+            try
+            {
+                int _value = 0;
+
+                for (int i = 1; i < str.Count(); i++)
+                {
+                    _value = Utils.CIntDef(str[i]);
+
+                    var rausach = from r in db.ESHOP_CATEGORies
+                                  where r.CAT_ID == _value && r.CAT_STATUS == 1
+                                  select r;
+                    //s += rausach.ToList()[0] + " > ";
+                    s += "  &raquo; <a href='/en/" + rausach.ToList()[0].CAT_SEO_URL + ".html'>" + rausach.ToList()[0].CAT_NAME + "</a> ";
+                }
+                return s;
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+                return "";
+            }
+        }
         private string CatChuoiURL(string s)
         {
             string[] sep = { "/" };
             string[] sep1 = { " " };
             string[] t1 = s.Split(sep, StringSplitOptions.RemoveEmptyEntries);
             string res = "";
-            for (int i = (t1.Length>1 ? 1 : 0); i < t1.Length; i++)
+            for (int i = (t1.Length>1 ? t1.Length-1 : 0); i < t1.Length; i++)
             {
                 string[] t2 = t1[i].Split(sep1, StringSplitOptions.RemoveEmptyEntries);
                 if (t2.Length > 0)
