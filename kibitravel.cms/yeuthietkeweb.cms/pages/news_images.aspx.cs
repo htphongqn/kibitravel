@@ -475,7 +475,7 @@ namespace yeuthietkeweb.cms.pages
                         hpf.SaveAs(fullpathfile);
                         g_update.NEWS_IMG_DESC = txtTitle.Value;
                         g_update.NEWS_IMG_ORDER = Utils.CIntDef(txtOrder.Value);
-                        g_update.NEWS_IMG_SHOWTYPE = Utils.CIntDef(ddlType.SelectedValue);
+                        g_update.NEWS_IMG_SHOWTYPE = Utils.CIntDef(ddlType.SelectedItem.Value);
                         g_update.NEWS_ID = m_news_id;
                         g_update.NEWS_IMG_IMAGE1 = hpf.FileName;
                         DB.ESHOP_NEWS_IMAGEs.InsertOnSubmit(g_update);

@@ -91,7 +91,7 @@
                                                 </a>
                                             </td>
                                             <td class="center">
-                                                <asp:LinkButton ID="lnkbtnDel" runat="server" CommandName="Delete" OnClientClick="return confirm('Bạn có chắc chắn xóa?');">
+                                                <asp:LinkButton ID="lnkbtnDel" runat="server" CommandName="Delete" CausesValidation="false" OnClientClick="return confirm('Bạn có chắc chắn xóa?');">
                                                     <img src="../images/icon_delete.png" title="Xóa" border="0">
                                                 </asp:LinkButton>
                                             </td>
