@@ -29,8 +29,7 @@
         </asp:Repeater>
     </p>
     <p class="lang-box">
-        <a href="/"><img src="/Resources/images/vi.png"></a>
+        <a href="/trang-chu.html"><img src="/Resources/images/vi.png"></a>
         <a href="/home.html"><img src="/Resources/images/en.png"></a>
-    </p>
-    </div>
+    </p>    </div>
 </div>

@@ -39,7 +39,7 @@ namespace kibitravel.web.Usercontrols
             string str = "";
             if (Utils.CIntDef(banner_field) == 1)
             {
-                str = fun.Getlogo(Banner_type, banner_field, Banner_ID, Banner_Image, "/");
+                str = fun.Getlogo(Banner_type, banner_field, Banner_ID, Banner_Image, "/trang-chu.html");
             }
             return str;
         }
