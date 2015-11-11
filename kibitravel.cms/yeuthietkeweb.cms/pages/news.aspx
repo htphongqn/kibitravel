@@ -186,15 +186,15 @@
                     </div>
                     <div class="form-group">
                         <label>Hiển thị trang chủ</label>
-                        <asp:RadioButtonList ID="rblNewsPeriod" runat="server" RepeatColumns="4" 
+                        <asp:RadioButtonList ID="rblNewsPeriod" runat="server" RepeatColumns="3" 
                             RepeatDirection="Horizontal">
+                            <asp:ListItem Selected="True" Text="Khác" Value="10"></asp:ListItem> 
                             <asp:ListItem Text="Nổi bật" Value="0"></asp:ListItem>   
-                            <asp:ListItem Text="Download" Value="1"></asp:ListItem>   
+                            <%--<asp:ListItem Text="Download" Value="1"></asp:ListItem> --%>  
                             <asp:ListItem Text="Client Say" Value="2"></asp:ListItem> 
                             <asp:ListItem Text="Hottour" Value="3"></asp:ListItem>
                             <asp:ListItem Text="Tour phổ biến" Value="4"></asp:ListItem>
-                            <asp:ListItem Text="Tour khác" Value="5"></asp:ListItem>
-                            <asp:ListItem Selected="True" Text="Khác" Value="10"></asp:ListItem>  
+                            <asp:ListItem Text="Tour khác" Value="5"></asp:ListItem> 
                         </asp:RadioButtonList>
                     </div>
                     <div class="form-group">
