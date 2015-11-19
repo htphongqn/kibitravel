@@ -23,6 +23,7 @@
     max-width: 100%;
     overflow: hidden;
     position: relative;
+    max-height: 300px;
 }
 .lSSlideWrapper > .lightSlider:after {
     clear: both;

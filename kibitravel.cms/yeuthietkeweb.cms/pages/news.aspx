@@ -94,6 +94,10 @@
                             onkeyup="ParseText(this);" onblur="ParseText(this);" />
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Vui lòng nhập tên tiêu đề"
                             Text="Vui lòng nhập tiêu đề" ControlToValidate="txtTitle" CssClass="errormes"></asp:RequiredFieldValidator>
+                    </div>
+                    <div class="form-group">
+                        <label>Tiêu đề nhỏ phải (nếu có)</label>
+                        <input type="text" name="txtTitle1" id="txtTitle1" runat="server" class="form-control"/>
                     </div>                                
                     <div class="form-group">
                         <label>Mô tả</label>

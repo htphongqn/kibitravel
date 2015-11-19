@@ -28,7 +28,7 @@ namespace Controller
                             where b.NEWS_PERIOD == period 
                             && b.NEWS_TYPE == type
                             && (c.CAT_LANGUAGE == lang || lang == -1)
-                            select new { b.NEWS_ID, b.NEWS_TITLE, b.NEWS_IMAGE3, b.NEWS_PRICE1, b.NEWS_DESC, b.NEWS_SEO_URL, b.NEWS_URL, b.NEWS_ORDER_PERIOD, b.NEWS_PUBLISHDATE, c.CAT_SEO_URL, b.NEWS_FIELD2 }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER_PERIOD).Take(limit).ToList();
+                            select new { b.NEWS_ID, b.NEWS_TITLE, b.NEWS_IMAGE3, b.NEWS_PRICE1, b.NEWS_DESC, b.NEWS_SEO_URL, b.NEWS_URL, b.NEWS_ORDER_PERIOD, b.NEWS_PUBLISHDATE, c.CAT_SEO_URL, b.NEWS_FIELD2, b.NEWS_FIELD3 }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER_PERIOD).Take(limit).ToList();
                 foreach (var i in list)
                 {
                     Pro_details_entity pro = new Pro_details_entity();
@@ -43,6 +43,7 @@ namespace Controller
                     pro.NEWS_PUBLISHDATE = Utils.CDateDef(i.NEWS_PUBLISHDATE, DateTime.Now);
                     pro.CAT_SEO_URL = i.CAT_SEO_URL;
                     pro.NEWS_FIELD2 = i.NEWS_FIELD2;
+                    pro.NEWS_FIELD3 = i.NEWS_FIELD3;
                     l.Add(pro);
                 }
                

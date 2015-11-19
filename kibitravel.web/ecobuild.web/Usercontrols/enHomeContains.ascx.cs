@@ -113,6 +113,13 @@ namespace kibitravel.web.Usercontrols
         {
             return fun.Getprice(price);
         }
+        public string GetStringLimit(object str)
+        {
+            string _str = Utils.CStrDef(str);
+            if (_str.Length > 200)
+                return _str.Substring(0, 200) + "...";
+            else return _str;
+        }
         #endregion
     }
 }

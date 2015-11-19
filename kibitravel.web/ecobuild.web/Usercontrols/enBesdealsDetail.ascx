@@ -12,8 +12,8 @@
                 <asp:Repeater ID="Rptinkhac" runat="server">
                     <ItemTemplate>
                         <li> 
-                            <h2 class="h2-link-bestdeals" title="<%# Eval("NEWS_TITLE") %>" href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>'><a><%# Eval("NEWS_TITLE") %></a></h2>
-                            <figure class="img-link"><a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>'><img src='<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%>'/></a></figure>  
+                            <h2 class="h2-link-bestdeals" title="<%# Eval("NEWS_TITLE") %>" href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>' style="text-align:right;"><a><%# Eval("NEWS_TITLE") %></a></h2>
+                            <figure class="img-link"><a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>'><img src='<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%>' style="width:100% !important;"/></a></figure>  
                         </li>
                     </ItemTemplate>
                 </asp:Repeater>
@@ -78,7 +78,7 @@
                 <ul id="image-gallery-1" class="gallery list-unstyled cS-hidden">
                     <asp:Repeater ID="Rpalbumimg" runat="server">
                     <ItemTemplate>
-                        <li data-thumb="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>" /> </li>
+                        <li data-thumb="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>" style="min-width:525px;"/> </li>
                     </ItemTemplate>
                     </asp:Repeater>
                 </ul>

@@ -262,6 +262,7 @@ namespace yeuthietkeweb.cms.pages
                     iCate.Visible = false;
                     txtCode.Value = G_info.ToList()[0].n.NEWS_CODE;
                     txtTitle.Value = G_info.ToList()[0].n.NEWS_TITLE;
+                    txtTitle1.Value = G_info.ToList()[0].n.NEWS_FIELD3;
                     txtDesc.Value = G_info.ToList()[0].n.NEWS_DESC;
                     txtUrl.Value = G_info.ToList()[0].n.NEWS_URL;
                     ddlTarget.SelectedValue = G_info.ToList()[0].n.NEWS_TARGET;
@@ -437,6 +438,7 @@ namespace yeuthietkeweb.cms.pages
 
                         news_insert.NEWS_CODE = txtCode.Value;
                         news_insert.NEWS_TITLE = txtTitle.Value;
+                        news_insert.NEWS_FIELD3 = txtTitle1.Value;
                         news_insert.NEWS_DESC = txtDesc.Value;
                         news_insert.NEWS_URL = txtUrl.Value;
                         news_insert.NEWS_TARGET = ddlTarget.SelectedValue;
@@ -489,6 +491,7 @@ namespace yeuthietkeweb.cms.pages
                         {
                             c_update.ToList()[0].NEWS_CODE = txtCode.Value;
                             c_update.ToList()[0].NEWS_TITLE = txtTitle.Value;
+                            c_update.ToList()[0].NEWS_FIELD3 = txtTitle1.Value;
                             c_update.ToList()[0].NEWS_DESC = txtDesc.Value;
                             c_update.ToList()[0].NEWS_URL = txtUrl.Value;
                             c_update.ToList()[0].NEWS_TARGET = ddlTarget.SelectedValue;
@@ -588,6 +591,7 @@ namespace yeuthietkeweb.cms.pages
 
                             news_insert.NEWS_CODE = txtCode.Value;
                             news_insert.NEWS_TITLE = txtTitle.Value;
+                            news_insert.NEWS_FIELD3 = txtTitle1.Value;
                             news_insert.NEWS_DESC = txtDesc.Value;
                             news_insert.NEWS_URL = txtUrl.Value;
                             news_insert.NEWS_TARGET = ddlTarget.SelectedValue;
@@ -648,6 +652,7 @@ namespace yeuthietkeweb.cms.pages
                             {
                                 c_update.ToList()[0].NEWS_CODE = txtCode.Value;
                                 c_update.ToList()[0].NEWS_TITLE = txtTitle.Value;
+                                c_update.ToList()[0].NEWS_FIELD3 = txtTitle1.Value;
                                 c_update.ToList()[0].NEWS_DESC = txtDesc.Value;
                                 c_update.ToList()[0].NEWS_URL = txtUrl.Value;
                                 c_update.ToList()[0].NEWS_TARGET = ddlTarget.SelectedValue;
