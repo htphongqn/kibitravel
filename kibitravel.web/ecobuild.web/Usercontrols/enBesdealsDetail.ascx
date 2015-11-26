@@ -3,6 +3,8 @@
 <%@ Register src="enPath.ascx" tagname="Path" tagprefix="uc1" %>
 <uc1:Path ID="Path1" runat="server" />
 <section class="content">
+    <link rel="stylesheet" href="/Resources/styles/flexslider.css" type="text/css" media="screen" />
+    <script src="/Resources/scripts/modernizr.js"></script>
     <div class="iblock detail-destination">
     <div class="col3 col-nav">
         <h2 class="tt-detail-2"><asp:Label ID="lblTitleCat" runat="server"></asp:Label></h2>
@@ -55,7 +57,7 @@
         });
 </script>
     <div class="col9" style="padding:0">
-        <h1 class="tt-detail tt-detail-deals"><asp:Label ID="lbNewsTitle" runat="server" /> <a class="btn-order" href="/booktour.html">Book Now</a></h1>
+        <h1 class="tt-detail tt-detail-deals"><asp:Label ID="lbNewsTitle" runat="server" /> <a class="btn-order" href="/en/booktour.html">Book Now</a></h1>
         <script type="text/javascript" src="/Resources/scripts/tabcontent.js"></script>
         <link rel="stylesheet" type="text/css" href="/Resources/styles/tabcontent3.css"/>
         <ul class="tabs" data-persist="true">
@@ -73,19 +75,31 @@
             </div>
             </div>
             <div class="col8" style="padding-right:0; text-align:right">
-            <div class="slide-detail-sc" style="background:#000; padding:5px">
-                <div class="clearfix">
-                <ul id="image-gallery-1" class="gallery list-unstyled cS-hidden">
-                    <asp:Repeater ID="Rpalbumimg" runat="server">
-                    <ItemTemplate>
-                        <li data-thumb="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>" style="min-width:525px;"/> </li>
-                    </ItemTemplate>
-                    </asp:Repeater>
-                </ul>
+
+            <div class="slider-fl">
+                <section class="sliderflex">
+                <div id="sliderflex" class="flexslider">
+                    <ul class="slides">
+                        <asp:Repeater ID="Rpalbumimg" runat="server">
+                            <ItemTemplate>
+                                <li> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"/> </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
                 </div>
+                <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                        <asp:Repeater ID="RpalbumimgS" runat="server">
+                            <ItemTemplate>
+                                <li> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"/> </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                </div>
+                </section>
             </div>
-            <article class="txt-destination"><asp:Label ID="lblDesc" runat="server"></asp:Label><br />
-            </article>
+
+            <article class="txt-destination"><asp:Label ID="lblDesc" runat="server"></asp:Label><br /></article>
             </div>
             <!--end--> 
         </div>
@@ -99,17 +113,28 @@
                 </div>
             </div>
             <div class="col8" style="padding-right:0; text-align:right">
-                <div class="slide-detail-sc" style="background:#000; padding:5px">
-                <div class="clearfix">
-                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                    <asp:Repeater ID="Rpalbumimg1" runat="server">
-                    <ItemTemplate>
-                        <li data-thumb="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>" /> </li>
-                    </ItemTemplate>
-                    </asp:Repeater>
+                <div class="slider-fl">
+                <section class="sliderflex">
+                <div id="sliderflex2" class="flexslider">
+                    <ul class="slides">
+                        <asp:Repeater ID="Rpalbumimg1" runat="server">
+                            <ItemTemplate>
+                                <li> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"/> </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </ul>
                 </div>
+                <div id="carousel2" class="flexslider">
+                    <ul class="slides">
+                        <asp:Repeater ID="RpalbumimgS1" runat="server">
+                            <ItemTemplate>
+                                <li> <img src="<%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMG_IMAGE1"))%>"/> </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
                 </div>
+                </section>
+            </div>
                 <article class="txt-destination"><asp:Label ID="lblDesc1" runat="server"></asp:Label><br />
                 </article>
             </div>
@@ -127,4 +152,53 @@
     </div>
     <div class="col9" style="padding:0"> </div>
     </div>
+    <script defer src="/Resources/scripts/jquery.flexslider.js"></script> 
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('#carousel2').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: true,
+                slideshow: true,
+                itemWidth: 90,
+                itemMargin: 5,
+                asNavFor: '#sliderflex2'
+            });
+
+            $('#sliderflex2 ').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: true,
+                slideshow: true,
+                sync: "#carousel2",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: true,
+                slideshow: true,
+                itemWidth: 90,
+                itemMargin: 5,
+                asNavFor: '#sliderflex'
+            });
+
+            $('#sliderflex ').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: true,
+                slideshow: true,
+                sync: "#carousel",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+
+        });
+      </script> 
+    <script src="/Resources/scripts/jquery.easing.js"></script> 
+    <script src="/Resources/scripts/jquery.mousewheel.js"></script>
 </section>

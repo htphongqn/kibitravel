@@ -22,7 +22,7 @@
 			});
 			</script>
       <article class="iblock detail-destination">
-        <h1 class="tt-detail"><asp:Label ID="lbNewsTitle" runat="server" /><a class="btn-order" href="/booktour.html">Book Now</a></h1>
+        <h1 class="tt-detail"><asp:Label ID="lbNewsTitle" runat="server" /><a class="btn-order" href="/en/booktour.html">Book Now</a></h1>
         <script type="text/javascript" src="/Resources/scripts/jssor.js"></script> 
         <script type="text/javascript" src="/Resources/scripts/jssor.slider.js"></script> 
         <script type="text/javascript" src="/Resources/scripts/jsor-js-2.js"></script>
@@ -73,7 +73,7 @@
               <li><a href="#view1"><asp:Literal ID="lbtab1" runat="server"></asp:Literal></a></li>
               <li><a href="#view2"><asp:Literal ID="lbtab2" runat="server"></asp:Literal></a></li>
               <li><a href="#view3"><asp:Literal ID="lbtab3" runat="server"></asp:Literal></a></li>
-               <a class="btn-order" href="/booktour.html">BOOK NOW</a>
+               <a class="btn-order" href="/en/booktour.html">BOOK NOW</a>
             </ul>
             <div class="wmn tabcontents ">
               <div id="view1"> 

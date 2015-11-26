@@ -94,6 +94,15 @@ namespace kibitravel.web.Usercontrols {
         protected global::System.Web.UI.WebControls.Repeater Rpalbumimg;
         
         /// <summary>
+        /// RpalbumimgS control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RpalbumimgS;
+        
+        /// <summary>
         /// lblDesc control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace kibitravel.web.Usercontrols {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater Rpalbumimg1;
+        
+        /// <summary>
+        /// RpalbumimgS1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RpalbumimgS1;
         
         /// <summary>
         /// lblDesc1 control.

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/Default.Master" AutoEventWireup="true" CodeBehind="BookTour-en.aspx.cs" Inherits="kibitravel.web.BookTour_en" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/enDefault.Master" AutoEventWireup="true" CodeBehind="BookTour-en.aspx.cs" Inherits="kibitravel.web.BookTour_en" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:Literal ID="ltrFavicon" runat="server" EnableViewState="false"></asp:Literal>
 </asp:Content>
@@ -15,23 +15,23 @@
         <div class="frm-book-tour">
         <p class="text-bt">Complete the reservation form below to redeem your voucher and book your tour. An email will be sent confirming your details submitted on your form and we will contact you if any additional information is required. By submitting this form you have read and agree to the Terms & Conditions. Thank you for making a reservation with Kibitravel!</p>
           <p> Name
-            <input type="text" class="txt-bt" id="Txtname" runat="server"/>
+            <input type="text" class="txt-bt" id="Txtname" runat="server" placeholder="Please enter your full name"/>
             <asp:RequiredFieldValidator ID="rfvHoVaTen" runat="server" ErrorMessage="Please enter your full name"
                 ControlToValidate="Txtname" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
           </p>
           <p> Phone
-            <input type="text" class="txt-bt" id="txtPhone" placeholder="Số điện thoại" runat="server"/>
+            <input type="text" class="txt-bt" id="txtPhone" placeholder="Please enter your phone number" runat="server"/>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter your phone number"
                 ControlToValidate="txtPhone" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
           </p>
           <p> Email
-            <input type="text" class="txt-bt" id="txtEmail" placeholder="Địa chỉ email" runat="server"/>
+            <input type="text" class="txt-bt" id="txtEmail" runat="server"/>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
                 ErrorMessage="The email address is not valid or in the wrong format" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="None"
                 ForeColor="Red" ValidationGroup="G40"></asp:RegularExpressionValidator>
           </p>
           <p>Message
-            <textarea class="txt-bt" id="txtContent" placeholder="Message" runat="server"></textarea>
+            <textarea class="txt-bt" id="txtContent" placeholder="Please enter your message" runat="server"></textarea>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please enter your message"
                 ControlToValidate="txtContent" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
           </p>

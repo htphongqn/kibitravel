@@ -52,7 +52,9 @@ namespace kibitravel.web.Usercontrols
                     lbNewsTitle.Text = list[0].NEWS_TITLE;
                     lblDesc.Text = lblDesc1.Text = list[0].NEWS_DESC;
                     Load_albumimg(list[0].NEWS_ID, ref Rpalbumimg,1);
+                    Load_albumimg(list[0].NEWS_ID, ref RpalbumimgS, 1);
                     Load_albumimg(list[0].NEWS_ID, ref Rpalbumimg1, 2);
+                    Load_albumimg(list[0].NEWS_ID, ref RpalbumimgS1, 2);
                 }
             }
             catch (Exception)
