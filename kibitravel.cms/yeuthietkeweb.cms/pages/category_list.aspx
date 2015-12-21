@@ -85,6 +85,22 @@
                                             CausesValidation="false" OnClick="lbtDelete_Click">Xóa</asp:LinkButton>
                                     </td>
                                 </tr>
+                                <tr>                                
+                                    <td>
+                                        <asp:DropDownList ID="ddlLang" runat="server" AutoPostBack="True" 
+                                            CssClass="form-control" onselectedindexchanged="ddlLang_SelectedIndexChanged">
+                                            <asp:ListItem Value="-1">---- Ngôn ngữ ----</asp:ListItem>
+                                            <asp:ListItem Text="Tiếng việt" Value="1"></asp:ListItem>
+                                            <asp:ListItem Text="Tiếng anh" Value="2"></asp:ListItem>
+                                        </asp:DropDownList>
+                                    </td>
+                                    <td>                                        
+                                        
+                                    </td>
+                                    <td>                                        
+                                        
+                                    </td>
+                                </tr>
                             </table>
                         </div>
                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">

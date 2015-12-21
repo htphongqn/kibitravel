@@ -146,7 +146,7 @@ header { background: rgba(0,0,0,0.7); height: 90px; z-index: 2; position: absolu
 .slt-blog { height: 25px; border: solid 0px #929497; background: #F7F7F7; width: 160px; margin-bottom: 10px; outline: none; box-shadow: inset 1px 1px #929497 }
 .btn-search-blog { padding: 2px 15px; }
 .detail-blog { text-align: center }
-.inner-detail-blog { width: 80%; margin-left: auto; margin-right: auto; display: inline-block; text-align: left; position: relative; padding-bottom: 10% }
+.inner-detail-blog { width: 100%; margin-left: auto; margin-right: auto; display: inline-block; text-align: left; position: relative; padding-bottom: 10% }
 .img-detail-bolg img { max-width: 70%; }
 .img-detail-bolg { background: #333233; margin-bottom: 10px; width: 100%; display: inline-block; text-align: center; }
 .inner-detail-blog p { margin: 10px 0; text-align: justify }
@@ -189,7 +189,7 @@ header { background: rgba(0,0,0,0.7); height: 90px; z-index: 2; position: absolu
 .tt-dt { width: 100%; text-align: left; color: #929497; font-size: 12px; text-transform: uppercase; padding-left: 5px; background: url(../images/bg-dt-1.png)top right no-repeat; background-size: auto; padding: 5px; font-family: inherit }
 .over-dt { display: inline-block; vertical-align: top; width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none; background: #fff; border: solid 1px #ccc; }
 .inner-dt:hover .over-dt { display: block }
-.tt-over-dt { width: 100%; text-align: left; color: #fff; font-size: 1.1em; text-transform: uppercase; padding: 5px; background: #046CAA; background: #046CAA url(../images/bg-dt-2.png)top right no-repeat; }
+.tt-over-dt { width: 100%; text-align: left; color: #fff; font-size: 1.1em; text-transform: uppercase; padding: 5px; background: #046CAA; background: #046CAA url(../images/bg-dt-2.png)top right no-repeat; padding-right: 5%;}
 .txt-dt { font-style: italic; text-align: justify; padding: 10px; color: #333 }
 .detail-dt { width: 100%; display: inline-block; padding: 10px; text-align: right; font-size: 18px }
 .detail-dt i { font-size: 25px }
@@ -202,7 +202,10 @@ header { background: rgba(0,0,0,0.7); height: 90px; z-index: 2; position: absolu
 .txt-destination { padding-top: 20px; border-top: solid 1px #3389D7; padding-bottom: 20px }
 .date-from-2 { margin: 10px 0; line-height: 14px; }
 .list-destinations-tour .inner-dt { position: relative }
-.list-destinations-tour .tt-dt { position: absolute; background: rgba(0,0,0,0.6) url(../images/bg_daytour.png) 115% no-repeat; bottom: 0; left: 0; color: #fff; font-weight: normal; text-transform: none }
+.list-destinations-tour .tt-dt { position: absolute; background: rgba(0,0,0,0.6) url(../images/bg_daytour.png) 115% no-repeat; bottom: 0; left: 0; color: #fff; font-weight: normal; text-transform: none ; padding-right: 25%;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;}
 .list-destinations-tour .tt-dt span { float: right; padding-right: 9px; position: absolute; right: 0; bottom: 5px; }
 .list-destinations-tour .img-dt img { margin-bottom: 0 }
 /*navy*/
@@ -323,7 +326,7 @@ header { background: rgba(0,0,0,1); height: auto; z-index: 2; position: relative
 .list-destinations-tour .destinations-it { width: 100% }
 .item-bestdeals { width: 100% }
 }
-.c-frm { position: fixed; background: rgba(0, 0, 0, 0.6); z-index: 99999; width: 100%; height: 100%; }
+.c-frm { position: fixed; z-index: 99999; width: 100%; height: 100%; top:0; left:0 }
 .close-btn { position: absolute; top: -30px; right: -30px; font-size: 30px; color: #fff; z-index: 99999999; cursor: pointer; font-size: 19px; border-radius: 50%; border: 2px #fff solid; padding: 3px 5px }
 .frm-booktour { position: relative }
 .frm-booktour { width: 550px; margin: 70px auto 30px; box-shadow: 0 0 18px rgba(0, 0, 0, 0.2); background: #fff; text-align: left; padding-bottom: 30px; }
@@ -347,3 +350,4 @@ header { background: rgba(0,0,0,1); height: auto; z-index: 2; position: relative
 .ct-cl .auth p { font-weight: bold }
 .slide-client { width: 100%; display: inline-block }
 .ct-cl .caret-ht { border-color: #E5E5E5; width: 0; height: 0; width: 0px; height: 0px; border-style: solid; border-width: 18px 18px 0 0; float: right; border-right-color: transparent; clear: both; }
+.c-frm .container{ background: transparent !important; width:100% !important; margin:0 !important}

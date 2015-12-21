@@ -8,11 +8,11 @@
 <section class="content">
       <div class="iblock list-media-blog">
         <p class="tt-mt"> <span class="mt-s"><b><asp:Label ID="lbNewsTitle" runat="server"></asp:Label></b></span> </p>
-        <p class="search-blog" >
-          <button class="btn-bt btn-search-blog" >
-          <a class="booktour-link"  >Tell us your stories</a>
-          </button>
-        </p>
+        <div class="search-blog">
+          <div class="btn-bt btn-search-blog booktour-link">
+          <a class="booktour-link">Tell us your stories</a>
+          </div>
+        </div>
         <asp:Repeater ID="rptlistnews" runat="server">
             <ItemTemplate>            
                 <article class="media-blog">

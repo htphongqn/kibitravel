@@ -91,8 +91,8 @@
                                             name="toggleSign">
                                     </th>
                                     <th>Tên</th>
-                                    <th>Tiêu đề</th>
-                                    <th>Địa chỉ</th>
+                                    <%--<th>Tiêu đề</th>
+                                    <th>Địa chỉ</th>--%>
                                     <th>Email</th>
                                     <th>Phone</th>
                                     <th>Nội dung</th>
@@ -112,20 +112,20 @@
                                                     border-right-style: none; border-left-style: none; border-bottom-style: none">
                                             </td>
                                             <td>
-                                                <a href='<%# getLink(DataBinder.Eval(Container.DataItem, "CONTACT_ID")) %>'>
+                                                <%--<a href='<%# getLink(DataBinder.Eval(Container.DataItem, "CONTACT_ID")) %>'>--%>
                                                     <%# DataBinder.Eval(Container.DataItem, "CONTACT_NAME")%>
-                                                </a>
+                                                <%--</a>--%>
                                             </td>
-                                            <td>
+                                            <%--<td>
                                                 <%# DataBinder.Eval(Container.DataItem, "CONTACT_TITLE")%>
                                             </td>
                                             <td>
                                                 <%# DataBinder.Eval(Container.DataItem, "CONTACT_ADDRESS")%>
-                                            </td>
+                                            </td>--%>
                                             <td>
-                                                <a href='<%# getLink(DataBinder.Eval(Container.DataItem, "CONTACT_ID")) %>'>
+                                                <%--<a href='<%# getLink(DataBinder.Eval(Container.DataItem, "CONTACT_ID")) %>'>--%>
                                                     <%# DataBinder.Eval(Container.DataItem, "CONTACT_EMAIL")%>
-                                                </a>
+                                                <%--</a>--%>
                                             </td>
                                             <td>
                                                 <%# DataBinder.Eval(Container.DataItem, "CONTACT_PHONE")%>
@@ -170,7 +170,7 @@
                   },
                   {
                       bSortable: false,
-                      aTargets: [8]
+                      aTargets: [6]
                   }
                 ]
              });

@@ -3,7 +3,7 @@
 
 <uc1:Path ID="Path1" runat="server" />
 <section class="content">
-      <div class="iblock most-tour list-deals">
+      <div id="div1" runat="server" class="iblock most-tour list-deals">
         <p class="tt-mt"> <span class="mt-s"><b><asp:Label ID="lbCateName" runat="server"></asp:Label></b></span> </p>
        <asp:Repeater ID="rptmenubestdeal" runat="server">
             <ItemTemplate>
@@ -18,4 +18,19 @@
             </ItemTemplate>
         </asp:Repeater>        
       </div>
+
+        <div id="div2" runat="server">
+         <p class="tt-mt"> <span class="mt-s"><b><asp:Label ID="lbCateName2" runat="server"></asp:Label></b></span> </p>
+          <div class="iblock bestdeals-list">        
+            <asp:Repeater ID="rptListBestdeal" runat="server">
+                <ItemTemplate>
+                    <article class="item-bestdeals" >
+                      <figure class="img-item-bestdeals"> <a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>"><img src="<%# GetImageCat(Eval("CAT_ID"),Eval("CAT_IMAGE1"))%>"  style="width:100% !important; min-width:350px;" /></a> </figure>
+                      <h2 class="des-item-bestdeals"> <%#Eval("cat_name")%></h2>
+                    </article>
+                </ItemTemplate>
+            </asp:Repeater>      
+          </div>
+        </div>
     </section>
+

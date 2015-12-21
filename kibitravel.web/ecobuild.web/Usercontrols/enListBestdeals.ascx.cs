@@ -30,7 +30,10 @@ namespace kibitravel.web.Usercontrols
             _typecat = lnews.getCatType(_cat_seo_url);
             if (!IsPostBack)
             {
-                Loadlist(rptListBestdeal);
+                if(Utils.CIntDef(Session["Cat_type"]) == 1)
+                    Loadlist(rptListBestdeal);
+                else
+                    Loadlist(rptListBestdeal2);
                 Loadtitle();
             }
         }

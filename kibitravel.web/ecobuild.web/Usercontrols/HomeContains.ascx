@@ -28,8 +28,13 @@
                 <article class="tour-mt">
                 <p class="more-mt"> <span class="more-s"><b><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">See more</a></b></span> <i class="caret-mt"></i></p>
                 <figure class="img-mt"> <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" style="max-height:210px;"/></a>
-                <div class="des-mt">
-                    <p> <%# Eval("NEWS_TITLE")%><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" class="price-mt"><i class="fa fa-tag"></i> <%# Eval("NEWS_FIELD3")%></a> </p>
+                <div class="des-mt list-destinations-tour">
+                    <p class="tt-dt"> 
+                    <%# Eval("NEWS_TITLE")%>
+                    <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" class="price-mt">
+                    <%--<i class="fa fa-tag"></i> --%>
+                    <span style="text-align:right;font-size:12px;color:White"><%# Eval("NEWS_FIELD3")%></span></a> 
+                    </p>
                 </div>
                 </figure>
                 <p class="day-of-mt"><i class="fa fa-clock-o"></i> <%# GetStringLimit(Eval("NEWS_DESC"))%></p>
@@ -50,8 +55,13 @@
                 <article class="tour-mt">
                 <p class="more-mt"> <span class="more-s"><b><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">See more</a></b></span> <i class="caret-mt"></i></p>
                 <figure class="img-mt"> <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" style="max-height:210px;"/></a>
-                <div class="des-mt">
-                    <p> <%# Eval("NEWS_TITLE")%><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" class="price-mt"><i class="fa fa-tag"></i> <%# Eval("NEWS_FIELD3")%></a> </p>
+                <div class="des-mt list-destinations-tour">
+                    <p class="tt-dt"> 
+                    <%# Eval("NEWS_TITLE")%>
+                    <a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" class="price-mt">
+                    <%--<i class="fa fa-tag"></i> --%>
+                    <span style="text-align:right;font-size:12px;color:White"><%# Eval("NEWS_FIELD3")%></span></a> 
+                    </p>
                 </div>
                 </figure>
                 <p class="day-of-mt"><i class="fa fa-clock-o"></i> <%# GetStringLimit(Eval("NEWS_DESC"))%></p>

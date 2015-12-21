@@ -69,7 +69,7 @@
         <div id="view1"> 
             <!--begin-->
             <div class="col4">
-            <p class="brand-s"><img src="/Resources/Images/logo-s.png" /></p>
+            <%--<p class="brand-s"><img src="/Resources/Images/logo-s.png" /></p>--%>
             <div class="box-hl-dt">
                 <asp:Literal ID="liHtml" runat="server"></asp:Literal>
             </div>
@@ -107,7 +107,7 @@
         <div id="view2" >
             <!--begin-->
             <div class="col4">
-                <p class="brand-s"><img src="/Resources/Images/logo-s.png" /></p>
+                <%--<p class="brand-s"><img src="/Resources/Images/logo-s.png" /></p>--%>
                 <div class="box-hl-dt">
                     <asp:Literal ID="liHtmlItinerary" runat="server"></asp:Literal>
                 </div>

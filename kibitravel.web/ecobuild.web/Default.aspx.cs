@@ -50,6 +50,18 @@ namespace kibitravel.web
         {
             Bind_meta_tags_index();
         }
-        
+
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            String hostdet = Request.ServerVariables["HTTP_HOST"].ToString();
+            if (hostdet.ToLower() == "kibitravel.com")
+            {
+                Page.MasterPageFile = "~/Masterpages/enIndex.Master";
+            }
+            else
+            {
+                Page.MasterPageFile = "~/Masterpages/Index.Master";
+            }
+        }
     }
 }

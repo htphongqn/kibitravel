@@ -18,6 +18,7 @@ namespace kibitravel.web.Usercontrols
         int _Catid = 0;
         string _cat_seo_url = string.Empty;
         #endregion
+        int rank = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             _Catid = Utils.CIntDef(Session["Cat_id"]);
@@ -34,7 +35,8 @@ namespace kibitravel.web.Usercontrols
             var item = per.GetCatalogryByID(_Catid);
             if (item != null)
             {
-                lbCateName.Text = item.CAT_NAME;
+                lbCateName.Text = lbCateName2.Text = item.CAT_NAME;
+                rank = Utils.CIntDef(item.CAT_RANK);
             }
         }
         
@@ -43,9 +45,22 @@ namespace kibitravel.web.Usercontrols
         {
             try
             {
-                var list = per.Menu2(_Catid);
-                rptmenubestdeal.DataSource = list;
-                rptmenubestdeal.DataBind();
+                if (rank > 1)
+                {
+                    var list = per.Menu2(_Catid);
+                    rptListBestdeal.DataSource = list;
+                    rptListBestdeal.DataBind();
+                    div1.Visible = false;
+                    div2.Visible = true;
+                }
+                else
+                {
+                    var list = per.Menu2(_Catid);
+                    rptmenubestdeal.DataSource = list;
+                    rptmenubestdeal.DataBind();
+                    div1.Visible = true;
+                    div2.Visible = false;
+                }
             }
             catch (Exception ex)
             {

@@ -58,7 +58,7 @@ namespace kibitravel.web
                     case 3:
                         getsession.LoadCatInfo(_catSeoUrl);
                         Bind_meta_tags_cat();
-                        if (Utils.CIntDef(Session["Cat_type"]) == 1)
+                        if (Utils.CIntDef(Session["Cat_type"]) == 1 || Utils.CIntDef(Session["Cat_type"]) == 5)
                         {
                             if (Utils.CIntDef(Session["Cat_showitem"]) == 1)
                             {

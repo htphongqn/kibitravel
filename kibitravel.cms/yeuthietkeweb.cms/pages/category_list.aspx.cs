@@ -68,9 +68,11 @@ namespace yeuthietkeweb.cms.pages
             try
             {
                 //string keyword = CpanelUtils.ClearUnicode(txtKeyword.Value);
-
+                int lang = Utils.CIntDef(ddlLang.SelectedValue);
                 var AllList = (from g in DB.ESHOP_CATEGORies
-                               where g.CAT_RANK > 0
+                               where 
+                               (g.CAT_LANGUAGE == lang || lang == -1)
+                               && g.CAT_RANK > 0
                                select new
                                {
                                    g.CAT_ID,
@@ -101,16 +103,16 @@ namespace yeuthietkeweb.cms.pages
                     DataTable CatTable = ds.Tables[0];
 
                     DataUtil.TransformTableWithSpace(ref CatTable, dsCat.Tables[0], relCat, null);
-                    if (IsPostBack)
-                    {
-                        rptList.DataSource = AllList;
-                        rptList.DataBind();
-                    }
-                    else
-                    {
+                    //if (IsPostBack)
+                    //{
+                    //    rptList.DataSource = AllList;
+                    //    rptList.DataBind();
+                    //}
+                    //else
+                    //{
                         rptList.DataSource = dsCat.Tables[0];
                         rptList.DataBind();
-                    }
+                    //}
                 }
 
             }
@@ -261,6 +263,11 @@ namespace yeuthietkeweb.cms.pages
                 DB.SubmitChanges();
                 SearchResult();
             }
+        }
+
+        protected void ddlLang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SearchResult();
         }
     }
 }

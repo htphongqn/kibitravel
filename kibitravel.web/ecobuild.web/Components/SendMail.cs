@@ -125,7 +125,7 @@ namespace GiaNguyen.Components
                 clsVproErrorHandler.HandlerError(ex);
             }
         }
-        public void SendEmailSMTP_DCV(string strSubject, string toAddress, string ccAddress, string bccAddress, string body, bool isHtml, bool isSSL)
+        public void SendEmailSMTP_DCV(string strSubject, string toAddress, string ccAddress, string bccAddress, string body, bool isHtml, bool isSSL, string cc2Address = "")
         {
             try
             {
@@ -136,6 +136,10 @@ namespace GiaNguyen.Components
                     if (ccAddress != "")
                     {
                         mail.CC.Add(ccAddress);
+                    }
+                    if (cc2Address != "")
+                    {
+                        mail.CC.Add(cc2Address);
                     }
                     if (bccAddress != "")
                     {

@@ -47,6 +47,12 @@ namespace Controller
             var item = db.ESHOP_CATEGORies.FirstOrDefault(n => n.CAT_ID == id);
             return item;
         }
+        public IQueryable<ESHOP_CATEGORy> GetListCatalogryByID(object catid)
+        {
+            int id = Utils.CIntDef(catid);
+            var item = db.ESHOP_CATEGORies.Where(n => n.CAT_ID == id);
+            return item;
+        }
         //Active menu
         #region Active menu
         public string Get_Cat_Seo_Url(string _seoUrl)

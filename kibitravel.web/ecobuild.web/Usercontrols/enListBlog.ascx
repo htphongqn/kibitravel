@@ -2,17 +2,17 @@
 
 <%@ Register src="enPath.ascx" tagname="Path" tagprefix="uc1" %>
 
-<%@ Register src="BookTour.ascx" tagname="BookTour" tagprefix="uc2" %>
-<uc2:BookTour ID="BookTour1" runat="server" />
+<%@ Register src="~/Usercontrols/enBookTour.ascx" tagname="BookTour" tagprefix="uc2" %>
+<uc2:BookTour ID="BookTour2" runat="server" />
 <uc1:Path ID="Path1" runat="server" />
 <section class="content">
       <div class="iblock list-media-blog">
         <p class="tt-mt"> <span class="mt-s"><b><asp:Label ID="lbNewsTitle" runat="server"></asp:Label></b></span> </p>
-        <p class="search-blog" >
-          <button class="btn-bt btn-search-blog" >
-          <a class="booktour-link"  >Tell us your stories</a>
-          </button>
-        </p>
+        <div class="search-blog">
+          <div class="btn-bt btn-search-blog booktour-link">
+          <a class="booktour-link">Tell us your stories</a>
+          </div>
+        </div>
         <asp:Repeater ID="rptlistnews" runat="server">
             <ItemTemplate>            
                 <article class="media-blog">

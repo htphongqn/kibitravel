@@ -27,7 +27,7 @@
     <link href="../css/css.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript">
             $(function () {
-                setInterval(function () { $.get("../KeepAlive.ashx"); }, 1000 * 30); // 30s gửi request một lần
+                setInterval(function () { $.get("/KeepAlive.ashx"); }, 1000 * 30); // 30s gửi request một lần
             });
     </script>
 </head>

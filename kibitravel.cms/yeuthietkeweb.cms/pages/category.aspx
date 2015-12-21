@@ -153,12 +153,13 @@
                 </div>
                 <div class="form-group">
                     <label>Kiểu hiển thị</label>
-                    <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="5">
+                    <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="6">
                         <asp:ListItem Text="News" Value="0" Selected="True"></asp:ListItem>
                         <asp:ListItem Text="Bestdeal" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Distinations" Value="2"></asp:ListItem>
                         <asp:ListItem Text="Social Activities" Value="3"></asp:ListItem>
                         <asp:ListItem Text="Blog" Value="4"></asp:ListItem>
+                        <asp:ListItem Text="Transportation" Value="5"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
                 <div class="form-group">

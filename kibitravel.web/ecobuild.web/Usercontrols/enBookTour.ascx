@@ -24,41 +24,41 @@
     <div class="frm-booktour" > <span class="close-btn"><i class="fa fa-close"></i></span>
       <p class="tt-mt"> <span class="mt-s"><b>Tell us your stories</b></span> </p>
       <div class="frm-book-tour">
-        <p> Họ và tên
-            <input type="text" class="txt-bt" id="Txtname" placeholder="Họ và tên" runat="server"/>
-            <asp:RequiredFieldValidator ID="rfvHoVaTen" runat="server" ErrorMessage="Chưa nhập họ và tên!"
+        <p> Fullname
+            <input type="text" class="txt-bt" id="Txtname" placeholder="Fullname" runat="server"/>
+            <asp:RequiredFieldValidator ID="rfvHoVaTen" runat="server" ErrorMessage="Please, enter your Fullname!"
                 ControlToValidate="Txtname" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
           </p>
-          <p> Số điện thoại
-            <input type="text" class="txt-bt" id="txtPhone" placeholder="Số điện thoại" runat="server"/>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Chưa nhập số điện thoại!"
+          <p> Phone
+            <input type="text" class="txt-bt" id="txtPhone" placeholder="Phone" runat="server"/>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please, enter your Phone!"
                 ControlToValidate="txtPhone" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
           </p>
           <p> Email
-            <input type="text" class="txt-bt" id="txtEmail" placeholder="Địa chỉ email" runat="server"/>
+            <input type="text" class="txt-bt" id="txtEmail" placeholder="Email" runat="server"/>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
-                ErrorMessage="E-mail định dạng chưa đúng!" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="None"
+                ErrorMessage="Email format is not correct!" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="None"
                 ForeColor="Red" ValidationGroup="G40"></asp:RegularExpressionValidator>
           </p>
-          <p>Tin nhắn
+          <p>Message
             <textarea class="txt-bt" id="txtContent" placeholder="Message" runat="server"></textarea>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Chưa nhập nội dung!"
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please, enter your Message!"
                 ControlToValidate="txtContent" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
           </p>          
           <p class="cht">
-          Mã an toàn<br />
+          Captcha<br />
             <script type="text/javascript"  language="Javascript">
                 function Catpc() {
                     var img = document.getElementById("icp");
                     img.src = "/Pages/captchr.ashx?query=" + Math.random();
                 }
             </script>
-            <input type="text" class="txt-bt captcha" id="txtCapcha" placeholder="Nhập mã an toàn" runat="server"/>
-            <img id="icp" src='/Pages/captchr.ashx?query=<%= querys() %>' alt="Mã  an toàn" />
+            <input type="text" class="txt-bt captcha" id="txtCapcha" placeholder="Captcha" runat="server"/>
+            <img id="icp" src='/Pages/captchr.ashx?query=<%= querys() %>' alt="Captcha" />
             <a href="javascript:void(0)" onclick="javascript:Catpc();"><img title="Refresh" src="/Resources/images/reloadpaf.png" /></a>
           </p>
           <p>
-            <asp:LinkButton ID="Lbthanhtoan" runat="server" OnClick="Lbthanhtoan_Click" ValidationGroup="G40" CssClass="btn-bt">Gửi tin</asp:LinkButton>
+            <asp:LinkButton ID="Lbthanhtoan" runat="server" OnClick="Lbthanhtoan_Click" ValidationGroup="G40" CssClass="btn-bt">Sent</asp:LinkButton>
             <a class="btn-bt" href="javascript:void(0)" onclick="reset();" >Refresh</a>
           </p>
       </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/enIndex.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="kibitravel.web.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/Index.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="kibitravel.web.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:Literal ID="ltrFavicon" runat="server" EnableViewState="false"></asp:Literal>
 </asp:Content>

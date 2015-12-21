@@ -73,7 +73,6 @@ namespace kibitravel.web.Usercontrols
                 //else
                 //{
 
-                string _sEmailCC = string.Empty;
                 string _sEmail = txtEmail.Value;
                 string _sName = Txtname.Value;
                 string _add = "";
@@ -85,15 +84,19 @@ namespace kibitravel.web.Usercontrols
                 _mailBody += "<br/><br/><strong>Tên khách hàng</strong>: " + _sName;
                 _mailBody += "<br/><br/><strong>Số điện thoại</strong>: " + _phone;
                 _mailBody += "<br/><br/><strong>Email</strong>: " + _sEmail;
-                _mailBody += "<br/><br/><strong>Tiêu đề</strong>: " + _title;
+                //_mailBody += "<br/><br/><strong>Tiêu đề</strong>: " + _title;
                 _mailBody += "<br/><br/><strong>Nội dung</strong>: " + _content + "<br/><br/>";
                 string _sMailBody = string.Empty;
                 _sMailBody += "Cám ơn quý khách: " + _sName + " đã đặt liên hệ với chúng tôi. Đây là email được gửi từ website của " + System.Configuration.ConfigurationManager.AppSettings["EmailDisplayName"] + " <br>" + _mailBody;
-                _sEmailCC = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_TO : "";
-                sm.SendEmailSMTP("Thông báo: Bạn đã liên hệ thành công", _sEmail, _sEmailCC, "", _sMailBody, true, false);
+
+                string _sEmailTO = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_TO : "";
+                string _sEmailCC = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_CC : "";
+                string _sEmailBCC = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_BCC : "";
+
+                sm.SendEmailSMTP_DCV("Thông báo: Bạn đã liên hệ thành công", _sEmail, _sEmailTO, _sEmailBCC, _sMailBody, true, false, _sEmailCC);
                 string strScript = "<script>";
                 strScript += "alert(' Đã gửi thành công!');";
-                strScript += "window.location='/';";
+                strScript += "window.location='/trang-chu.html';";
                 strScript += "</script>";
                 Page.RegisterClientScriptBlock("strScript", strScript);
                 //}
