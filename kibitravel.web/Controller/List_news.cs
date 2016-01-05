@@ -23,7 +23,7 @@ namespace Controller
                             join b in db.ESHOP_NEWs on a.NEWS_ID equals b.NEWS_ID
                             join c in db.ESHOP_CATEGORies on a.CAT_ID equals c.CAT_ID
                             where (c.CAT_ID == _Catid || c.CAT_PARENT_PATH.Contains(_Catid.ToString()))
-                            select new { b.NEWS_ID, b.NEWS_TITLE, b.NEWS_IMAGE3, b.NEWS_DESC, b.NEWS_SEO_URL, b.NEWS_URL, b.NEWS_ORDER, b.NEWS_ORDER_PERIOD, b.NEWS_PUBLISHDATE, c.CAT_SEO_URL, b.NEWS_CODE }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER).ToList();
+                            select new { b.NEWS_ID, b.NEWS_TITLE, b.NEWS_IMAGE3, b.NEWS_DESC, b.NEWS_SEO_URL, b.NEWS_URL, b.NEWS_ORDER, b.NEWS_ORDER_PERIOD, b.NEWS_PUBLISHDATE, c.CAT_SEO_URL, b.NEWS_CODE, b.NEWS_FIELD2, b.NEWS_FIELD3 }).OrderByDescending(n => n.NEWS_PUBLISHDATE).OrderByDescending(n => n.NEWS_ORDER).ToList();
                 foreach (var i in list)
                 {
                     News_details_entity pro = new News_details_entity();
@@ -38,6 +38,7 @@ namespace Controller
                     pro.NEWS_ORDER_PERIOD = Utils.CIntDef(i.NEWS_ORDER_PERIOD);
                     pro.NEWS_PUBLISHDATE = Utils.CDateDef(i.NEWS_PUBLISHDATE, DateTime.Now);
                     pro.CAT_SEO_URL = i.CAT_SEO_URL;
+                    pro.NEWS_FIELD3 = i.NEWS_FIELD3;
                     l.Add(pro);
                 }
                 

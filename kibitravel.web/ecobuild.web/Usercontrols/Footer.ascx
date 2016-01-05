@@ -36,6 +36,6 @@
     </div>
     <!--/col ft-->
     <p class="paypal"><a href="https://www.paypal.com/vn/webapps/mpp/home"  target="_blank"><img src="/Resources/images/paypal.png" /></a> </p>
-    <p class="copyright"><span>© kibitravel 2015</span></p>
+    <p class="copyright"><span>© kibitravel 2013</span></p>
     </div>
 </footer>
