@@ -77,7 +77,7 @@ namespace yeuthietkeweb.cms.pages
                     str = "Yahoo";
                     break;
                 case 2:
-                    str = "Skype";
+                    str = "Whatsapp";
                     break;
                 case 3:
                     str = "Facebook";

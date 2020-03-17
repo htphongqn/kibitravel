@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace yeuthietkeweb.cms.pages {
-    
-    
-    public partial class online {
-        
+namespace yeuthietkeweb.cms.pages
+{
+
+
+    public partial class online
+    {
+
         /// <summary>
         /// txtDesc control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txtDesc;
-        
+
         /// <summary>
         /// RequiredFieldValidator4 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
-        
+
         /// <summary>
         /// txtName control.
         /// </summary>
@@ -38,16 +40,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtName;
-        
-        /// <summary>
-        /// txtSkype control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSkype;
-        
+
         /// <summary>
         /// rblType control.
         /// </summary>
@@ -56,7 +49,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rblType;
-        
+
         /// <summary>
         /// txtOrder control.
         /// </summary>
@@ -65,7 +58,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtOrder;
-        
+
         /// <summary>
         /// rblLanguage control.
         /// </summary>
@@ -74,7 +67,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rblLanguage;
-        
+
         /// <summary>
         /// lbMessage control.
         /// </summary>
@@ -83,7 +76,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lbMessage;
-        
+
         /// <summary>
         /// lbtSave control.
         /// </summary>
@@ -92,7 +85,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button lbtSave;
-        
+
         /// <summary>
         /// lbtSaveNew control.
         /// </summary>
@@ -101,7 +94,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtSaveNew;
-        
+
         /// <summary>
         /// lbtDelete control.
         /// </summary>
@@ -110,7 +103,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtDelete;
-        
+
         /// <summary>
         /// btnBack control.
         /// </summary>
@@ -119,7 +112,7 @@ namespace yeuthietkeweb.cms.pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnBack;
-        
+
         /// <summary>
         /// ValidationSummary1 control.
         /// </summary>

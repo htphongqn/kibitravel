@@ -75,7 +75,7 @@
                             <table id="tblFilter">
                                 <tr>
                                     <td>
-                                        <a href="category.aspx" class="btn btn-default btn-success btn-sm">Thêm mới</a>
+                                        <a href="online.aspx" class="btn btn-default btn-success btn-sm">Thêm mới</a>
                                     </td>
                                     <td>
                                         <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');" CssClass="btn btn-default btn-success btn-sm"

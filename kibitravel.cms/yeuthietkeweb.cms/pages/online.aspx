@@ -39,7 +39,7 @@
                                         <%--<asp:ListItem Value="7" Text="Mua hàng"></asp:ListItem>--%>
                                         <asp:ListItem Value="8" Text="Mail"></asp:ListItem>
                                         <%--<asp:ListItem Value="1" Text="Yahoo"></asp:ListItem> --%> 
-                                        <asp:ListItem Value="2" Text="Skype"></asp:ListItem>                     
+                                        <asp:ListItem Value="2" Text="Whatsapp"></asp:ListItem>                     
                                         <asp:ListItem Value="3" Text="Facebook"></asp:ListItem>
                                         <asp:ListItem Value="4" Text="Google+"></asp:ListItem>
                                         <asp:ListItem Value="5" Text="Twitter"></asp:ListItem>

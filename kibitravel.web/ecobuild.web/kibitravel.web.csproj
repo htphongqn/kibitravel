@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -14,6 +15,17 @@
     <AssemblyName>kibitravel.web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -110,10 +122,17 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Ajax-customer.aspx" />
+    <Content Include="Pages\BookTour-en.aspx" />
+    <Content Include="Pages\BookTour.aspx" />
     <Content Include="Pages\cart-result.aspx" />
+    <Content Include="Pages\Contact-en.aspx" />
     <Content Include="Pages\Contact.aspx" />
+    <Content Include="Pages\Home-en.aspx" />
+    <Content Include="Pages\Home-vi.aspx" />
     <Content Include="Pages\intro.aspx" />
+    <Content Include="Pages\Main-en.aspx" />
     <Content Include="Pages\Main.aspx" />
+    <Content Include="Pages\Print-en.aspx" />
     <Content Include="Pages\Print.aspx" />
     <Content Include="Resources\fonts\BebasNeueRegular.svg" />
     <Content Include="Resources\fonts\fontawesome-webfont.svg" />
@@ -164,6 +183,7 @@
     <Content Include="Resources\styles\animate.css" />
     <Content Include="Resources\styles\bxslider.css" />
     <Content Include="Resources\styles\css.css" />
+    <Content Include="Resources\styles\flexslider.css" />
     <Content Include="Resources\styles\font-awesome.min.css" />
     <Content Include="Resources\styles\fonts.css" />
     <Content Include="Resources\styles\jssor.css" />
@@ -173,14 +193,53 @@
     <Content Include="Resources\styles\styles.css" />
     <Content Include="Resources\styles\tabcontent.css" />
     <Content Include="Resources\styles\tabcontent3.css" />
+    <Content Include="Resources\styles\template.css" />
+    <Content Include="Resources\styles\tmp\styles.css" />
+    <Content Include="Resources\styles\toolbar.css" />
+    <Content Include="Usercontrols\BesdealsDetail.ascx" />
+    <Content Include="Usercontrols\Bestdeals.ascx" />
+    <Content Include="Usercontrols\BlogDetail.ascx" />
+    <Content Include="Usercontrols\BookTour.ascx" />
+    <Content Include="Usercontrols\DestinationDetail.ascx" />
+    <Content Include="Usercontrols\Destinations.ascx" />
+    <Content Include="Usercontrols\enBesdealsDetail.ascx" />
+    <Content Include="Usercontrols\enBestdeals.ascx" />
+    <Content Include="Usercontrols\enBlogDetail.ascx" />
+    <Content Include="Usercontrols\enBookTour.ascx" />
+    <Content Include="Usercontrols\enDestinationDetail.ascx" />
+    <Content Include="Usercontrols\enDestinations.ascx" />
+    <Content Include="Usercontrols\enFooter.ascx" />
+    <Content Include="Usercontrols\enGuide.ascx" />
+    <Content Include="Usercontrols\enHeader.ascx" />
+    <Content Include="Usercontrols\enHomeContains.ascx" />
+    <Content Include="Usercontrols\enInfoHome.ascx" />
+    <Content Include="Usercontrols\enListBestdeals.ascx" />
+    <Content Include="Usercontrols\enListBlog.ascx" />
+    <Content Include="Usercontrols\enListDestinations.ascx" />
+    <Content Include="Usercontrols\enListNews.ascx" />
+    <Content Include="Usercontrols\enNewsDetail.ascx" />
+    <Content Include="Usercontrols\enPath.ascx" />
+    <Content Include="Usercontrols\enSearchResult.ascx" />
+    <Content Include="Usercontrols\enSlide.ascx" />
+    <Content Include="Usercontrols\enSocialActivities.ascx" />
+    <Content Include="Usercontrols\enSocialActivitiesDetail.ascx" />
+    <Content Include="Usercontrols\enToolbar.ascx" />
+    <Content Include="Usercontrols\enTopHeader.ascx" />
     <Content Include="Usercontrols\Footer.ascx" />
     <Content Include="Usercontrols\Guide.ascx" />
     <Content Include="Usercontrols\Header.ascx" />
     <Content Include="Usercontrols\HomeContains.ascx" />
     <Content Include="Usercontrols\InfoHome.ascx" />
+    <Content Include="Usercontrols\ListBestdeals.ascx" />
+    <Content Include="Usercontrols\ListBlog.ascx" />
+    <Content Include="Usercontrols\ListDestinations.ascx" />
+    <Content Include="Usercontrols\ListNews.ascx" />
+    <Content Include="Usercontrols\NewsDetail.ascx" />
     <Content Include="Usercontrols\Path.ascx" />
     <Content Include="Usercontrols\SearchResult.ascx" />
     <Content Include="Usercontrols\Slide.ascx" />
+    <Content Include="Usercontrols\SocialActivities.ascx" />
+    <Content Include="Usercontrols\SocialActivitiesDetail.ascx" />
     <Content Include="Usercontrols\Toolbar.ascx" />
     <Content Include="Usercontrols\TopHeader.ascx" />
     <Content Include="Web.config">
@@ -195,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\clsFormat.cs" />
+    <Compile Include="Components\Const.cs" />
     <Compile Include="Components\Pageindex_chage.cs" />
     <Compile Include="Components\SendMail.cs" />
     <Compile Include="Default.aspx.cs">
@@ -206,6 +266,27 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\enDefault.Master.cs">
+      <DependentUpon>enDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\enDefault.Master.designer.cs">
+      <DependentUpon>enDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\enIndex.Master.cs">
+      <DependentUpon>enIndex.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\enIndex.Master.designer.cs">
+      <DependentUpon>enIndex.Master</DependentUpon>
     </Compile>
     <Compile Include="Masterpages\Index.Master.cs">
       <DependentUpon>Index.Master</DependentUpon>
@@ -221,12 +302,33 @@
     <Compile Include="Pages\Ajax-customer.aspx.designer.cs">
       <DependentUpon>Ajax-customer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BookTour-en.aspx.cs">
+      <DependentUpon>BookTour-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BookTour-en.aspx.designer.cs">
+      <DependentUpon>BookTour-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BookTour.aspx.cs">
+      <DependentUpon>BookTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BookTour.aspx.designer.cs">
+      <DependentUpon>BookTour.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\cart-result.aspx.cs">
       <DependentUpon>cart-result.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\cart-result.aspx.designer.cs">
       <DependentUpon>cart-result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contact-en.aspx.cs">
+      <DependentUpon>Contact-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact-en.aspx.designer.cs">
+      <DependentUpon>Contact-en.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -235,6 +337,20 @@
     <Compile Include="Pages\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Home-en.aspx.cs">
+      <DependentUpon>Home-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home-en.aspx.designer.cs">
+      <DependentUpon>Home-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home-vi.aspx.cs">
+      <DependentUpon>Home-vi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home-vi.aspx.designer.cs">
+      <DependentUpon>Home-vi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\intro.aspx.cs">
       <DependentUpon>intro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,12 +358,26 @@
     <Compile Include="Pages\intro.aspx.designer.cs">
       <DependentUpon>intro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Main-en.aspx.cs">
+      <DependentUpon>Main-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main-en.aspx.designer.cs">
+      <DependentUpon>Main-en.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Print-en.aspx.cs">
+      <DependentUpon>Print-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Print-en.aspx.designer.cs">
+      <DependentUpon>Print-en.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Print.aspx.cs">
       <DependentUpon>Print.aspx</DependentUpon>
@@ -257,6 +387,209 @@
       <DependentUpon>Print.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usercontrols\BesdealsDetail.ascx.cs">
+      <DependentUpon>BesdealsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\BesdealsDetail.ascx.designer.cs">
+      <DependentUpon>BesdealsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\Bestdeals.ascx.cs">
+      <DependentUpon>Bestdeals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\Bestdeals.ascx.designer.cs">
+      <DependentUpon>Bestdeals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\BlogDetail.ascx.cs">
+      <DependentUpon>BlogDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\BlogDetail.ascx.designer.cs">
+      <DependentUpon>BlogDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\BookTour.ascx.cs">
+      <DependentUpon>BookTour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\BookTour.ascx.designer.cs">
+      <DependentUpon>BookTour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\DestinationDetail.ascx.cs">
+      <DependentUpon>DestinationDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\DestinationDetail.ascx.designer.cs">
+      <DependentUpon>DestinationDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\Destinations.ascx.cs">
+      <DependentUpon>Destinations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\Destinations.ascx.designer.cs">
+      <DependentUpon>Destinations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enBesdealsDetail.ascx.cs">
+      <DependentUpon>enBesdealsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enBesdealsDetail.ascx.designer.cs">
+      <DependentUpon>enBesdealsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enBestdeals.ascx.cs">
+      <DependentUpon>enBestdeals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enBestdeals.ascx.designer.cs">
+      <DependentUpon>enBestdeals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enBlogDetail.ascx.cs">
+      <DependentUpon>enBlogDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enBlogDetail.ascx.designer.cs">
+      <DependentUpon>enBlogDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enBookTour.ascx.cs">
+      <DependentUpon>enBookTour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enBookTour.ascx.designer.cs">
+      <DependentUpon>enBookTour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enDestinationDetail.ascx.cs">
+      <DependentUpon>enDestinationDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enDestinationDetail.ascx.designer.cs">
+      <DependentUpon>enDestinationDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enDestinations.ascx.cs">
+      <DependentUpon>enDestinations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enDestinations.ascx.designer.cs">
+      <DependentUpon>enDestinations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enFooter.ascx.cs">
+      <DependentUpon>enFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enFooter.ascx.designer.cs">
+      <DependentUpon>enFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enGuide.ascx.cs">
+      <DependentUpon>enGuide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enGuide.ascx.designer.cs">
+      <DependentUpon>enGuide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enHeader.ascx.cs">
+      <DependentUpon>enHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enHeader.ascx.designer.cs">
+      <DependentUpon>enHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enHomeContains.ascx.cs">
+      <DependentUpon>enHomeContains.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enHomeContains.ascx.designer.cs">
+      <DependentUpon>enHomeContains.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enInfoHome.ascx.cs">
+      <DependentUpon>enInfoHome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enInfoHome.ascx.designer.cs">
+      <DependentUpon>enInfoHome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enListBestdeals.ascx.cs">
+      <DependentUpon>enListBestdeals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enListBestdeals.ascx.designer.cs">
+      <DependentUpon>enListBestdeals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enListBlog.ascx.cs">
+      <DependentUpon>enListBlog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enListBlog.ascx.designer.cs">
+      <DependentUpon>enListBlog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enListDestinations.ascx.cs">
+      <DependentUpon>enListDestinations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enListDestinations.ascx.designer.cs">
+      <DependentUpon>enListDestinations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enListNews.ascx.cs">
+      <DependentUpon>enListNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enListNews.ascx.designer.cs">
+      <DependentUpon>enListNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enNewsDetail.ascx.cs">
+      <DependentUpon>enNewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enNewsDetail.ascx.designer.cs">
+      <DependentUpon>enNewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enPath.ascx.cs">
+      <DependentUpon>enPath.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enPath.ascx.designer.cs">
+      <DependentUpon>enPath.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enSearchResult.ascx.cs">
+      <DependentUpon>enSearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enSearchResult.ascx.designer.cs">
+      <DependentUpon>enSearchResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enSlide.ascx.cs">
+      <DependentUpon>enSlide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enSlide.ascx.designer.cs">
+      <DependentUpon>enSlide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enSocialActivities.ascx.cs">
+      <DependentUpon>enSocialActivities.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enSocialActivities.ascx.designer.cs">
+      <DependentUpon>enSocialActivities.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enSocialActivitiesDetail.ascx.cs">
+      <DependentUpon>enSocialActivitiesDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enSocialActivitiesDetail.ascx.designer.cs">
+      <DependentUpon>enSocialActivitiesDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enToolbar.ascx.cs">
+      <DependentUpon>enToolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enToolbar.ascx.designer.cs">
+      <DependentUpon>enToolbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enTopHeader.ascx.cs">
+      <DependentUpon>enTopHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enTopHeader.ascx.designer.cs">
+      <DependentUpon>enTopHeader.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -292,6 +625,41 @@
     <Compile Include="Usercontrols\InfoHome.ascx.designer.cs">
       <DependentUpon>InfoHome.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Usercontrols\ListBestdeals.ascx.cs">
+      <DependentUpon>ListBestdeals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ListBestdeals.ascx.designer.cs">
+      <DependentUpon>ListBestdeals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\ListBlog.ascx.cs">
+      <DependentUpon>ListBlog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ListBlog.ascx.designer.cs">
+      <DependentUpon>ListBlog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\ListDestinations.ascx.cs">
+      <DependentUpon>ListDestinations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ListDestinations.ascx.designer.cs">
+      <DependentUpon>ListDestinations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\ListNews.ascx.cs">
+      <DependentUpon>ListNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ListNews.ascx.designer.cs">
+      <DependentUpon>ListNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\NewsDetail.ascx.cs">
+      <DependentUpon>NewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\NewsDetail.ascx.designer.cs">
+      <DependentUpon>NewsDetail.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\Path.ascx.cs">
       <DependentUpon>Path.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -312,6 +680,20 @@
     </Compile>
     <Compile Include="Usercontrols\Slide.ascx.designer.cs">
       <DependentUpon>Slide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\SocialActivities.ascx.cs">
+      <DependentUpon>SocialActivities.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\SocialActivities.ascx.designer.cs">
+      <DependentUpon>SocialActivities.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\SocialActivitiesDetail.ascx.cs">
+      <DependentUpon>SocialActivitiesDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\SocialActivitiesDetail.ascx.designer.cs">
+      <DependentUpon>SocialActivitiesDetail.ascx</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Toolbar.ascx.cs">
       <DependentUpon>Toolbar.ascx</DependentUpon>
@@ -339,6 +721,9 @@
     <None Include="bin\ComponentArt.UIFramework.lic" />
     <Content Include="Pages\captchr.ashx" />
     <Content Include="Masterpages\Index.Master" />
+    <Content Include="Masterpages\Default.Master" />
+    <Content Include="Masterpages\enDefault.Master" />
+    <Content Include="Masterpages\enIndex.Master" />
     <None Include="Resources\fonts\BebasNeueRegular.eot" />
     <None Include="Resources\fonts\BebasNeueRegular.otf" />
     <None Include="Resources\fonts\BebasNeueRegular.ttf" />
@@ -370,8 +755,13 @@
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">

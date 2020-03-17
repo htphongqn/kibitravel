@@ -43,7 +43,13 @@
         <p class="tt-sp"><i class="fa fa-skype"></i> Online support </p>        
         <asp:Repeater ID="rptSupport" runat="server">
             <ItemTemplate>
-            <p class="sp-item"><a href="skype:<%# Eval("ONLINE_NICKNAME")%>?chat" title="<%# Eval("ONLINE_DESC")%>" class="sk"><img src="/Resources/images/sk.png" /></a> <span><%# Eval("ONLINE_DESC")%></span></p>
+            <%--<p class="sp-item"><a href="skype:<%# Eval("ONLINE_NICKNAME")%>?chat" title="<%# Eval("ONLINE_DESC")%>" class="sk"><img src="/Resources/images/sk.png" /></a> <span><%# Eval("ONLINE_DESC")%></span></p>--%>
+                <p class="sp-item">
+                    <a href="https://api.whatsapp.com/send?phone=<%# Eval("ONLINE_NICKNAME")%>&amp;text=<%# Eval("ONLINE_DESC")%>" target="_blank" class="sk">
+                        <img src="https://whatsappbrand.com/wp-content/themes/whatsapp-brc/images/WhatsApp_Logo_6.png" alt="whatsapp">
+                      </a>
+                    <span><%# Eval("ONLINE_DESC")%></span>
+                </p>
             </ItemTemplate>
         </asp:Repeater>
     </div>
